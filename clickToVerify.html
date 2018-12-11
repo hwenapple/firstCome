@@ -1,0 +1,568 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" type="text/css">
+    <style>
+    html,
+    body{
+        margin:0;
+        padding:0;
+        height:100%;
+    }
+    #captcha-container {
+        min-height:100%;
+        position:relative;
+    }
+    #body {
+        min-height: 100%;
+        padding-top:101px;
+        padding-bottom:91px;   /* Height of the footer */
+     }
+    #footer {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+     @media only screen and (max-width: 767px) {
+        #body {
+            padding-top: 64px;
+        }
+    }
+
+    @media only screen and (max-width: 1010px) {
+        .main-wrapper {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+    .static-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+        border-top: #facf00 4px solid;
+        height: 105px;
+    }
+    @media only screen and (max-width: 797px) {
+        .static-header {
+          height: 64px;
+        }
+    }
+    @media (min-width: 992px){
+        .container {
+            width: 100%;
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+    }
+    .header {
+        display: block;
+        height: 100%;
+        position: relative;
+        background: #ffffff;
+        transition: background-color 0.3s;
+        box-sizing: border-box;
+    }
+    .header .header-overlay {
+        position: fixed;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        left: 0;
+        top: 4px;
+        width: 100%;
+        height: 0;
+        background: rgba(39, 47, 56, 0.7);
+        overflow: hidden;
+    }
+    .header .header-overlay.overlay-drop {
+        opacity: 1;
+        height: calc( 100vh - 4px);
+    }
+    .header .header-wrap {
+        height: 100%;
+        position: relative;
+        background: #ffffff;
+        z-index: 1;
+    }
+    .header .header-wrap > .container {
+        max-width: 1600px;
+    }
+    .header .header-wrap > .container:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: rgba(39, 47, 56, 0.2);
+    }
+    .header a {
+        text-decoration: none;
+    }
+    .header a:hover, .header a:focus {
+        color: #272f38;
+        text-decoration: none;
+    }
+
+    .header .container {
+        height: 100%;
+        max-width: 1600px;
+        width: 100%;
+    }
+    .header .logo {
+        height: 100%;
+        float: left;
+    }
+    .header .logo a {
+        height: 100%;
+    }
+    .header .logo a,
+    .header .logo img,
+    .header .logo span {
+        display: inline-block;
+    }
+    .header .logo img {
+        height: 55px;
+        position: relative;
+        transform: translateY(-50%);
+        top: 50%;
+    }
+    .header .logo span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+    @media only screen and (max-width: 1599px) {
+        .header .logo img {
+            height: 35px;
+        }
+    }
+
+    .footer-container {
+        position: relative;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        z-index: 10;
+        padding: 4px 20px 0;
+        background: #272f38;
+        color: #fff;
+    }
+    .footer-container .footer-inner {
+        width: 100%;
+        max-width: 1530px;
+        padding: 35px 0;
+        margin: 0 auto;
+    }
+    .footer-container .footer-inner .row + .row {
+        margin-top: 2px;
+    }
+    .footer-container .footer-inner .footer-menu-items, .footer-container .footer-inner .footer-social-medias {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .footer-container .footer-inner .footer-menu-items li, .footer-container .footer-inner .footer-social-medias li {
+        list-style-type: none;
+        display: inline-block;
+    }
+    .footer-container .footer-inner .footer-menu-items li:before, .footer-container .footer-inner .footer-social-medias li:before {
+        display: none;
+    }
+    .footer-container .footer-inner .footer-menu-items {
+        margin-bottom: 10px;
+    }
+    .footer-container .footer-inner .footer-menu-items li {
+        margin-right: 15px;
+        margin-bottom: 2px;
+    }
+    .footer-container .footer-inner .footer-social-medias {
+        text-align: right;
+    }
+    .footer-container .footer-inner .footer-social-medias li {
+        margin-left: 32px;
+    }
+    .footer-container .footer-inner .footer-social-medias li:first-child {
+        margin-left: 0;
+    }
+    .footer-container .footer-inner .footer-copyright {
+        font-size: 12px;
+        font-weight: 100;
+    }
+    .footer-container a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .footer-container a:hover {
+        text-decoration: underline;
+        color: #fff;
+    }
+    .footer-container a:visited, .footer-container a:link, .footer-container a:active {
+        text-decoration: none;
+        color: #fff;
+    }
+    .footer-container a:visited:hover, .footer-container a:link:hover, .footer-container a:active:hover {
+        text-decoration: underline;
+        color: #fff;
+    }
+    .footer-container p {
+        margin-bottom: 0;
+        line-height: 1.42857143;
+    }
+    @media (max-width: 1600px) {
+        .footer-container {
+          padding: 4px 35px 0;
+        }
+    }
+    @media (max-width: 1440px) {
+        .footer-container {
+          font-size: 14px;
+          font-weight: 100;
+          padding: 4px 30px 0;
+        }
+        .footer-container .footer-inner {
+          max-width: 1400px;
+        }
+    }
+    @media (max-width: 1199px) {
+        .footer-container {
+          padding-top: 4px;
+          padding: 4px 20px 0;
+          text-align: center;
+        }
+        .footer-container .footer-inner .footer-copyright {
+          margin-top: 12px;
+        }
+    }
+    .footer-container .prog-bar-container {
+        position: fixed;
+        bottom: -1px;
+        left: 0;
+        z-index: 9999;
+        width: 100%;
+        height: 5px;
+        overflow: hidden;
+    }
+    .footer-container .prog-bar-container .prog-bar {
+        width: 0%;
+        height: 100%;
+        background: #facf00;
+    }
+    .footer-container.visiable .prog-bar-container {
+        position: absolute;
+        top: 0;
+        bottom: initial;
+        height: 4px;
+    }
+    .footer-container.visiable .prog-bar-container .prog-bar {
+        width: 100% !important;
+        -webkit-transition: width 0.6s ease;
+        -o-transition: width 0.6s ease;
+        transition: none;
+    }
+    @media (max-width: 1199px) {
+        .footer-container .prog-bar-container {
+          height: 5px;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        .static-footer.footer-container .footer-inner .footer-copyright {
+          margin-top: 0;
+        }
+    }
+
+    .page-title {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        padding: 32px 15px 20px;
+        max-width: 1040px;
+    }
+
+    .page-title:after {
+        content: '';
+        display: block;
+        margin: 0 auto;
+        width: 96px;
+        height: 4px;
+        margin-top: 13px;
+        background-color: #facf00;
+    }
+
+    .heading1 {
+        font-size: 48px;
+        line-height: 1.25;
+        font-weight: 300;
+    }
+
+    .captcha-content {
+        max-width: 1010px;
+        margin: 0 auto;
+        font-size: 16px;
+        color: #272F38;
+        line-height: 22px;
+    }
+
+    .captcha-content a {
+        text-decoration: underline;
+        color:#272F38;
+    }
+
+    .captcha-content a:hover {
+        text-decoration: none;
+        color:#272F38;
+    }
+
+    .captcha-content a {
+        text-decoration: underline;
+        color:#272F38;
+    }
+
+    .captcha-content li {
+        margin-bottom: 12px;
+    }
+
+    .captcha-content li:last-child {
+        margin-bottom: 0;
+    }
+
+    .captcha-form {
+        margin-bottom: 60px;
+    }
+
+    .langBlock_en {
+        font-family: "Open Sans","Arial",sans-serif;
+    }
+
+    .langBlock_zh, .langBlock_cn {
+        font-family: "Microsoft JhengHei", "PingFang TC", "Heiti TC", sans-serif;
+        display: none;
+    }
+    </style>
+  <script type="text/javascript" src="/tybdoqsmavpknslq.js" defer=""></script><style type="text/css">#d__fFH{position:absolute;top:-5000px;left:-5000px}#d__fF{font-family:serif;font-size:200px;visibility:hidden}#buerqdactrucda{display:none!important}</style><script charset="UTF-8" async="" src="https://api-na.geetest.com/gettype.php?gt=f2ae6cadcf7886856696502e1d55e00c&amp;callback=geetest_1541549165976"></script><script charset="UTF-8" async="" src="https://static.geetest.com/static/js/fullpage.8.6.1.js"></script><script charset="UTF-8" src="https://api-na.geetest.com/get.php?gt=f2ae6cadcf7886856696502e1d55e00c&amp;challenge=524cd5986dedcf0c223609c6875bc40a&amp;lang=en&amp;pt=0&amp;w=ZX8TsF2IKQnhEcGc(uMbV)XYZh1rT5HYr(NVm2P38zgtnBRJv3MdVzQDXq02D4r)NqJG(08dH)po8RwTMJO8z6QOUhLZdXpwtldh7GKlfhxhfB2(pHJFIwgksgkJ4))4mYvU57SG02(ilIy1DgyL6)fOrdJsgHGanaGmK3Zr36VllPpnH2CbjNknYRQ3ELZSxGENxexYKK50HExZtSpOzil0)uGL2RznN(eBp2RAjNlehDu22ZoMccrGG(Lt6YYbjDn2aUmb5Ceg199UfHE8Bw9Q0hZxbOJNvp6k0LXoMzoZHHYwp4BNr)uNj)rky5qcZSBKx89ROoPGHNE8yJJy2yInBzG9p7Uz7GwpmLWaWd7WiRP)0j6cAXspBm2cLuO9Q0fvD1luqmPf(pnN6)ElooE(lUYdWwJ5msQQ5cQ1tIlz5SpKZGwfK013QWnjKmMqMHf61RlKvxSHDsVq06j2AKoOYcVXbvDk4AfUbbDxncn0ovV9gh16cz3zykX0RrEoRITrnNqoKXXMBypH1xnngium9UkciAP941Qf3tRvAiy84rFIZLJyPV50mftl9SHAFaJwX21tC(v3U0uHjw41)hVwUnL7e6RomMfNiiAgghUUieApc1T7xGjs9lJJ5hX(LwpdwTCF8XQ)b4fepEcwJ45VHkzyjevwl51rJGFcmjpi2f(nVqto9U7WUCnCILkBqW05puV8PN56HL3e5cdNQMmTtFRczmvgewDJ7n1tEp8SxvIRdlj7ZHMO069LuyO7z68Mbiprhj6a79tYKtOZbR6mjFColZHmbGAmgIA)sn0OJa)1HnnHJb8mRpO7cpBrwEBvnKF4jHwgF8V81RN(0kwPY67hGr5(4W4xhSWtvSXL7g2q6hzcvjBCbaFU2MT7ahhM7kLMe7ENTjeq9D3otAnZi3kC5f0HSWvM6xnptnYTtqGLKBQ1dVXPsMfLTrkzVwsk9sO(MIfDrmwZjroIJ2m90(VzlJCjqGJLeA89eRupWEblvyj7UJtjWODJbV1kt8vJEeyVcE5k8hNjuFnw)15FwwONqDNrbUiUofSCL98Yggf8HPUOpkZSHAtv762)AaWCQ12UnIqeYNVl)QDr9mDDOPjeRDf4rwoUrrJDXQBvQlm8OR6IyES5y37b)JlAi4dtz3CLZqMxv4pb8QjHn00IWWQRKvJ1kHpuDHmlqSqdSXll1U2oMm2rgYnkX2Q8ylUGnIneBfzIo0jSzGqbkQPnbV8ve2nPBLGMr6zKlYhxvnG9bon0K0Ynerscdotoq)CbyHRiHygpH0s64R)JP02Mae0J4DSKgjkik(0T6QAjbqmB(fgF5EgYNhDLTVSlW1DZjBvaI8t1X5pboNIKNUCTZWHg4go(n6OX2YvyNi5Lbc6HqwM4AdkppR82je3GOmI4CbLPeofcpuwdJHU2YUCKoOANZrt37lsL5BdS61TYQbMvtWqqj5n1EznO)TKjulIpmkbhV0r0WB5WQ64Lqu1css4go8O4dRsSYrm2CzAuqB)QdQZ(3m1eh2Fp)lXZRsoVGyQBRsueRWtA)EU8BBGQBNhwhMMAgoCGXqKVsvMFF3x5yq)m0hQKMmjr21AhQFQ)fVwPOQUvVvRlx(I5wVzpxhF1qqvfda17NeeRzSjxP9iOAdC3sXtI3tZyyYuV1SqHnP(aCvZQOFYg6eBLzL2s7k17)UyQTTJ92uBGtKerdqSTzzNZW3xHO9tjHdaNVQeyKW(uRpw7OUNen7RuGoAml2rB4TqS6uLvjsFTBqnytWn3DafQLBYG)86mg(Wg7EsWgUBmsw7zfGQ1PENhROTTFgTnMl2PChglQ3s7LrMwtlYmFNogS4olDXxcCfdlScylU4Fkah87HpxNM2JVkted3nSVmPiEUxcMzfcJenA0OpwrsqQAvQTFdd5)UXLPrqMCDEB5Cxzmgt36BrsI(i1iKJeaKob0TMiOJPTtHtoVgMeqZ3okfscZ0M8m7EYiPZvRG5Ps1SMIr8gfjmAkXUCK4YIuZtAw0jB0zHvIKj4.43c1ad210b570a8c38178be152c6089ba8dfea00d0184c054349c2f4e5f5fa22027797ec0ea134ccce0107e0eb43527073c2b9ac6be7e962eb2905f53f4b09493fcc8be7e6e99fd444abffdd0d64e86630793fa68362eb1a8ad4dcfa053b2c78f307f7f6649ff208e1f398d5655df191c32ae9208cc97d79450e368e15e9fb0f&amp;callback=geetest_1541549160944"></script><link href="https://static.geetest.com/static/wind/style_https.1.5.2.css" rel="stylesheet"><script charset="UTF-8" src="https://api-na.geetest.com/reset.php?gt=f2ae6cadcf7886856696502e1d55e00c&amp;challenge=524cd5986dedcf0c223609c6875bc40a&amp;lang=en&amp;w=azC3p5ue()oyjYLDlSFSEfWGpiTHt4sgb6j1YZSYaqvWsOPDWG)HWyHAzE2AT5rrp7eHKFmbl72OPSRGGslyXnj2J9jtJDNhNq7wV9tI0K10c9gnXZnHn(Ar7fZyK)covQf4EJ)2s1mg0tEkMC)pIUpzNEUgkRBDvkonZ)ugd5BjqU7GltoI9grKiGx2SIwImkq16ssKa24JDZbWsd4sSszpx2(eIl(bkL6jCrKhK0jL6Gs8htreFN77MRYLvJpKlKzNhgnq0lU(y21XvKMUmwlGk4NoFGLxrJKxh6bK28s3Bd91lokVkTcEllMM)8UsbQNX(DnxAdsZMdN9(BpLsDTW77JFv1mtwfhg(ArwrYdSqhjhwWhGOl9m)ipQ7Jlz5r0xrYAcQdVjsIoDLKGhyhdh3ofzff6GKmv9vax)Pnu9SJgeADxRTJTaPuNeQnKJ3fjnFzcwNrPl8mE(DZEU9bNgvyeLBxzr9qUdRS0)yEpKnT1ACg0BdJNXnt0feUc8cJl16JarLC8)kcgMUmzdJbQ4vc5la3HVmYkLer15TtpXS)OE5Qo0IuOSuxzy)eUBXeUbrnR44Wi14YxlYJ6bw7azUKfcFezG4lVHh13(bxD5SKpC5AE9PawCRiygY8SABCEUD877LC4kt8(CrZ7vjsKNFUX7SMK5fHtWEh1nlvyetXS08n7(aKre2aqbXwpIzc4HMkEknHU9zf3pthnc4tS5DNf7Ewh9cMXAZ2FTtz2ozVqIkKLj3sF7rf18OYeyfYT3TfKTZi75K9zJtYjoUu1TP(xc2uyYZ4h5nLEHjXdON7WfZcdV0wvfFfOUI38Jknh5ddNnYM96d5htP3LMUHSQZoIeTXpG6BRXLi1IEI2U8)h36bMSZx3ZXAEYvdk)zD6CaaKLA(6EzVoBJQmM15FitZvewX4goN48cPUYMU6B9NRic8GxRJ76)z(9vVxHh4)oUeKYNgE2kGXeyMxvyXbf7Z(ffZoRbnAQaOeGtUbpmZqiD7LZEXnpBVfnfDHJ2DLQi3P)dhMhsrj7Hbfq1Ah(7gj(EsozDdj)nA8yDr(p8uePjlIdmJWOeKlxiU(vn9coXYmiX4J)GylprwrV6SdRJptrIeY8UvYScgQx)J63r7ZkDWIyg8KsQWG(M8XxTtzrPOHlqbH4eIcLfrujU8DTkhOXE3Ik71a(vftQHs25NY0uKirWdx1YeQR5igo1EaX7yCpXYiIpyvqSQnF(MZgqZ4BEvGCPyPpBpxraL7)opdpRIrObQXsy2FQHyh8BUB3p6(j4w6vo6cb9BDiPOQ..41055125a2d15faa641c50528a9efc70275d0c52a5077bbaf3aa7da6036bb688e2822f669111d0ff6f23bd8f00e8e6a828fbe4d216a254d0433e6a673c8d3bb9282fdc470a3d9ba236cc1b21bd67b04d32da294de95b914735dbdfde0943ecaf99a7c3cbd33f04756cdeaabd16aeaba16912f26ae7d341870edd067b6d8215b0&amp;pt=0&amp;callback=geetest_1541549706862"></script><script charset="UTF-8" src="https://api-na.geetest.com/reset.php?gt=f2ae6cadcf7886856696502e1d55e00c&amp;challenge=c4f7653209de8d441e9c7e185c068d2e&amp;lang=en&amp;w=spbWDEf4Qiop(A5DAcKjueFItX39o1sIkZGdiFmmqY(9P7Qe3o0CEIuMqMFdX0BHcnToO71uqHMu5L6RFDfngTf1v)RvcSNer3IosVb)6KMCmUN6qBhzTm02IjQCzaR)seiaUWyux()Kznc(BY167uY3gxcKsw7jXTuZP7ah0exCesJ7s3)Anjojfk864aTgH6q6mSjR8cXvyYNwTuEB8ImaQ(NYH)NJ(T1InibWeRhgSGo2Um90JoV2PRDaYoCeG47KtB6Bz94wmeqK7DxfcRXdl(71H5JKsvVUTpicdh7oU6eHym2uW7(ZCm3qk1HxA4iFaY1glBBcdz9DZZ5HGo9TwhMHK5oYbvvC7FuN3dk2bPDCoz1d4HIZVO6DgHEv2)kR9W5LesMhdJPvZRtgwSWWzrHBuRkLaJeccPC1sI)WezZTxZugSCD3taSno)JBzpCt)P5chHLwZiU0lHn8F(2EQv6ro3tma6hb9cNxfok(zAU97O7zSL)uYGiUzwirrtziCpmeQ(LzsdKAOnfOfM9yeMAO4Xgg84DxgkzPtcemHrXX75SSLJ18Z8fpzM2hhKNlceTj4em0)CuHK2IOMaDcn6OyOy)jj))4BtRqvm3xvc8RerfSpCSLl3ll787G06ezeOkt)fPQoIPbcO)9UxIPDKfs9JRldExXxIugrJSy)OKNy96U1k57JtoNpOvOmdWfeFH3Ui8lhUWyv))p8(eVcVU)SNf5apF(OowmSYDIGCoIx7TpIeWTpU4DSvifIjEUg5KKeuhHqLhVrhMmze0AQkunyvgNFgqkSm8UXxl7jXsUP(zJkKdtPQrQl6MI3WzXGSauRxdYUeVsOwzq6MMPe)cq7ohGzgN4pvFV9u4(VgCC74adzCXg2kP(4XXRR)sPCoLMWHL3YWPpC)P1LhcXMY74BPqnSpOxBik7zjzUBNGLrCREK8ibz4vXunha8mMWsKjaXsEtldA0Q4DrLXskvBmoCNGNLcnLKf9fH(0Xmyh4n9rUKfqr(vON64karYmV11LPBqVSCbP6veTJq0kz)SuwgXhmjxDHe073KXqEbSnJSqsgr(hTkspifELHxW4LTxWoLoZtBuqZzkQFaj5jBaU5BfBJldz2lHOXFXB71LvdAUx58SVIRus1cu83NOrUPINLYVlVMwbbXT6p0Lr0gQNy)7e8lyCcjw)XmZ8M9Cl5rpy0ZfTDUabEfzf9DfLxUH6Qg2H0cF)f4RSHSKY(dWeNFeORh5h9fYp5yStehyK47KD78NCch)myBw0KK9rAiw9xPvLCQAmU0m6TcA..70df4a441e92414d35b1271d0fb19ac2d4debe74a4b372d0f5e83eea94e3922abb4fe8469c67292acafb1ab8acb2e752c22b044ed1bf1b1158875e53d0820a4ebfe556f44372ad796836f3aa6cc8ffd0b8478a35a3fcf20ad98af052b5e7def8632d4a1af1a93f51caced849e1edab8ac3e2564ab2ea39f0e72589d66db5fb27&amp;pt=0&amp;callback=geetest_1541550238526"></script><script charset="UTF-8" src="https://api-na.geetest.com/reset.php?gt=f2ae6cadcf7886856696502e1d55e00c&amp;challenge=a0271e0ab039de6f45dd548785906966&amp;lang=en&amp;w=PCoQlGkDwcJm2grijhFy2EFDLo4khAQ0b9TXW5l4K4ajEW09EuYovr3i7dC502fCkVT4(IDA6fHlj7wiDIUdLu8vZYxuwX5bUB(6grWH9YBQhzGQYGM85DftFr8ONcPi3AnyB(PHdbzTQYU6Wnnbs5G0vMouDgpz)8vzHEyeNyrmmGvCtxa1G2dAR6a8K660iGJBXYwhNl9OG6AfXMAohhgOi0OV5FtwLdzWdyIuF9UQKL401VhZ30cUqp6pswRrZLparX3kcQLSRgVWGNQIG3koicNOaE5JFu2MByxJoZTfqrh1LjK2uIxN7Qk7gnqnZPu10sMbanGp(awfr1i52Ho2BzJexC3Xbq0F2h)1CS0ZSKujiqZA728l)C6P8rCARkgPe92TnRlD5lVyATHZN3CwQJYtr)kwvQEPmsryPM5O81bp7)b1wmZrO3FUpT9Q9naVmC18hthKtfnsXCepY41qnYxxGcDuEe8TKg88SkQwEkRWJwWCNbG))yAVGpraFyeX)jRi(103Dt)Dd5aPlO7ixzHJpeVLBAOa4s3qCIOv)AA6YedNM44heSqRVnEFXBhYlZ8yM)9A94Jasfi1haiHCVXM54I1KEQAdy3aM1DBnajm3SeskWKmfw8GZ)fxYjDuLDuZQimUfmfkDvhmWrQ6i80JXqFyj8UKfzRC(SUmXqurTcXCFHWm1u7z2S9B3rFkbGfTeEcpCS5GFGZ4b2P2KJFiJPV6GJ2lVI6TrFZhro8ShBt4IUq6k1PZ7R63xGI3(enWdPWYy(2TGunfTv9(MICDurFOV6t4PabqGeQ8fK0nh5boMVPZ3odgSjuC8H04R9YxIPCJQFVBJVczwQ5Nl2yxb9uCsc77(Fh2gQ14NLKSylpPcHS)IXyBNQHAWmYO6CGl9Vs54wWYAS7QTpZ5h23U3)vekrU7Njyk1q(igA7256lMfhZ55jfnm2QXrZiuMHYYI626R9OOFLdBkFGPQpTyi64LOki1Vs2xPeDa(7g6gotbbeKMoNbIA)s9VQKTt2V6xqxlc8pPlp8RUDuL5UIaihb5ZTbJhSofY2KLWRtUnIhPKnhIz6EQZQpsXG4CxIXozDezTbVHW0tmuOVYvXYGMOvlh)3toqXMm2EJpqeHmbwC(85nheOa(jSOXa5RP07R14xkMbkYNUihq0aAGI(yisoj4f167fi19yVjGPV7gTh3RTS(2pWgfzLDfcY)hE3bayVXQZOqKmZcMaZ3E1BbiO55u9tu(ddqyvwRjBLz3fdk4H2MNhDJ3K7B0cKmi4s9i2DY(L7JiAhj3Q..6387f03a6039254bb7092fdbce3ddf2c1fac7b23e0454d5e90bada5a124398c12381ed84bdb0656b71bab2b31e1f05762655ffd0a331dba0c333a49fd65b4bbae60fedd612b003a9c13c877b0b954806eaef9ded1b629d30ceada7fd120b8d8036b1ccd934cb01055efa7994753b498bffa010b6c3dd5f0769ff80af65d3ba57&amp;pt=0&amp;callback=geetest_1541550780981"></script></head>
+<body>
+  <div id="captcha-container">
+    <header id="header">
+      <div class="static-header">
+        <div class="header">
+          <div class="header-wrap">
+            <div class="container">
+              <div class="logo">
+                <a href="https://www.asiamiles.com/am/en/homepage">
+                <img src="https://www.asiamiles.com/content/dam/am-content/common/images/header/m_header_logo.svg" alt="Asia Miles" title="Asia Miles"><span>Asia Miles</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="body">
+      <div class="main-wrapper">
+        <div class="langBlock_en">
+          <div class="captcha-content">
+            <div class="heading1 page-title">Pardon our interruption</div>
+            <p>As you were browsing www.asiamiles.com something about your browser made us think you were a bot. There are a few reasons this might happen:</p>
+            <br>
+            <ul class="captcha-acknowlegement-list">
+              <li>You’re a power user moving through this website with super-human speed.</li>
+              <li>You’ve disabled Javascript in your web browser.</li>
+              <li>A third-party browser plugin, such as Ghostery or NoScript, is preventing JavaScript from running. Additional information is available in this <a href="https://help.distilnetworks.com/hc/en-us/articles/212154438-Third-Party-Browser-Plugins-That-Block-JavaScript" target="_blank">support article</a>.</li>
+            </ul> 
+            <br>
+            <p>After completing the CAPTCHA below, you will immediately regain access to www.asiamiles.com.</p>
+            <br>
+          </div>
+        </div>
+        <div class="langBlock_zh">
+          <div class="captcha-content">
+            <div class="heading1 page-title">很抱歉打擾你的瀏覽</div>
+            <p>在你瀏覽 www.asiamiles.com 時，你的瀏覽器讓我們覺得你是一個機器人。 這可能有幾個原因：</p>
+            <br>
+            <ul class="captcha-acknowlegement-list">
+              <li>你是以超逾常人速度穿梭本網站的超級用戶。</li>
+              <li>你的瀏覽器已停用 JavaScript。</li>
+              <li>第三方瀏覽器插件（如 Ghostery 或 NoScript）阻止 JavaScript 運行。 如欲得悉更多資訊，請參見此<a href="https://help.distilnetworks.com/hc/en-us/articles/212154438-Third-Party-Browser-Plugins-That-Block-JavaScript" target="_blank">技術支援文章</a>。</li>
+            </ul> 
+            <br>
+            <p>完成下面的CAPTCHA後，你將可立刻再次瀏覽 www.asiamiles.com。</p>
+            <br>
+          </div>
+        </div>
+        <div class="langBlock_cn">
+          <div class="captcha-content">
+            <div class="heading1 page-title">很抱歉中断您的浏览</div>
+            <p>在您浏览 www.asiamiles.com 时，您的浏览器出现了疑似机器人程序的操作。这可能是因为：</p>
+            <br>
+            <ul class="captcha-acknowlegement-list">
+              <li>您正以超乎常人的速度在浏览本网站。</li>
+              <li>您禁用了网络浏览器中的 Javascript。</li>
+              <li>第三方浏览器插件（如 Ghostery 或 NoScript ）正在阻止 JavaScript 运行。如需了解更多信息，可查阅这篇<a href="https://help.distilnetworks.com/hc/en-us/articles/212154438-Third-Party-Browser-Plugins-That-Block-JavaScript" target="_blank">技术支持文章</a>。</li>
+            </ul> 
+            <br>
+            <p>填写以下验证码之后，您将能立即重新浏览 www.asiamiles.com。</p>
+            <br>
+          </div>
+        </div>
+        <div class="captcha-content captcha-form">
+                        <script type="text/javascript">
+                var distilRequestMethod = "POST";
+                var distilSafariNumberStepsBack = 1;
+
+                var distilCallbackGuard = function(callbackName) {
+                    return function() {
+                        if (typeof(window[callbackName]) === 'function') {
+                            return window[callbackName].apply(null, arguments)
+                        } else {
+                            document.getElementById('dCF_input_complete').style.display = 'inline'
+                        }
+                    }
+                }
+            </script>
+            <script type="text/javascript" src="/distil_r_captcha.util.js"></script>
+            <form id="distilCaptchaForm" class="geetest_easy" action="/distil_r_captcha.html?requestId=9c0bde02-990a-4d4c-99b5-71c0b7b12e9f&amp;httpReferrer=" method="post">
+                <input id="dCF_ticket" name="dCF_ticket" type="hidden" value="1.0&amp;xsjQdrOtL9rYq+0dOIw/ncUZI+VidL+5BsPfpAZszLiMebtVty1LXFdRHY2DJ/rrM+xgeQKI/CDgfRHSYKtwdqztAnSN55CV4Au890ndc6ECL4NhIC9DnOnDLQdf7cEkurrQopoBBez+Fu04ax3+bX1gPGRpwvEATe7OwZxPy24=">
+                        <noscript>
+                    <div>
+                        <p><strong>JavaScript needs to be enabled to complete CAPTCHA.</strong></p>
+                    </div>
+                </noscript>
+                <div id="captcha-box"><span id="captcha-status-message" class="text-info" style="display: none;">Loading Captcha …<br></span><div class="geetest_holder geetest_wind geetest_detect" style="width: 300px;"><div class="geetest_form"><input type="hidden" name="geetest_challenge"><input type="hidden" name="geetest_validate"><input type="hidden" name="geetest_seccode"></div><div class="geetest_btn"><div class="geetest_radar_btn"><div class="geetest_radar"><div class="geetest_ring"><div class="geetest_small"></div></div><div class="geetest_sector" style="transform: rotate(16.1614deg);"><div class="geetest_small"></div></div><div class="geetest_cross"><div class="geetest_h"></div><div class="geetest_v"></div></div><div class="geetest_dot"></div><div class="geetest_scan"><div class="geetest_h"></div></div><div class="geetest_status"><div class="geetest_bg"></div><div class="geetest_hook"></div></div></div><div class="geetest_ie_radar"></div><div class="geetest_radar_tip" tabindex="0" aria-label="Click to verify" style="outline-width: 0px;"><span class="geetest_radar_tip_content">Click to verify</span><span class="geetest_reset_tip_content">Retry</span><span class="geetest_radar_error_code"></span></div><a class="geetest_logo" target="_blank" href="http://www.geetest.com/first_page"></a><div class="geetest_other_offline geetest_offline"></div></div><div class="geetest_ghost_success"><div class="geetest_success_btn"><div class="geetest_success_box"><div class="geetest_success_show"><div class="geetest_success_pie"></div><div class="geetest_success_filter"></div><div class="geetest_success_mask"></div></div><div class="geetest_success_correct"><div class="geetest_success_icon"></div></div></div><div class="geetest_success_radar_tip"><span class="geetest_success_radar_tip_content"></span><span class="geetest_success_radar_tip_timeinfo"></span></div><a class="geetest_success_logo" target="_blank" href="http://www.geetest.com/first_page"></a><div class="geetest_success_offline geetest_offline"></div></div></div><div class="geetest_slide_icon"></div></div><div class="geetest_wait"><span class="geetest_wait_dot geetest_dot_1"></span><span class="geetest_wait_dot geetest_dot_2"></span><span class="geetest_wait_dot geetest_dot_3"></span></div><div class="geetest_fullpage_click"><div class="geetest_fullpage_ghost"></div><div class="geetest_fullpage_click_wrap"><div class="geetest_fullpage_click_box"></div><div class="geetest_fullpage_pointer"><div class="geetest_fullpage_pointer_out"></div><div class="geetest_fullpage_pointer_in"></div></div></div></div><div class="geetest_goto" style="display: none;"><div class="geetest_goto_ghost"></div><div class="geetest_goto_wrap"><div class="geetest_goto_content"><div class="geetest_goto_content_tip"></div></div><div class="geetest_goto_cancel"></div><a class="geetest_goto_confirm"></a></div></div><div class="geetest_panel"><div class="geetest_panel_ghost"></div><div class="geetest_panel_box"><div class="geetest_other_offline geetest_panel_offline"></div><div class="geetest_panel_loading"><div class="geetest_panel_loading_icon"></div><div class="geetest_panel_loading_content"></div></div><div class="geetest_panel_success"><div class="geetest_panel_success_box"><div class="geetest_panel_success_show"><div class="geetest_panel_success_pie"></div><div class="geetest_panel_success_filter"></div><div class="geetest_panel_success_mask"></div></div><div class="geetest_panel_success_correct"><div class="geetest_panel_success_icon"></div></div></div><div class="geetest_panel_success_title"></div></div><div class="geetest_panel_error"><div class="geetest_panel_error_icon"></div><div class="geetest_panel_error_title"></div><div class="geetest_panel_error_content"></div><div class="geetest_panel_error_code"></div></div><div class="geetest_panel_footer"><div class="geetest_panel_footer_logo"></div><div class="geetest_panel_footer_copyright"></div></div><div class="geetest_panel_next"></div></div></div></div></div>
+                <!--[if (gt IE 8)|(WindowsEdition)]><!-->
+                    <script src="//static.geetest.com/static/tools/gt.js"></script>
+                <!--<![endif]-->
+                <!--[if (lte IE 8)&(!(WindowsEdition))]>
+                    <script src="http://static.geetest.com/static/tools/gt.js"></script>
+                <![endif]-->
+                <script type="text/javascript">
+
+                function generateCaptcha(timeout) { return function() {
+                    // IE 6 and below is the reason for `generateCaptcha` taking a timeout and
+                    // returning a function. In those browsers, `setTimeout` is unable to pass additional
+                    // parameters to the function when the timeout is triggered.
+                    document.getElementById('dCF_input_complete').style.display = 'none'
+                    var xhr;
+                    if (window.XMLHttpRequest) {
+                        //Modern browsers use native object
+                        xhr = new XMLHttpRequest();
+                    } else {
+                        //IE 5 and 6
+                        xhr = new ActiveXObject("Microsoft.XMLHTTP");
+                    }
+
+                    xhr.open('POST', "/distil_r_captcha_challenge", true);
+                    xhr.onreadystatechange = function(){
+                        var captchaDestinationId = 'captcha-box'
+                        var captchaStatus = document.getElementById('captcha-status-message')
+                        if (xhr.readyState == 4) {
+                            if (xhr.status == 200) {
+                                captchaStatus.setAttribute('class', 'text-info')
+                                captchaStatus.innerHTML = 'Loading Captcha &hellip;<br>'
+                                captchaStatus.style.display = "inline"
+                                var response = xhr.responseText.split(';')
+                                initGeetest({
+                                    gt: 'f2ae6cadcf7886856696502e1d55e00c' ,
+                                    challenge: response[0], // Challenge encoded
+                                    product: 'float',
+                                    offline: false,
+                                    new_captcha: 1,
+                                    api_server: 'api-na.geetest.com',
+                                    lang: response[1] // Language encoded
+                                }, function(captchaObj){
+                                    captchaObj.onReady(function() {
+                                        captchaStatus.style.display = 'none'
+                                        captchaStatus.setAttribute('class', 'text-info')
+                                    })
+                                    captchaObj.appendTo(document.getElementById(captchaDestinationId))
+                                    captchaObj.onSuccess(distilCallbackGuard("distilCaptchaDoneCallback"))
+                                })
+                            } else {
+                                captchaStatus.innerHTML = "We&apos;re having trouble loading your Captcha. Consider refreshing the page.<br>"
+                                captchaStatus.setAttribute('class', 'text-danger')
+                                captchaStatus.style.display = "inline"
+                                window.setTimeout(generateCaptcha(timeout * 2), timeout)
+                            }
+                        }
+                    }
+                    xhr.send()
+                } }
+
+                if (window.addEventListener) {
+                    window.addEventListener('load', generateCaptcha(500), false);
+                } else if (window.attachEvent) {
+                    // IE 5 and 6
+                    window.attachEvent('onload', generateCaptcha(500));
+                }
+
+                </script>
+                        <div id="dCF_complete">
+                    <input id="dCF_input_complete" type="submit" value="Complete Captcha" style="display: none;">
+                </div>
+                <div id="dCF_captcha_text">You reached this page when attempting to access https://api.asiamiles.com/profile/api/v1/login<br> IP Adddress: 73.15.12.8 <br> Trace: 9c0bde02-990a-4d4c-99b5-71c0b7b12e9f via ed9d7641-5b43-4bbf-93b6-05c83b67f870 <br>Wed, 07 Nov 2018 00:05:55 GMT</div>
+            </form>
+        
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="footer-container visiable static-footer">
+        <div class="prog-bar-container"><div class="prog-bar" style="width: 100%;"></div></div>
+        <div class="footer-inner">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 footer-copyright">
+              <div class="langBlock_en">
+                <p>Copyright © Asia Miles is managed and operated by Asia Miles Limited.</p>
+              </div>
+              <div class="langBlock_zh">
+                <p>版權所有 © 「亞洲萬里通」由亞洲萬里通有限公司管理。</p>
+              </div>
+              <div class="langBlock_cn">
+                <p>版权所有 ©「亚洲万里通」由亚洲万里通有限公司管理。 | 京ICP证09072568号</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript">
+function hideEn() {
+  for (var n = document.getElementsByClassName("langBlock_en"), e = 0; e < n.length; e += 1) n[e].style.display = "none"
+}
+
+function getLang() {
+  if (null == (n = navigator.languages[0] || navigator.userLanguage || navigator.language || "en") || void 0 == n || -1 !== n.indexOf("en")) var n = "en-US";
+  return n
+}
+
+function fixCaptchaBttn(n) {
+  document.getElementById("dCF_input_complete") && (document.getElementById("dCF_input_complete").value = n)
+}
+
+function showCopy(n) {
+  for (var e = document.getElementsByClassName("langBlock_" + n), t = 0; t < e.length; t += 1) e[t].style.display = 'block'
+}
+
+var UTCdate = new Date(new Date().getTime());
+var ulang = getLang().toLowerCase();
+if (ulang == 'zh' || ulang == 'zh-tw' || ulang == 'zh-hk') {
+  hideEn();
+  showCopy('zh');
+  fixCaptchaBttn("完成 CAPTCHA");
+  document.getElementById('dCF_captcha_text').innerHTML = "你在嘗試瀏覽以下網址時進入此頁： " + document.location + "<br/> IP 地址： 73.15.12.8 <br/> 追蹤： 9c0bde02-990a-4d4c-99b5-71c0b7b12e9f 經由 ed9d7641-5b43-4bbf-93b6-05c83b67f870 <br/>"+ UTCdate.toGMTString();
+} else if (ulang == 'zh-cn') {
+  hideEn();
+  showCopy('cn');
+  fixCaptchaBttn("完成 CAPTCHA");
+  document.getElementById('dCF_captcha_text').innerHTML = "您在试图访问 " + document.location + " 时来到了本页面<br/> IP 地址： 73.15.12.8 <br/> 足迹： 9c0bde02-990a-4d4c-99b5-71c0b7b12e9f 经由 ed9d7641-5b43-4bbf-93b6-05c83b67f870 <br/>"+ UTCdate.toGMTString();  
+} else {
+  document.getElementById('dCF_captcha_text').innerHTML = "You reached this page when attempting to access " + document.location + "<br/> IP Adddress: 73.15.12.8 <br/> Trace: 9c0bde02-990a-4d4c-99b5-71c0b7b12e9f via ed9d7641-5b43-4bbf-93b6-05c83b67f870 <br/>"+ UTCdate.toGMTString();
+}
+
+</script>
+
+
+<div id="d__fFH" style="position: absolute; top: -5000px; left: -5000px;"><object id="d_dlg" classid="clsid:3050f819-98b5-11cf-bb82-00aa00bdce0b" width="0px" height="0px"></object><span id="d__fF" style="font-family: Courier, serif; font-size: 72px; visibility: hidden;">The quick brown fox jumps over the lazy dog.</span></div></body></html>

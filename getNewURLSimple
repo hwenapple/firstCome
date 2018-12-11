@@ -1,0 +1,10 @@
+https://proxy.hidemyass.com/proxy/en-us/aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8_Z3dzX3JkPXNzbA
+
+
+
+curl -H 'Host: proxy.hidemyass.com' -H 'Cache-Control: max-age=0' -H 'Origin: https://proxy.hidemyass.com' -H 'Upgrade-Insecure-Requests: 1' -H 'Accept: text/html,application/xhtml xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8' -H 'Referer: https://proxy.hidemyass.com/en-us' -H 'Accept-Language: en-US,en;q=0.9' --data "form[url]=google.com&form[dataCenter]=random" --compressed 'https://proxy.hidemyass.com/process/en-us'
+
+
+curl -H 'Host: proxy.hidemyass.com' -H 'Cache-Control: max-age=0' -H 'Upgrade-Insecure-Requests: 1' -H 'Accept: text/html,application/xhtml xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8' -H 'Referer: https://proxy.hidemyass.com/en-us' -H 'Accept-Language: en-US,en;q=0.9' --compressed 'https://proxy.hidemyass.com/proxy/en-us/Z29vZ2xlLmNvb
+
+curl -H 'Host: proxy.hidemyass.com' -H 'Cache-Control: max-age=0' -H 'Upgrade-Insecure-Requests: 1' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36' -H 'Accept: text/html,application/xhtml xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8' -H 'Referer: https://proxy.hidemyass.com/en-us' -H 'Accept-Language: en-US,en;q=0.9' --compressed 'https://proxy.hidemyass.com/proxy/en-us/aHR0cDovL3d3dy5nb29nbGUuY29tLw'

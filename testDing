@@ -1,0 +1,47 @@
+import requests
+
+cookies = {
+    '__gads': 'ID=79ea68e21b7969e3:T=1530251894:S=ALNI_MbRzwr3WoMSBuLgNLLK7eAOY0V_VQ',
+    'trc_cookie_storage': 'taboola%20global%3Auser-id=57593600-e9f2-4f78-b760-b58b7916f57f-tuct3865ea',
+    'PHPSESSID': 'vsvvdhetcqm1fs9rjgvoi5c63t',
+    'mosvisitor': '1',
+    '__utmc': '125674584',
+    '__utmz': '125674584.1535005148.3.3.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not provided)',
+    '__utmt': '1',
+    '__utma': '125674584.969763786.1530251932.1535005148.1537325398.4',
+    'SFChinaRen_f_visit': '5',
+    '0cc274c7f3661367c0dd64d26835c266': 'ce3767e29d5eb137a49f4e1dcbe0bc38',
+    'usercookie[username]': '9562harrywenhr',
+    'usercookie[password]': '57d39b9d15b783fa31b7deb888857abd',
+    'SFChinaRen_data': 'a:2:{s:11:"autologinid"',
+    'SFChinaRen_sid': '97ea1ed242ab0a0113d3a3fc1e09580d',
+    'bidks': '906',
+    'OSS': '5',
+    'bidkc': '906',
+    '328058d19e394e305adafb3ef15979fc': '63abeaec2840a8fe14f1e976c6276ec2',
+    'SFChinaRen_t': 'a:1:{i:198590',
+    '__utmb': '125674584.6.10.1537325400',
+    'GED_PLAYLIST_ACTIVITY': 'W3sidSI6InlqWGwiLCJ0c2wiOjE1MzczMjU1NTAsIm52IjowLCJ1cHQiOjE1MzczMjU1MzQsImx0IjoxNTM3MzI1NTM3fSx7InUiOiJCUWRoIiwidHNsIjoxNTM3MzI1NTIyLCJudiI6MSwidXB0IjoxNTM3MzI1NTE5LCJsdCI6MTUzNzMyNTUyMn0seyJ1IjoiUEUvVCIsInRzbCI6MTUzNzMyNTUxNSwibnYiOjEsInVwdCI6MTUzNzMyNTUxMSwibHQiOjE1MzczMjU1MTV9XQ..',
+}
+
+headers = {
+    'Host': 'www.chineseinsfbay.com',
+    'cache-control': 'max-age=0',
+    'origin': 'https://www.chineseinsfbay.com',
+    'upgrade-insecure-requests': '1',
+    'content-type': 'application/x-www-form-urlencoded',
+    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+    'accept': 'text/html,application/xhtml xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'referer': 'https://www.chineseinsfbay.com/f/page_viewtopic/t_198590.html',
+    'accept-language': 'en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7,zh-TW;q=0.6',
+}
+
+data = 'quickreply=true&post=true&confirm=true&message=<p>ding one more time\xA0</p>&t=198590'
+
+response = requests.post('https://www.chineseinsfbay.com/f/page_pppping/f_5/mode_reply.html', headers=headers, cookies=cookies, data=data)
+
+
+
+
+
+curl -H 'Host: www.chineseinsfbay.com' -H 'Cookie: __gads=ID=79ea68e21b7969e3:T=1530251894:S=ALNI_MbRzwr3WoMSBuLgNLLK7eAOY0V_VQ; trc_cookie_storage=taboola%20global%3Auser-id=57593600-e9f2-4f78-b760-b58b7916f57f-tuct3865ea; PHPSESSID=vsvvdhetcqm1fs9rjgvoi5c63t; mosvisitor=1; __utmc=125674584; __utmz=125674584.1535005148.3.3.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not provided); __utmt=1; __utma=125674584.969763786.1530251932.1535005148.1537325398.4; SFChinaRen_f_visit=5; 0cc274c7f3661367c0dd64d26835c266=ce3767e29d5eb137a49f4e1dcbe0bc38; usercookie[username]=9562harrywenhr; usercookie[password]=57d39b9d15b783fa31b7deb888857abd; SFChinaRen_data=a:2:{s:11:"autologinid";s:0:"";s:6:"userid";s:6:"467087";}; SFChinaRen_sid=97ea1ed242ab0a0113d3a3fc1e09580d; bidks=906; OSS=5; bidkc=906; 328058d19e394e305adafb3ef15979fc=63abeaec2840a8fe14f1e976c6276ec2; SFChinaRen_t=a:1:{i:198590;i:1537325521;}; __utmb=125674584.6.10.1537325400; GED_PLAYLIST_ACTIVITY=W3sidSI6InlqWGwiLCJ0c2wiOjE1MzczMjU1NTAsIm52IjowLCJ1cHQiOjE1MzczMjU1MzQsImx0IjoxNTM3MzI1NTM3fSx7InUiOiJCUWRoIiwidHNsIjoxNTM3MzI1NTIyLCJudiI6MSwidXB0IjoxNTM3MzI1NTE5LCJsdCI6MTUzNzMyNTUyMn0seyJ1IjoiUEUvVCIsInRzbCI6MTUzNzMyNTUxNSwibnYiOjEsInVwdCI6MTUzNzMyNTUxMSwibHQiOjE1MzczMjU1MTV9XQ..' -H 'cache-control: max-age=0' -H 'origin: https://www.chineseinsfbay.com' -H 'upgrade-insecure-requests: 1' -H 'content-type: application/x-www-form-urlencoded' -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36' -H 'accept: text/html,application/xhtml xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8' -H 'referer: https://www.chineseinsfbay.com/f/page_viewtopic/t_198590.html' -H 'accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7,zh-TW;q=0.6' --data-binary "quickreply=true&post=true&confirm=true&message=<p>ding one more time 456 </p>&t=198590" --compressed 'https://www.chineseinsfbay.com/f/page_pppping/f_5/mode_reply.html'

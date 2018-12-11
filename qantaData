@@ -1,0 +1,2842 @@
+haorans-Mac-mini:firstCome hwen$ git pull
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 2), reused 3 (delta 2), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From github.com:harrywenhr/firstCome
+   c3e2246..8c96133  master     -> origin/master
+Updating c3e2246..8c96133
+Fast-forward
+ queryCMDQanta.py | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+haorans-Mac-mini:firstCome hwen$ python queryCMDQanta.py 
+we started our qanta search now !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+----------------------------we are trying the infinite cmd search via qanta------------------------------
+
+We are now querying 20181219
+checking SFO PVG 20181219
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU590      
+Wed 19 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Wed 19 Dec 18
+Business flight status      Your flight from San Francisco to Hong Kong will be in Economy   Seat Available CX873 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+Wed 19 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Wed 19 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Wed 19 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Wed 19 Dec 18
+Business flight status      Your flight from San Francisco to Hong Kong will be in Economy   Seat Available CX873 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+Wed 19 Dec 18
+Business flight status      Your flight from San Francisco to Hong Kong will be in Economy   Seat Available CX873 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+
+==================================20180830_13:02:23 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking SFO HKG 20181219
+200
+We have results returned, we now parse it
+allowed segments 1, current segments 2
+
+==================================20180830_13:02:27 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20181219
+We are now querying 20181220
+checking SFO PVG 20181220
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU590      
+
+==================================20180830_13:02:41 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking SFO HKG 20181220
+200
+We have results returned, we now parse it
+allowed segments 1, current segments 2
+
+==================================20180830_13:02:45 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20181220
+We are now querying 20181221
+checking SFO PVG 20181221
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU590      
+
+==================================20180830_13:02:59 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking SFO HKG 20181221
+200
+We have results returned, we now parse it
+allowed segments 1, current segments 2
+
+==================================20180830_13:03:03 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20181221
+We are now querying 20181222
+checking SFO PVG 20181222
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU590      
+
+==================================20180830_13:03:17 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking SFO HKG 20181222
+200
+We have results returned, we now parse it
+allowed segments 1, current segments 2
+
+==================================20180830_13:03:21 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20181222
+We are now querying 20181223
+checking SFO PVG 20181223
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU590      
+Sun 23 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      Your flight from San Francisco to Hong Kong will be in Economy   Seat Available CX873 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      Your flight from San Francisco to Hong Kong will be in Economy   Seat Available CX873 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      Your flight from San Francisco to Hong Kong will be in Economy   Seat Available CX873 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      Your flight from San Francisco to Hong Kong will be in Economy   Seat Available CX873 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+
+==================================20180830_13:03:35 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking SFO HKG 20181223
+200
+We have results returned, we now parse it
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+
+==================================20180830_13:03:39 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20181223
+We are now querying 20190105
+checking HKG TLV 20190105
+200
+We have results returned, we now parse it
+we dont have anything for that day, system suggested Alternative dates
+
+==================================20180830_13:03:57 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PVG TLV 20190105
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU551      
+expectedAirline CX, actual flightNumber   MU569      
+expectedAirline CX, actual flightNumber   MU551      
+expectedAirline CX, actual flightNumber   MU587      
+expectedAirline CX, actual flightNumber   MU587      
+allowed segments 2, current segments 3
+allowed segments 2, current segments 3
+allowed segments 2, current segments 3
+
+==================================20180830_13:04:01 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+pvgDepartDate 20190104
+checking PVG TLV 20190104
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   AY88      
+expectedAirline CX, actual flightNumber   MU551      
+expectedAirline CX, actual flightNumber   BA168      
+expectedAirline CX, actual flightNumber   MU553      
+expectedAirline CX, actual flightNumber   MU219      
+
+==================================20180830_13:04:09 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20190105
+We are now querying 20190107
+checking HKG TLV 20190107
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   LY76      
+
+==================================20180830_13:04:22 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PVG TLV 20190107
+200
+We have results returned, we now parse it
+Mon 7 Jan 19
+Business flight status     Seat Available KA809 Business     
+Tel Aviv will be in
+First flight status      Your flight from Hong Kong to Tel Aviv will be in Business   Seat Available KA809 First     
+Tel Aviv will be in
+we dont want non first filght in our last route, we invalide trip
+Mon 7 Jan 19
+Business flight status     Seat Available MU725 Business     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Mon 7 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Mon 7 Jan 19
+Business flight status     Seat Available KA891 Business     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Mon 7 Jan 19
+Business flight status     Seat Available MU723 Business     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Mon 7 Jan 19
+Business flight status     Seat Available CX369 Business     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Mon 7 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+expectedAirline CX, actual flightNumber   AY88      
+Mon 7 Jan 19
+Business flight status     Seat Available MU505 Business     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+expectedAirline CX, actual flightNumber   MU551      
+Mon 7 Jan 19
+Business flight status     Seat Available KA893 Business     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Mon 7 Jan 19
+Business flight status     Seat Available KA805 Business     
+Tel Aviv will be in
+First flight status      Your flight from Hong Kong to Tel Aviv will be in Business   Seat Available KA805 First     
+Tel Aviv will be in
+we dont want non first filght in our last route, we invalide trip
+expectedAirline CX, actual flightNumber   BA168      
+Mon 7 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Mon 7 Jan 19
+Business flight status      Your flight from Shanghai  to Hong Kong will be in Economy   Seat Available MU509 Business     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Mon 7 Jan 19
+Business flight status     Seat Available CX367 Business     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Mon 7 Jan 19
+Business flight status     Seat Available MU503 Business     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Mon 7 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Mon 7 Jan 19
+Business flight status     Seat Available MU507 Business     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Mon 7 Jan 19
+Business flight status     Seat Available KA803 Business     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   MU787      
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   LY76      
+
+==================================20180830_13:04:27 - =============================
+
+
+we got available flights 
+
+[{'status': 'Business available', 'prevFlight': u'  KA809      ', 'flight': u'  CX675      ', 'location': u'Hong Kong', 'time': u'Mon 7 Jan 19_ 01:10  Tue '}]
+
+
+
+==================================END=============================
+
+pvgDepartDate 20190106
+checking PVG TLV 20190106
+200
+We have results returned, we now parse it
+Sun 6 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      Your flight from Hong Kong to Tel Aviv will be in Premium Economy   Seat Available MU725 Business     
+Tel Aviv will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      Your flight from Hong Kong to Tel Aviv will be in Premium Economy   Seat Available MU723 Business     
+Tel Aviv will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      Your flight from Hong Kong to Tel Aviv will be in Premium Economy   Seat Available MU505 Business     
+Tel Aviv will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Tel Aviv will be in
+expectedAirline CX, actual flightNumber   MU551      
+Sun 6 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+expectedAirline CX, actual flightNumber   BA168      
+Sun 6 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      Your flight from Hong Kong to Tel Aviv will be in Premium Economy   Seat Available MU503 Business     
+Tel Aviv will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      Your flight from Hong Kong to Tel Aviv will be in Premium Economy   Seat Available MU507 Business     
+Tel Aviv will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   LY96      
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   MU787      
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   LY76      
+
+==================================20180830_13:04:31 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20190107
+We are now querying 20190114
+checking TLV HKG 20190114
+200
+We have results returned, we now parse it
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+
+==================================20180830_13:04:45 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking TLV PVG 20190114
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   BA169      
+expectedAirline CX, actual flightNumber   MU552      
+expectedAirline CX, actual flightNumber   LY95      
+expectedAirline CX, actual flightNumber   MU772      
+expectedAirline CX, actual flightNumber   MU220      
+expectedAirline CX, actual flightNumber   MU554      
+expectedAirline CX, actual flightNumber   MU570      
+expectedAirline CX, actual flightNumber   MU552      
+
+==================================20180830_13:04:49 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20190114
+We are now querying 20190115
+checking TLV HKG 20190115
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   LY75      
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+
+==================================20180830_13:05:03 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking TLV PVG 20190115
+200
+We have results returned, we now parse it
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      Your flight from Tel Aviv to Hong Kong will be in Premium Economy   Seat Available CX676 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      Your flight from Tel Aviv to Hong Kong will be in Premium Economy   Seat Available CX676 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+expectedAirline CX, actual flightNumber   IB6889      
+Tue 15 Jan 19
+Business flight status      Your flight from Tel Aviv to Hong Kong will be in Premium Economy   Seat Available CX676 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+expectedAirline CX, actual flightNumber   BA169      
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      Your flight from Tel Aviv to Hong Kong will be in Premium Economy   Seat Available CX676 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      Your flight from Tel Aviv to Hong Kong will be in Premium Economy   Seat Available CX676 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+expectedAirline CX, actual flightNumber   AY87      
+expectedAirline CX, actual flightNumber   MU552      
+expectedAirline CX, actual flightNumber   MU710      
+expectedAirline CX, actual flightNumber   LY75      
+expectedAirline CX, actual flightNumber   LY75      
+expectedAirline CX, actual flightNumber   LY75      
+expectedAirline CX, actual flightNumber   LY75      
+expectedAirline CX, actual flightNumber   LY75      
+
+==================================20180830_13:05:07 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20190115
+We are now querying 20190119
+checking PVG SFO 20190119
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU589      
+expectedAirline CX, actual flightNumber   QF73      
+expectedAirline CX, actual flightNumber   QF73      
+expectedAirline CX, actual flightNumber   QF49      
+expectedAirline CX, actual flightNumber   JL2      
+Sat 19 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU725 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+expectedAirline CX, actual flightNumber   JL2      
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+expectedAirline CX, actual flightNumber   MU767      
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU723 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU503 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+expectedAirline CX, actual flightNumber   JL2      
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU507 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+
+==================================20180830_13:05:21 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking HKG SFO 20190119
+200
+We have results returned, we now parse it
+Sat 19 Jan 19
+Business flight status      No Seats     
+None will be in
+First flight status      No Seats     
+None will be in
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+
+==================================20180830_13:05:26 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+pvgDepartDate 20190118
+checking PVG SFO 20190118
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU589      
+expectedAirline CX, actual flightNumber   QF73      
+expectedAirline CX, actual flightNumber   QF73      
+expectedAirline CX, actual flightNumber   JL2      
+Fri 18 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU725 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+expectedAirline CX, actual flightNumber   JL2      
+expectedAirline CX, actual flightNumber   JL2      
+Fri 18 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Fri 18 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Fri 18 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU723 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Fri 18 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU503 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Fri 18 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+expectedAirline CX, actual flightNumber   JL2      
+expectedAirline CX, actual flightNumber   JL2      
+Fri 18 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU505 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Fri 18 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU701 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+
+==================================20180830_13:05:30 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20190119
+We are now querying 20190120
+checking PVG SFO 20190120
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU589      
+expectedAirline CX, actual flightNumber   QF73      
+expectedAirline CX, actual flightNumber   QF73      
+expectedAirline CX, actual flightNumber   QF49      
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU723 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU503 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU507 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU505 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+
+==================================20180830_13:05:45 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking HKG SFO 20190120
+200
+We have results returned, we now parse it
+Sun 20 Jan 19
+Business flight status      No Seats     
+None will be in
+First flight status      No Seats     
+None will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+None will be in
+First flight status      No Seats     
+None will be in
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+
+==================================20180830_13:05:50 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+pvgDepartDate 20190119
+checking PVG SFO 20190119
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU589      
+expectedAirline CX, actual flightNumber   QF73      
+expectedAirline CX, actual flightNumber   QF73      
+expectedAirline CX, actual flightNumber   QF49      
+expectedAirline CX, actual flightNumber   JL2      
+Sat 19 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU725 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+expectedAirline CX, actual flightNumber   JL2      
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+expectedAirline CX, actual flightNumber   MU767      
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU723 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU503 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+expectedAirline CX, actual flightNumber   JL2      
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU507 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+
+==================================20180830_13:05:54 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20190120
+We are now querying 20190121
+checking PVG SFO 20190121
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU589      
+expectedAirline CX, actual flightNumber   QF73      
+expectedAirline CX, actual flightNumber   QF73      
+expectedAirline CX, actual flightNumber   JL2      
+Mon 21 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Premium Economy   Seat Available MU725 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+expectedAirline CX, actual flightNumber   JL2      
+Mon 21 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Mon 21 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Mon 21 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Mon 21 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Mon 21 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Mon 21 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Mon 21 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Premium Economy   Seat Available MU723 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Mon 21 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Mon 21 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Premium Economy   Seat Available MU503 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+expectedAirline CX, actual flightNumber   JL2      
+Mon 21 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Mon 21 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Premium Economy   Seat Available MU507 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Mon 21 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Mon 21 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Premium Economy   Seat Available MU505 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Mon 21 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Premium Economy   Seat Available MU701 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+
+==================================20180830_13:06:09 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking HKG SFO 20190121
+200
+We have results returned, we now parse it
+Mon 21 Jan 19
+Business flight status      No Seats     
+None will be in
+First flight status      No Seats     
+None will be in
+Mon 21 Jan 19
+Business flight status      No Seats     
+None will be in
+First flight status      No Seats     
+None will be in
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+
+==================================20180830_13:06:13 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+pvgDepartDate 20190120
+checking PVG SFO 20190120
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU589      
+expectedAirline CX, actual flightNumber   QF73      
+expectedAirline CX, actual flightNumber   QF73      
+expectedAirline CX, actual flightNumber   QF49      
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU723 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU503 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU507 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU505 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+
+==================================20180830_13:06:17 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20190121
+
+-----------------------------------We have finised one loop, contine with another----------------------
+
+we now wait for 30s before next search
+
+----------------------------we are trying the infinite cmd search via qanta------------------------------
+
+We are now querying 20181219
+checking SFO PVG 20181219
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU590      
+Wed 19 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Wed 19 Dec 18
+Business flight status      Your flight from San Francisco to Hong Kong will be in Economy   Seat Available CX873 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+Wed 19 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Wed 19 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Wed 19 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Wed 19 Dec 18
+Business flight status      Your flight from San Francisco to Hong Kong will be in Economy   Seat Available CX873 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+Wed 19 Dec 18
+Business flight status      Your flight from San Francisco to Hong Kong will be in Economy   Seat Available CX873 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+
+==================================20180830_13:07:02 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking SFO HKG 20181219
+200
+We have results returned, we now parse it
+allowed segments 1, current segments 2
+
+==================================20180830_13:07:06 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20181219
+We are now querying 20181220
+checking SFO PVG 20181220
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU590      
+
+==================================20180830_13:07:21 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking SFO HKG 20181220
+200
+We have results returned, we now parse it
+allowed segments 1, current segments 2
+
+==================================20180830_13:07:25 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20181220
+We are now querying 20181221
+checking SFO PVG 20181221
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU590      
+
+==================================20180830_13:07:39 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking SFO HKG 20181221
+200
+We have results returned, we now parse it
+allowed segments 1, current segments 2
+
+==================================20180830_13:07:43 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20181221
+We are now querying 20181222
+checking SFO PVG 20181222
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU590      
+
+==================================20180830_13:07:56 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking SFO HKG 20181222
+200
+We have results returned, we now parse it
+allowed segments 1, current segments 2
+
+==================================20180830_13:08:00 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20181222
+We are now querying 20181223
+checking SFO PVG 20181223
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU590      
+Sun 23 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      Your flight from San Francisco to Hong Kong will be in Economy   Seat Available CX873 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      Your flight from San Francisco to Hong Kong will be in Economy   Seat Available CX873 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      Your flight from San Francisco to Hong Kong will be in Economy   Seat Available CX873 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      Your flight from San Francisco to Hong Kong will be in Economy   Seat Available CX873 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+
+==================================20180830_13:08:15 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking SFO HKG 20181223
+200
+We have results returned, we now parse it
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+
+==================================20180830_13:08:19 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20181223
+We are now querying 20190105
+checking HKG TLV 20190105
+200
+We have results returned, we now parse it
+we dont have anything for that day, system suggested Alternative dates
+
+==================================20180830_13:08:38 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PVG TLV 20190105
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU551      
+expectedAirline CX, actual flightNumber   MU569      
+expectedAirline CX, actual flightNumber   MU551      
+expectedAirline CX, actual flightNumber   MU587      
+expectedAirline CX, actual flightNumber   MU587      
+allowed segments 2, current segments 3
+allowed segments 2, current segments 3
+allowed segments 2, current segments 3
+
+==================================20180830_13:08:42 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+pvgDepartDate 20190104
+checking PVG TLV 20190104
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   AY88      
+expectedAirline CX, actual flightNumber   MU551      
+expectedAirline CX, actual flightNumber   BA168      
+expectedAirline CX, actual flightNumber   MU553      
+expectedAirline CX, actual flightNumber   MU219      
+
+==================================20180830_13:08:46 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20190105
+We are now querying 20190107
+checking HKG TLV 20190107
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   LY76      
+
+==================================20180830_13:09:00 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PVG TLV 20190107
+200
+We have results returned, we now parse it
+Mon 7 Jan 19
+Business flight status     Seat Available KA809 Business     
+Tel Aviv will be in
+First flight status      Your flight from Hong Kong to Tel Aviv will be in Business   Seat Available KA809 First     
+Tel Aviv will be in
+we dont want non first filght in our last route, we invalide trip
+Mon 7 Jan 19
+Business flight status     Seat Available MU725 Business     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Mon 7 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Mon 7 Jan 19
+Business flight status     Seat Available KA891 Business     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Mon 7 Jan 19
+Business flight status     Seat Available MU723 Business     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Mon 7 Jan 19
+Business flight status     Seat Available CX369 Business     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Mon 7 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+expectedAirline CX, actual flightNumber   AY88      
+Mon 7 Jan 19
+Business flight status     Seat Available MU505 Business     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+expectedAirline CX, actual flightNumber   MU551      
+Mon 7 Jan 19
+Business flight status     Seat Available KA893 Business     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Mon 7 Jan 19
+Business flight status     Seat Available KA805 Business     
+Tel Aviv will be in
+First flight status      Your flight from Hong Kong to Tel Aviv will be in Business   Seat Available KA805 First     
+Tel Aviv will be in
+we dont want non first filght in our last route, we invalide trip
+expectedAirline CX, actual flightNumber   BA168      
+Mon 7 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Mon 7 Jan 19
+Business flight status      Your flight from Shanghai  to Hong Kong will be in Economy   Seat Available MU509 Business     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Mon 7 Jan 19
+Business flight status     Seat Available CX367 Business     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Mon 7 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Mon 7 Jan 19
+Business flight status     Seat Available MU503 Business     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Mon 7 Jan 19
+Business flight status     Seat Available MU507 Business     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Mon 7 Jan 19
+Business flight status     Seat Available KA803 Business     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   MU787      
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   LY76      
+
+==================================20180830_13:09:04 - =============================
+
+
+we got available flights 
+
+[{'status': 'Business available', 'prevFlight': u'  KA809      ', 'flight': u'  CX675      ', 'location': u'Hong Kong', 'time': u'Mon 7 Jan 19_ 01:10  Tue '}]
+
+
+
+==================================END=============================
+
+pvgDepartDate 20190106
+checking PVG TLV 20190106
+200
+We have results returned, we now parse it
+Sun 6 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      Your flight from Hong Kong to Tel Aviv will be in Premium Economy   Seat Available MU725 Business     
+Tel Aviv will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      Your flight from Hong Kong to Tel Aviv will be in Premium Economy   Seat Available MU723 Business     
+Tel Aviv will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      Your flight from Hong Kong to Tel Aviv will be in Premium Economy   Seat Available MU505 Business     
+Tel Aviv will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Tel Aviv will be in
+expectedAirline CX, actual flightNumber   MU551      
+Sun 6 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+expectedAirline CX, actual flightNumber   BA168      
+Sun 6 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      Your flight from Hong Kong to Tel Aviv will be in Premium Economy   Seat Available MU503 Business     
+Tel Aviv will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      Your flight from Hong Kong to Tel Aviv will be in Premium Economy   Seat Available MU507 Business     
+Tel Aviv will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Tel Aviv will be in
+Sun 6 Jan 19
+Business flight status      No Seats     
+Tel Aviv will be in
+First flight status      No Seats     
+Tel Aviv will be in
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   LY96      
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   MU787      
+expectedAirline CX, actual flightNumber   LY76      
+expectedAirline CX, actual flightNumber   LY76      
+
+==================================20180830_13:09:09 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20190107
+We are now querying 20190114
+checking TLV HKG 20190114
+200
+We have results returned, we now parse it
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+
+==================================20180830_13:09:23 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking TLV PVG 20190114
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   BA169      
+expectedAirline CX, actual flightNumber   MU552      
+expectedAirline CX, actual flightNumber   LY95      
+expectedAirline CX, actual flightNumber   MU772      
+expectedAirline CX, actual flightNumber   MU220      
+expectedAirline CX, actual flightNumber   MU554      
+expectedAirline CX, actual flightNumber   MU570      
+expectedAirline CX, actual flightNumber   MU552      
+
+==================================20180830_13:09:27 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20190114
+We are now querying 20190115
+checking TLV HKG 20190115
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   LY75      
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+
+==================================20180830_13:09:41 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking TLV PVG 20190115
+200
+We have results returned, we now parse it
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      Your flight from Tel Aviv to Hong Kong will be in Premium Economy   Seat Available CX676 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      Your flight from Tel Aviv to Hong Kong will be in Premium Economy   Seat Available CX676 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+expectedAirline CX, actual flightNumber   IB6889      
+Tue 15 Jan 19
+Business flight status      Your flight from Tel Aviv to Hong Kong will be in Premium Economy   Seat Available CX676 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+expectedAirline CX, actual flightNumber   BA169      
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      Your flight from Tel Aviv to Hong Kong will be in Premium Economy   Seat Available CX676 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      Your flight from Tel Aviv to Hong Kong will be in Premium Economy   Seat Available CX676 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+Tue 15 Jan 19
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+expectedAirline CX, actual flightNumber   AY87      
+expectedAirline CX, actual flightNumber   MU552      
+expectedAirline CX, actual flightNumber   MU710      
+expectedAirline CX, actual flightNumber   LY75      
+expectedAirline CX, actual flightNumber   LY75      
+expectedAirline CX, actual flightNumber   LY75      
+expectedAirline CX, actual flightNumber   LY75      
+expectedAirline CX, actual flightNumber   LY75      
+
+==================================20180830_13:09:45 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20190115
+We are now querying 20190119
+checking PVG SFO 20190119
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU589      
+expectedAirline CX, actual flightNumber   QF73      
+expectedAirline CX, actual flightNumber   QF73      
+expectedAirline CX, actual flightNumber   QF49      
+expectedAirline CX, actual flightNumber   JL2      
+Sat 19 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU725 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+expectedAirline CX, actual flightNumber   JL2      
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+expectedAirline CX, actual flightNumber   MU767      
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU723 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU503 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+expectedAirline CX, actual flightNumber   JL2      
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU507 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+
+==================================20180830_13:10:00 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking HKG SFO 20190119
+200
+We have results returned, we now parse it
+Sat 19 Jan 19
+Business flight status      No Seats     
+None will be in
+First flight status      No Seats     
+None will be in
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+
+==================================20180830_13:10:05 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+pvgDepartDate 20190118
+checking PVG SFO 20190118
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU589      
+expectedAirline CX, actual flightNumber   QF73      
+expectedAirline CX, actual flightNumber   QF73      
+expectedAirline CX, actual flightNumber   JL2      
+Fri 18 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU725 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+expectedAirline CX, actual flightNumber   JL2      
+expectedAirline CX, actual flightNumber   JL2      
+Fri 18 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Fri 18 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Fri 18 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU723 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Fri 18 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU503 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Fri 18 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+expectedAirline CX, actual flightNumber   JL2      
+expectedAirline CX, actual flightNumber   JL2      
+Fri 18 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU505 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Fri 18 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU701 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+
+==================================20180830_13:10:10 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20190119
+We are now querying 20190120
+checking PVG SFO 20190120
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU589      
+expectedAirline CX, actual flightNumber   QF73      
+expectedAirline CX, actual flightNumber   QF73      
+expectedAirline CX, actual flightNumber   QF49      
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU723 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU503 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU507 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU505 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+
+==================================20180830_13:10:24 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking HKG SFO 20190120
+200
+We have results returned, we now parse it
+Sun 20 Jan 19
+Business flight status      No Seats     
+None will be in
+First flight status      No Seats     
+None will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+None will be in
+First flight status      No Seats     
+None will be in
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+
+==================================20180830_13:10:28 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+pvgDepartDate 20190119
+checking PVG SFO 20190119
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU589      
+expectedAirline CX, actual flightNumber   QF73      
+expectedAirline CX, actual flightNumber   QF73      
+expectedAirline CX, actual flightNumber   QF49      
+expectedAirline CX, actual flightNumber   JL2      
+Sat 19 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU725 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+expectedAirline CX, actual flightNumber   JL2      
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+expectedAirline CX, actual flightNumber   MU767      
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU723 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU503 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+expectedAirline CX, actual flightNumber   JL2      
+Sat 19 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sat 19 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU507 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+
+==================================20180830_13:10:33 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20190120
+We are now querying 20190121
+checking PVG SFO 20190121
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU589      
+expectedAirline CX, actual flightNumber   QF73      
+expectedAirline CX, actual flightNumber   QF73      
+expectedAirline CX, actual flightNumber   JL2      
+Mon 21 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Premium Economy   Seat Available MU725 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+expectedAirline CX, actual flightNumber   JL2      
+Mon 21 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Mon 21 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Mon 21 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Mon 21 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Mon 21 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Mon 21 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Mon 21 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Premium Economy   Seat Available MU723 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Mon 21 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Mon 21 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Premium Economy   Seat Available MU503 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+expectedAirline CX, actual flightNumber   JL2      
+Mon 21 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Mon 21 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Premium Economy   Seat Available MU507 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Mon 21 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Mon 21 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Premium Economy   Seat Available MU505 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Mon 21 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Premium Economy   Seat Available MU701 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+
+==================================20180830_13:10:47 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking HKG SFO 20190121
+200
+We have results returned, we now parse it
+Mon 21 Jan 19
+Business flight status      No Seats     
+None will be in
+First flight status      No Seats     
+None will be in
+Mon 21 Jan 19
+Business flight status      No Seats     
+None will be in
+First flight status      No Seats     
+None will be in
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+
+==================================20180830_13:10:52 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+pvgDepartDate 20190120
+checking PVG SFO 20190120
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU589      
+expectedAirline CX, actual flightNumber   QF73      
+expectedAirline CX, actual flightNumber   QF73      
+expectedAirline CX, actual flightNumber   QF49      
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU723 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU503 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      No Seats     
+San Francisco will be in
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU507 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+Sun 20 Jan 19
+Business flight status      Your flight from Hong Kong to San Francisco will be in Economy   Seat Available MU505 Business     
+San Francisco will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+San Francisco will be in
+
+==================================20180830_13:10:56 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20190121
+
+-----------------------------------We have finised one loop, contine with another----------------------
+
+we now wait for 30s before next search
+
+----------------------------we are trying the infinite cmd search via qanta------------------------------
+
+We are now querying 20181219
+checking SFO PVG 20181219
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU590      
+Wed 19 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Wed 19 Dec 18
+Business flight status      Your flight from San Francisco to Hong Kong will be in Economy   Seat Available CX873 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+Wed 19 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Wed 19 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Wed 19 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Wed 19 Dec 18
+Business flight status      Your flight from San Francisco to Hong Kong will be in Economy   Seat Available CX873 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+Wed 19 Dec 18
+Business flight status      Your flight from San Francisco to Hong Kong will be in Economy   Seat Available CX873 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+
+==================================20180830_13:11:40 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking SFO HKG 20181219
+200
+We have results returned, we now parse it
+allowed segments 1, current segments 2
+
+==================================20180830_13:11:45 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20181219
+We are now querying 20181220
+checking SFO PVG 20181220
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU590      
+
+==================================20180830_13:11:59 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking SFO HKG 20181220
+200
+We have results returned, we now parse it
+allowed segments 1, current segments 2
+
+==================================20180830_13:12:03 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20181220
+We are now querying 20181221
+checking SFO PVG 20181221
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU590      
+
+==================================20180830_13:12:17 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking SFO HKG 20181221
+200
+We have results returned, we now parse it
+allowed segments 1, current segments 2
+
+==================================20180830_13:12:21 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20181221
+We are now querying 20181222
+checking SFO PVG 20181222
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU590      
+
+==================================20180830_13:12:35 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking SFO HKG 20181222
+200
+We have results returned, we now parse it
+allowed segments 1, current segments 2
+
+==================================20180830_13:12:39 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20181222
+We are now querying 20181223
+checking SFO PVG 20181223
+200
+We have results returned, we now parse it
+expectedAirline CX, actual flightNumber   MU590      
+Sun 23 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      Your flight from San Francisco to Hong Kong will be in Economy   Seat Available CX873 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      Your flight from San Francisco to Hong Kong will be in Economy   Seat Available CX873 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      No Seats     
+Hong Kong will be in
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      Your flight from San Francisco to Hong Kong will be in Economy   Seat Available CX873 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+Sun 23 Dec 18
+Business flight status      Your flight from San Francisco to Hong Kong will be in Economy   Seat Available CX873 Business     
+Hong Kong will be in
+we dont want non Business filght in our last route, we invalide trip
+First flight status      No Seats     
+Hong Kong will be in
+
+==================================20180830_13:12:53 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking SFO HKG 20181223
+200
+We have results returned, we now parse it
+allowed segments 1, current segments 2
+allowed segments 1, current segments 2
+
+==================================20180830_13:12:58 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 20181223
+

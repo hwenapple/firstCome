@@ -1,0 +1,50 @@
+import requests
+
+cookies = {
+    'ADRUM': 's=1531878230748&r=https://www.cathaypacific.com/cx/en_US/book-a-trip/redeem-flights/facade.html?0',
+    'bm_sv': '705E258344DEC347F82D8032ACF59644~oXFcm6t7ZS9gRe0R3WildVeV1dn EnhV9FHHJj6T5RS1iA6JSoW/4Rre5bFYaHbVNF4H Gl1W sDRq bLKurVqNjbqHLploxM kq7IPIoqPH3B/K7phs76EkuGMIOgdm52inxXSC72eadRN8aVNatPnA5Sr2C9eV82MGOWlGB2Q=',
+    'com.silverpop.iMA.session': '21510ad3-ad15-2556-eb8b-50ae39cd50e9',
+    'mlc_cookie': '0YwFFhmd4MbnbRWJmAhTgnJUw 7hVFEs33xpSdbOITA1diCdz47/0BUdUvOUyU2BEiScOTy3h1jdyR9/1YwLNQ==',
+    'OPTOUTMULTI': '0:0|c1:0',
+    '_ga': 'GA1.2.941145097.1530157179',
+    '_gid': 'GA1.2.757617278.1531878173',
+    'com.silverpop.iMAWebCookie': '881175c8-36b4-a8a0-5684-3831c8d2caa1',
+    'optimizelyEndUserId': 'oeu1530157178798r0.8350007567926421',
+    'utag_main': 'v_id:016444799da000145cebb7df873801075002b06d009dc$_sn:3$_ss:0$_st:1531880003479$dc_visit:3$ses_id:1531878170491',
+    'com.silverpop.iMA.page_visit': '421037378:1689025890:1768161648:',
+    '_abck': '6981E8E2B8C02424003D1B03AB6AF8BB172362A4404A00007758345B64152622~0~L8uKLI0pR0PXsnZI75gU5qVNzTNpaUm4d gbBnnjqTs=~-1~-1',
+    'AM.REFRESH.1675359815': 'false',
+    'IBE.REFRESH.1675359815': 'false',
+    'MMB.REFRESH.1675359815': 'false',
+    'MPO.REFRESH.1675359815': 'false',
+    'SHARED.REFRESH.1675359815': 'false',
+    'mlc_prelogin': '1',
+    'MLC_SESSIONID': '82b47e5c-a104-46f0-864e-ecf0007967b6',
+    'MMB_JSESSIONID': 'accb1520-38e0-4e83-bc8e-2f3211d19cec',
+    '_gat_tealium_0': '1',
+    'ak_bmsc': 'D288419DF71DD5934485CC2F5BD979328CAE182539610000199B4E5B1E4EA77C~plxtDDrqVjBeqYr4PgsdLO4OxrXLndiYN8Ptr6f0ILGG3sk6ebleym9GZskQHuvbLTTn1ZGBfIKErJddGHTOduiUI7VLFGjd4v7TY/4e8hHYaf9teOOLjDlpP5NxrSuE2w5ILnmECzklrsiDTEzBN3ExFvr0hce4ZtDbQ/knv35zSYauqOwzr3WI ZchTGwTYWMBP0xRZGJspI0VLamI8X8jaQS9nSpgF1mgGidn5whpnOB83X2ZjI5H30GmqeLK/U',
+    'CXMPO_JSESSIONID': 'a0943ecc-3866-4f1d-a028-7074133ea726',
+    'LoginCookie': '9f6faf205a590cec2baec621e4acefa7e1048ea42326c203389101db7d2075db',
+    'bm_sz': 'FE6CB8629A5513C59060C65023C42F58~QAAQJRiujCbECZxkAQAAMNwNqzMPdUnly9akOr3QZVqb5fqxFuH1WnCGEFQSu47rVH9I1OJGbWg9OPDO6VAuXAat8RUmvI4D7fTBaZ8d8XVFWHEegQW8OVARwlbgXiolwx5JJajo1n0APSJD95jDDbldOCZ652/ 2IHxrKJT51zYi5S2EZGjEsxz0rwNCZfU9GdVsJvE',
+    'D_HID': '3C1E16BD-7B70-3325-8783-4365A4218F00',
+    'D_IID': '4B68B8EC-4A13-3B49-BFD5-74DD4F23A0E5',
+    'D_UID': '34C0685E-2DF0-373A-999D-DCEC571F62DA',
+    'D_ZID': '1D80185C-A9A1-3EDA-B638-FFCE58FB4D6C',
+    'D_ZUID': '814D4A23-100E-3F27-99F1-B0037AB23E1E',
+    'D_SID': '17.192.68.109:mVv2O6QdyG5xib 9Ohf SqRWDfDw 5Qkh5FKbhznq2Q',
+    'utm': 'DIRECT',
+}
+
+headers = {
+    'Host': 'book.cathaypacific.com',
+    'accept': 'text/html,application/xhtml xml,application/xml;q=0.9,*/*;q=0.8',
+    'content-type': 'application/x-www-form-urlencoded',
+    'origin': 'https://www.cathaypacific.com',
+    'accept-language': 'en-us',
+    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7',
+    'referer': 'https://www.cathaypacific.com/cx/en_US/book-a-trip/redeem-flights/facade.html',
+}
+
+data = 'SERVICE_ID=1&LANGUAGE=GB&EMBEDDED_TRANSACTION=AirAvailabilityServlet&SITE=CXAWCXAW&ENCT=2&ENTRYCOUNTRY=HK&ENTRYLANGUAGE=en'
+
+response = requests.post('https://book.cathaypacific.com/CathayPacificAwardV3/dyn/air/booking/availability', headers=headers, cookies=cookies, data=data)

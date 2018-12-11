@@ -1,0 +1,780 @@
+haorans-Mac-mini:firstCome hwen$ git pull
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 2), reused 3 (delta 2), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From github.com:harrywenhr/firstCome
+   fac134d..123d25a  master     -> origin/master
+Updating fac134d..123d25a
+Fast-forward
+ queryAlaska.py | 22 +++++++++++++---------
+ 1 file changed, 13 insertions(+), 9 deletions(-)
+haorans-Mac-mini:firstCome hwen$ python queryAlaska.py 
+
+----------------------------we are trying the infinite search via alaskaair------------------------------
+
+We are now querying 08/08/2018
+checking HND SFO 08/08/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:11:45 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PEK SJC 08/08/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:11:58 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PVG SEA 08/08/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:12:11 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 08/08/2018
+We are now querying 08/09/2018
+checking HND SFO 08/09/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:12:33 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PEK SJC 08/09/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:12:46 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PVG SEA 08/09/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:12:59 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 08/09/2018
+We are now querying 08/10/2018
+checking HND SFO 08/10/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:13:21 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PEK SJC 08/10/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:13:33 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PVG SEA 08/10/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:13:46 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 08/10/2018
+We are now querying 08/11/2018
+checking HND SFO 08/11/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:14:07 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PEK SJC 08/11/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:14:19 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PVG SEA 08/11/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:14:33 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 08/11/2018
+
+-----------------------------------We have finised one loop, contine with another----------------------
+
+we now wait for 10 minute before next search
+
+----------------------------we are trying the infinite search via alaskaair------------------------------
+
+We are now querying 08/08/2018
+checking HND SFO 08/08/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:24:55 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PEK SJC 08/08/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:25:08 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PVG SEA 08/08/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:25:21 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 08/08/2018
+We are now querying 08/09/2018
+checking HND SFO 08/09/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:25:42 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PEK SJC 08/09/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:25:56 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PVG SEA 08/09/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:26:09 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 08/09/2018
+We are now querying 08/10/2018
+checking HND SFO 08/10/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:26:31 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PEK SJC 08/10/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:26:43 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PVG SEA 08/10/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:26:56 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 08/10/2018
+We are now querying 08/11/2018
+checking HND SFO 08/11/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:27:18 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PEK SJC 08/11/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:27:30 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PVG SEA 08/11/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:27:43 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 08/11/2018
+
+-----------------------------------We have finised one loop, contine with another----------------------
+
+we now wait for 10 minute before next search
+
+----------------------------we are trying the infinite search via alaskaair------------------------------
+
+We are now querying 08/08/2018
+checking HND SFO 08/08/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:38:05 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PEK SJC 08/08/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:38:17 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PVG SEA 08/08/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:38:30 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 08/08/2018
+We are now querying 08/09/2018
+checking HND SFO 08/09/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:38:52 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PEK SJC 08/09/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:39:17 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PVG SEA 08/09/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_17:39:30 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 08/09/2018
+We are now querying 08/10/2018
+we have search for over 30 queries now, we stop for 30 minutes
+checking HND SFO 08/10/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:09:52 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PEK SJC 08/10/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:10:04 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PVG SEA 08/10/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:10:17 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 08/10/2018
+We are now querying 08/11/2018
+checking HND SFO 08/11/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:10:38 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PEK SJC 08/11/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:10:50 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PVG SEA 08/11/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:11:04 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 08/11/2018
+
+-----------------------------------We have finised one loop, contine with another----------------------
+
+we now wait for 10 minute before next search
+
+----------------------------we are trying the infinite search via alaskaair------------------------------
+
+We are now querying 08/08/2018
+checking HND SFO 08/08/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:21:26 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PEK SJC 08/08/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:21:39 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PVG SEA 08/08/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:21:52 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 08/08/2018
+We are now querying 08/09/2018
+checking HND SFO 08/09/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:22:14 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PEK SJC 08/09/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:22:27 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PVG SEA 08/09/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:22:41 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 08/09/2018
+We are now querying 08/10/2018
+checking HND SFO 08/10/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:23:02 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PEK SJC 08/10/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:23:15 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PVG SEA 08/10/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:23:28 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 08/10/2018
+We are now querying 08/11/2018
+checking HND SFO 08/11/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:23:50 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PEK SJC 08/11/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:24:02 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PVG SEA 08/11/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:24:15 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 08/11/2018
+
+-----------------------------------We have finised one loop, contine with another----------------------
+
+we now wait for 10 minute before next search
+
+----------------------------we are trying the infinite search via alaskaair------------------------------
+
+We are now querying 08/08/2018
+checking HND SFO 08/08/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:34:37 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PEK SJC 08/08/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:34:49 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PVG SEA 08/08/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:35:02 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 08/08/2018
+We are now querying 08/09/2018
+checking HND SFO 08/09/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:35:24 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PEK SJC 08/09/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:35:38 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PVG SEA 08/09/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:35:51 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+we have finished querying 08/09/2018
+We are now querying 08/10/2018
+checking HND SFO 08/10/2018
+200
+We have results returned, we now parse it
+
+==================================20180719_18:36:13 - =============================
+
+
+we dont have flights available 
+
+
+==================================END=============================
+
+checking PEK SJC 08/10/2018
+403
+we are not over error message threshHold yet, dont report
+checking PVG SEA 08/10/2018
+403
+we are not over error message threshHold yet, dont report
+we have finished querying 08/10/2018
+We are now querying 08/11/2018
+checking HND SFO 08/11/2018
+403
+we are not over error message threshHold yet, dont report
+checking PEK SJC 08/11/2018
+403
+we are not over error message threshHold yet, dont report
+checking PVG SEA 08/11/2018
+403
+we are not over error message threshHold yet, dont report
+we have finished querying 08/11/2018
+
+-----------------------------------We have finised one loop, contine with another----------------------
+
+we now wait for 10 minute before next search
+
+----------------------------we are trying the infinite search via alaskaair------------------------------
+
+We are now querying 08/08/2018
+checking HND SFO 08/08/2018
+403
+sendErrorMessage From alaska search  DOCTYPE html html lang en head meta charset utf 8 meta name viewport content width device width initial scale 1 title Access to this page has been denied 
+we have search for over 30 queries now, we stop for 30 minutes
+^CTraceback (most recent call last):
+  File "queryAlaska.py", line 272, in <module>
+    start()
+  File "queryAlaska.py", line 246, in start
+    routeQuery('PEK','SJC', departDate)
+  File "queryAlaska.py", line 218, in routeQuery
+    time.sleep(1800)
+KeyboardInterrupt
+haorans-Mac-mini:firstCome hwen$ 
