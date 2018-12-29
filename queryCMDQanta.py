@@ -385,6 +385,7 @@ def start():
 						routeQuery('TLV','PVG', departDate,'LON')
 						if numberDate == 20190115:
 							routeQuery('LHR','SFO', departDate,'LON', 'BA')
+							routeQuery('LHR','LAX', departDate,'LON', 'BA')
 					elif numberDate < 20190218:
 						routeQuery('PVG','SFO', departDate,'SHA')
 						routeQuery('HKG','SFO', departDate,'HKG')
