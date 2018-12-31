@@ -31,7 +31,7 @@ user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Ge
 #, '20190417',
 interestedDates = ['20181221','20181222','20181223']
 #HKG-TLV no flight on sunday
-interestedDates = ['20190114','20190115', '20190120', '20190121', '20190122']
+interestedDates = ['20190115', '20190120', '20190121', '20190122']
 
 #interestedDates = ['20181210']
 landingSearchDate = '05/19/2018'
@@ -381,11 +381,8 @@ def start():
 						print "pvgDepartDate {}".format(pvgDepartDate)
 						routeQuery('PVG','TLV', pvgDepartDate,'SHA')
 					elif numberDate < 20190118:
-						routeQuery('TLV','HKG', departDate,'LON')
-						routeQuery('TLV','PVG', departDate,'LON')
-						if numberDate == 20190115:
-							routeQuery('LHR','SFO', departDate,'LON', 'BA')
-							routeQuery('LHR','LAX', departDate,'LON', 'BA')
+						routeQuery('LHR','SFO', departDate,'LON', 'BA')
+						routeQuery('LHR','LAX', departDate,'LON', 'BA')
 					elif numberDate < 20190218:
 						routeQuery('PVG','SFO', departDate,'SHA')
 						routeQuery('HKG','SFO', departDate,'HKG')
