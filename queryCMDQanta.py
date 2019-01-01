@@ -219,7 +219,7 @@ def textMessage(message):
 	os.system(cmd)
 	time.sleep(5)
 	cmd = 'osascript sendMessage.scpt 4159944384 "{0}"'.format(message)
-	os.system(cmd) 	
+	#os.system(cmd) 	
 
 
 def monthConvert(month):
