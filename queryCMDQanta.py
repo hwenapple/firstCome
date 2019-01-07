@@ -66,6 +66,9 @@ def shouldIgnore(flightResult):
 	if 'Tue 22 Jan' in flightResult['time'] and 'Business' in flightResult['status']:
 		print "we know about this one, dont report"
 		return True
+	if '872' in flightResult['flight'] and 'Business' in flightResult['status']:
+		print "we know about this one, dont report"
+		return True
 	return False
 
 
