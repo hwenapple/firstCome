@@ -31,7 +31,7 @@ user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Ge
 #, '20190417',
 interestedDates = ['20181221','20181222','20181223']
 #HKG-TLV no flight on sunday
-interestedDates = ['20190115', '20190120', '20190121', '20190122', '20190123', '20190124']
+interestedDates = ['20190115', '20190123', '20190124']
 
 #interestedDates = ['20181210']
 landingSearchDate = '05/19/2018'
