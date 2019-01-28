@@ -47,31 +47,29 @@ def sendErrorMessage(errorStr):
 
 def rentUp():
 
+	
 	cookies = {
-	    '__gads': 'ID=8fa535f6c368d336:T=1535489418:S=ALNI_MY9VzPOp1miRJJhLGke8AfLHyByMA',
-	    'trc_cookie_storage': 'taboola%20global%3Auser-id=4add3874-df3d-4b8e-8d54-0944618028fb-tuct11785a7',
-	    'PHPSESSID': 'hqgj832phvs91kcru8fumscs37',
-	    'mosvisitor': '1',
-	    '__utmc': '125674584',
-	    '__utmz': '125674584.1538689187.15.6.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not provided)',
-	    '_ga': 'GA1.2.579884844.1535489418',
-	    '_gid': 'GA1.2.702387644.1538689193',
-	    'SFChinaRen_f_visit': '5',
-	    '__utma': '125674584.579884844.1535489418.1538689187.1538696124.16',
-	    'username': '00722d5013e03931a8395d6de45e050d5dfb',
-	    'password': '20446e1b52ae6d6ff07a038ba964',
-	    '__utmt': '1',
-	    '328058d19e394e305adafb3ef15979fc': '1979fdb25e3b4775d080076e1b6a0e06',
-	    '0cc274c7f3661367c0dd64d26835c266': 'e9dadd0f4187bf93b9af31e68819e1bf',
-	    'usercookie[username]': '9562harrywenhr',
-	    'usercookie[password]': '57d39b9d15b783fa31b7deb888857abd',
-	    'SFChinaRen_data': 'a:2:{s:11:"autologinid"',
-	    'SFChinaRen_sid': '60846e8f537486f84f7101e177c15a7d',
-	    'bidks': '460',
-	    'bidkc': '460',
-	    'SFChinaRen_t': 'a:6:{i:198590',
-	    '__utmb': '125674584.28.10.1538696128',
-	    'GED_PLAYLIST_ACTIVITY': 'W3sidSI6IkF4R3QiLCJ0c2wiOjE1Mzg2OTgxNjEsIm52IjoxLCJ1cHQiOjE1Mzg2OTgxNDAsImx0IjoxNTM4Njk4MTYwfSx7InUiOiJ4ZU1zIiwidHNsIjoxNTM4Njk4MTI4LCJudiI6MSwidXB0IjoxNTM4Njk4MTIzLCJsdCI6MTUzODY5ODEyN30seyJ1IjoiNnRiciIsInRzbCI6MTUzODY5ODAzOCwibnYiOjAsInVwdCI6MTUzODY5ODAyNywibHQiOjE1Mzg2OTgwMjd9XQ..',
+    'mosvisitor': '1',
+    'PHPSESSID': 'e36ca8ue8728jpq6nd306qaabm',
+    '__utmc': '125674584',
+    '__utmz': '125674584.1548659064.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not provided)',
+    '__utmt': '1',
+    '__utma': '125674584.902455778.1548659064.1548659064.1548659064.1',
+    '__gads': 'ID=b8c33d3131dc2120:T=1548659064:S=ALNI_MYbm3FLUXBHNk3OgzW9BOeij6DV3w',
+    'SFChinaRen_f_visit': '3,5',
+    'bidkc': '60',
+    'trc_cookie_storage': 'taboola%20global%3Auser-id=76873075-8550-44f4-b57d-5d007862884e-tuct310a315',
+    '_sctr': '1|1548576000000',
+    '_scid': '4b16abc9-4f90-43b0-95a1-36e761fb080f',
+    '328058d19e394e305adafb3ef15979fc': '3cb53c2aba70b2d5d4f9457438fa78f0',
+    '0cc274c7f3661367c0dd64d26835c266': '7a08fdd08e734f5ac1cd07a3d78a1f25',
+    'GED_PLAYLIST_ACTIVITY': 'W3sidSI6IkdOWSsiLCJ0c2wiOjE1NDg2NTk0MDYsIm52IjoxLCJ1cHQiOjE1NDg2NTk0MDIsImx0IjoxNTQ4NjU5NDAyfSx7InUiOiJRUTliIiwidHNsIjoxNTQ4NjU5MzYzLCJudiI6MSwidXB0IjoxNTQ4NjU5MzYwLCJsdCI6MTU0ODY1OTM2MX1d',
+    'usercookie[username]': 'harrywenhr1989',
+    'usercookie[password]': '051270f8343107eccf3f401a460bec0b',
+    'SFChinaRen_data': 'a:2:{s:11:"autologinid"',
+    'SFChinaRen_sid': '893f5ff3bbfadcd2a83f201174d5dbce',
+    'SFChinaRen_t': 'a:1:{i:215885',
+    '__utmb': '125674584.15.10.1548659064',
 	}
 
 	headers = {
@@ -80,22 +78,23 @@ def rentUp():
 	    'origin': 'https://www.chineseinsfbay.com',
 	    'upgrade-insecure-requests': '1',
 	    'content-type': 'application/x-www-form-urlencoded',
-	    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+	    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
 	    'accept': 'text/html,application/xhtml xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-	    'referer': 'https://www.chineseinsfbay.com/f/page_viewtopic/t_200625.html',
+	    'referer': 'https://www.chineseinsfbay.com/f/page_viewtopic/t_215885.html',
 	    'accept-language': 'en-US,en;q=0.9',
 	}
-	#data = 'quickreply=true&post=true&confirm=true&message=<p>quick support\xA0</p>&t=200625'
 
+
+	
 	randomNumber = random.randint(1,1000000)
 	randomString = "One more time {}".format(randomNumber)
 	print "randomString {}".format(randomString)
 
-	data = 'quickreply=true&post=true&confirm=true&message=<p>{}</p>&t=200625'.format(randomString)
+	data = 'quickreply=true&post=true&confirm=true&message=<p>{}</p>&t=215885'.format(randomString)
 
 	response = requests.post('https://www.chineseinsfbay.com/f/page_pppping/f_5/mode_reply.html', headers=headers, cookies=cookies, data=data)
 	print response.status_code
-	print response.content
+	#print response.content
 	if response.status_code != 200:
 		sendErrorMessage(response.content)
 
