@@ -111,12 +111,12 @@ def rentUp():
 	if response.status_code != 200:
 		sendErrorMessage(response.content)
 
-	print "second thread"
-	response1 = requests.post('https://www.chineseinsfbay.com/f/page_pppping/f_5/mode_reply.html', headers=headers1, cookies=cookies, data=data1)
-	print response1.status_code
-	#print response.content
-	if response1.status_code != 200:
-		sendErrorMessage(response1.content)
+	# print "second thread"
+	# response1 = requests.post('https://www.chineseinsfbay.com/f/page_pppping/f_5/mode_reply.html', headers=headers1, cookies=cookies, data=data1)
+	# print response1.status_code
+	# #print response.content
+	# if response1.status_code != 200:
+	# 	sendErrorMessage(response1.content)
 
 def start():
 	print "we started our rent up query now !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
@@ -131,7 +131,7 @@ def start():
 			traceback.print_exc()
 		print "\n-----------------------------------We have finised one loop, contine with another----------------------\n"
 		print "we have finished rent up, sleep for one hour"
-		time.sleep(3600)
+		time.sleep(7200)
 
 
 
