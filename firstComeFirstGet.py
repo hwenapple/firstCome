@@ -35,6 +35,7 @@ def check_exists_id(browser, idName):
 def check_visible_id(browser, idName):
 	try:
 		result = browser.find_element_by_id(idName)
+		print "check_visible_id {}".format(result.value_of_css_property("style"))
 		if result.is_displayed():
 			return True
 	except Exception as e:
@@ -54,14 +55,18 @@ def check_exists_xpath(browser, path):
 
 
 def getPage(browser):
+	print "current_url {}".format(browser.current_url)
+	if 'CreditCard' in browser.current_url or 'Your Information' in browser.page_source:
+		print "we got to payment page"
+		return True
 	try:
 		badElement = "redemption"
 		goodXpath = "//p[contains(text(), 'Buy Now')]"
 		#we check 
 		#WebDriverWait(browser, 10).until(AnyEc(EC.presence_of_element_located((By.ID, badElement)), EC.presence_of_element_located((By.ID, goodElement)))) 
 		WebDriverWait(browser, 10).until(AnyEc(EC.presence_of_element_located((By.XPATH, goodXpath)), EC.presence_of_element_located((By.ID, badElement)))) 	
-		if check_visible_id(browser, "error-confirmation-overlay"):
-			print "error-confirmation-overlay now, we refresh to re try"
+		if check_visible_id(browser, "error-onhold-overlay"):
+			print "error-onhold-overlay now, we refresh to re try"
 			browser.refresh()
 			return False			
 		if check_exists_xpath(browser, goodXpath):
@@ -78,7 +83,16 @@ def getPage(browser):
 					continue
 				print "we were able to click the button"
 				break
-			return True
+			if check_visible_id(browser, "error-onhold-overlay"):
+				print "error-onhold-overlay now, we refresh to re try"
+				browser.refresh()
+				return False
+			if 'Your Information' in browser.page_source:
+				print "we got to payment page"
+				return True
+			print "not able to get payment, we re try"
+			browser.refresh()
+			return False
 		if check_exists_id(browser, badElement):
 			#we still get the bad element
 			print "we still get the badXpath refresh page"
@@ -94,7 +108,7 @@ def getPage(browser):
 
 
 def waitTillWeAreHalfMinuteAway():
-	start_time = "Wed May 29 09:59:50 2019"
+	start_time = "Thu May 30 09:59:50 2019"
 	b = time.mktime(time.strptime(start_time,"%a %b %d %H:%M:%S %Y"))
 	print(time.strftime("%a %b %d %H:%M:%S %Y", time.localtime(b)) ) 
 	a = float(b)-time.time()
@@ -125,7 +139,7 @@ if __name__ == '__main__':
 		index = int(options.urlOption)
 		actualURL = urls[index]
 	
-	testurl = "https://dailygetaways.ustravel.org/Home/Offer/B0591"
+	testurl = "https://dailygetaways.ustravel.org/Home/Offer/B0568"
 	actualURL = testurl
 	print "actualURL %s" % actualURL
 	browser = webdriver.Chrome()
