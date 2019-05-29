@@ -159,7 +159,7 @@ def getPage(browser, price, numerOfTicket):
 	return True
 
 def waitTillWeAreHalfMinuteAway():
-	start_time = "Mon Jan 14 20:44:50 2019"
+	start_time = "Thu Apr 4 16:24:50 2019"
 	b = time.mktime(time.strptime(start_time,"%a %b %d %H:%M:%S %Y"))
 	print(time.strftime("%a %b %d %H:%M:%S %Y", time.localtime(b)) ) 
 	a = float(b)-time.time()
