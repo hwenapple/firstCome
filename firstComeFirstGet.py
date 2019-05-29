@@ -8,38 +8,49 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 import time
 from optparse import OptionParser
+import sys
 
 class AnyEc:
-    """ Use with WebDriverWait to combine expected_conditions
-        in an OR.
-    """
-    def __init__(self, *args):
-        self.ecs = args
-    def __call__(self, driver):
-        for fn in self.ecs:
-            try:
-                if fn(driver): return True
-            except:
-                pass
+	""" Use with WebDriverWait to combine expected_conditions
+		in an OR.
+	"""
+	def __init__(self, *args):
+		self.ecs = args
+	def __call__(self, driver):
+		for fn in self.ecs:
+			try:
+				if fn(driver): return True
+			except:
+				pass
 
 
 def check_exists_id(browser, idName):
-    try:
-        result = browser.find_element_by_id(idName)
-    except Exception as e:
-    	print "we have exception in check exists {0}".format(e)
-        return False
-    return True
+	try:
+		result = browser.find_element_by_id(idName)
+	except Exception as e:
+		print "we have exception in check exists {0}".format(e)
+		return False
+	return True
+
+def check_visible_id(browser, idName):
+	try:
+		result = browser.find_element_by_id(idName)
+		if result.is_displayed():
+			return True
+	except Exception as e:
+		print "we have exception in check visibale element exists {0}".format(e)
+		return False
+	return False
 
 def check_exists_xpath(browser, path):
-    try:
-        result = browser.find_elements_by_xpath(path)
-        if len(result) > 0:
-        	return True
-    except Exception as e:
-    	print "we have exception in check exists {0}".format(e)
-        return False
-    return False
+	try:
+		result = browser.find_elements_by_xpath(path)
+		if len(result) > 0:
+			return True
+	except Exception as e:
+		print "we have exception in check exists {0}".format(e)
+		return False
+	return False
 
 
 def getPage(browser):
@@ -49,8 +60,8 @@ def getPage(browser):
 		#we check 
 		#WebDriverWait(browser, 10).until(AnyEc(EC.presence_of_element_located((By.ID, badElement)), EC.presence_of_element_located((By.ID, goodElement)))) 
 		WebDriverWait(browser, 10).until(AnyEc(EC.presence_of_element_located((By.XPATH, goodXpath)), EC.presence_of_element_located((By.ID, badElement)))) 	
-		if check_exists_id(browser, "error-onhold-overlay"):
-			print "error now"
+		if check_visible_id(browser, "error-confirmation-overlay"):
+			print "error-confirmation-overlay now, we refresh to re try"
 			browser.refresh()
 			return False			
 		if check_exists_xpath(browser, goodXpath):
@@ -83,7 +94,7 @@ def getPage(browser):
 
 
 def waitTillWeAreHalfMinuteAway():
-	start_time = "Tue May 08 09:59:30 2018"
+	start_time = "Wed May 29 09:59:50 2019"
 	b = time.mktime(time.strptime(start_time,"%a %b %d %H:%M:%S %Y"))
 	print(time.strftime("%a %b %d %H:%M:%S %Y", time.localtime(b)) ) 
 	a = float(b)-time.time()
@@ -105,23 +116,26 @@ def waitTillWeAreHalfMinuteAway():
 if __name__ == '__main__':
 	parser = OptionParser(usage="python firstComeFirstGet.py --start YES")
 	parser.add_option("--start", dest="start", help="YES for start the program immediately")
+	parser.add_option("--urlOption", dest="urlOption", help="urlOption")
 	(options, args) = parser.parse_args()
 	if not options.start:
 		waitTillWeAreHalfMinuteAway()
+	urls = ["https://dailygetaways.ustravel.org/Home/Offer/B0582", "https://dailygetaways.ustravel.org/Home/Offer/B0584", "https://dailygetaways.ustravel.org/Home/Offer/B0585", "https://dailygetaways.ustravel.org/Home/Offer/B0586"]
+	if options.urlOption:
+		index = int(options.urlOption)
+		actualURL = urls[index]
+	
+	testurl = "https://dailygetaways.ustravel.org/Home/Offer/B0591"
+	actualURL = testurl
+	print "actualURL %s" % actualURL
 	browser = webdriver.Chrome()
-	badURL = "https://dailygetaways.ustravel.org/Home/Offer/B0494"
-	goodURL = "https://dailygetaways.ustravel.org/Home/Offer/B0466"
+	browser.get(actualURL)
 
-	hyatt75k = "https://dailygetaways.ustravel.org/Home/Offer/B0494"
-	hyatt40k = "https://dailygetaways.ustravel.org/Home/Offer/B0493"
-	hyatt30k = "https://dailygetaways.ustravel.org/Home/Offer/B0492"
-	browser.get("https://dailygetaways.ustravel.org/Home/Offer/B0473")
 	#browser.get(hyatt30k)	
 	while(True):
 		if getPage(browser):
 			break
 		print "we re try it"
-		time.sleep(0.1)
 	print "========================================================="
 	print "We were able to get into the buy page!!!! please Keep the ternimal open and go through each browser to find the one to enter purchase info"
 	print "========================================================="
