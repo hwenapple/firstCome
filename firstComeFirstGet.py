@@ -118,14 +118,14 @@ def getPage(browser):
 		return False
 
 
-def waitTillWeAreHalfMinuteAway(start_time):
+def waitTillWeAreMinuteAway(start_time):
 	b = time.mktime(time.strptime(start_time,"%a %b %d %H:%M:%S %Y"))
 	print(time.strftime("%a %b %d %H:%M:%S %Y", time.localtime(b)) ) 
 	a = float(b)-time.time()
-	if a <= 30:
-		print "we are past half minute away set time, fire immediately"
+	if a <= 60:
+		print "we are past minute away set time, fire immediately"
 		return
-	a = a - 30
+	a = a - 60
 	print "we will wait {0} seconds to start".format(a)
 	loopCount = int(a / 30)
 	remain = int(a % 30)
@@ -250,7 +250,7 @@ if __name__ == '__main__':
 
 	startTime = "Fri May 31 10:00:00 2019"
 	if not options.start:
-		waitTillWeAreHalfMinuteAway(startTime)
+		waitTillWeAreMinuteAway(startTime)
 	urls = ["https://dailygetaways.ustravel.org/Home/Offer/B0582", "https://dailygetaways.ustravel.org/Home/Offer/B0584", "https://dailygetaways.ustravel.org/Home/Offer/B0585", "https://dailygetaways.ustravel.org/Home/Offer/B0586"]
 	if options.urlOption:
 		index = int(options.urlOption)
