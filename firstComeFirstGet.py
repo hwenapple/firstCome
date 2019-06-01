@@ -14,6 +14,39 @@ import re
 import requests
 
 
+startImmediately = True
+usePreDefinedProductID = True
+
+
+productIDs = {'B0582':'2bbeA029-6a17-4976-bbfe-92b66e0782db', 'B0584':'23eaA181-3e6e-4689-80bc-d987eff4f541', 'B0585':'2b55A292-5939-44c1-82f6-c2753befad7f','B0586':'2985A3de-d2fd-4b04-aa60-478e0e7994fa'}
+
+
+
+injected_javascript = ''
+with open('/Users/hwen/firstCome/myTest.js', 'r') as f:
+	injected_javascript = f.read()
+	print injected_javascript
+
+
+# injected_javascript = (
+#     'myFunction2 = function () { return "quite" };'
+#     'const callback = arguments[0];'
+#     'const handleDocumentLoaded = () => {'
+#     '  document.getElementById("description").innerHTML = "abcd";'
+#     '  callback();'
+#     '};'
+#     'if (document.readyState === "loading") {'
+#     '  document.addEventListener("DOMContentLoaded", handleDocumentLoaded);'
+#     '} else {'
+#     '  handleDocumentLoaded();'
+#     '}'
+# )
+
+
+
+
+
+
 
 
 class AnyEc:
@@ -184,7 +217,7 @@ def testOnclick():
 
 
 def inPaymentPage(browser):
-	print "current_url {}".format(browser.current_url)
+	print "checkIfInPayment {}".format(browser.current_url)
 	if 'CreditCard' in browser.current_url or 'Your Information' in browser.page_source:
 		print "we got to payment page"
 		return True
@@ -196,7 +229,15 @@ def newGetPage(url, startTime):
 	browser = webdriver.Chrome()
 	browser.get(url)
 
-	holdClickTillTime(startTime)
+	#browser.execute_async_script(injected_javascript)
+	browser.execute_script(injected_javascript)
+
+	time.sleep(3)
+	print "make sure we have succefully injected {}".format(browser.execute_script("return myFunction2()"))
+	#print "function results2 {}".format(browser.execute_script("return EcomRedirect2('229fB10a-afe6-4ddd-9edd-1f0e6213b9c9','B0555')"))
+
+	if not startImmediately:
+		holdClickTillTime(startTime)
 	print "we start requests to get the product ID"
 	productID = getProductID(url)
 
@@ -206,9 +247,9 @@ def newGetPage(url, startTime):
 		if inPaymentPage(browser):
 			return True
 		try:
-			browser.execute_script("return EcomRedirect('{0}', '{1}')".format(productID, offerID))
+			browser.execute_script("return EcomRedirect2('{0}', '{1}')".format(productID, offerID))
 		except Exception as e:
-			print "we did not execute the EcomRedirect {0} we continue".format(e)
+			print "we did not execute the EcomRedirect2 {0} we continue".format(e)
 		
 
 def sanitizeProductID(offerID, content):
@@ -221,9 +262,22 @@ def sanitizeProductID(offerID, content):
 	print "we have product id {}".format(resultStr)
 	return resultStr
 
+
+def getEcomRedirectStr(content):
+	result = re.search('EcomRedirect(.*);', content)
+	resultStr = result.group(1)
+	resultStr = ''.join(resultStr.split())
+	print resultStr
+	return resultStr
+	
+
 def getProductID(url):
 	offerID = url.split('/')[-1]
 	productID = ''
+	if usePreDefinedProductID:
+		productID = productIDs[offerID]
+		print "we use predifined product ID {}".format(productID)
+		return productID
 	while True:
 		try:
 			response = requests.get(url)
@@ -231,6 +285,9 @@ def getProductID(url):
 				#print response.content
 				if 'EcomRedirect' in response.content:
 					productID = sanitizeProductID(offerID, response.content)
+					#getEcomRedirectStr(response.content)
+					print response.content
+					sys.exit(0)
 					break
 				else:
 					print "No EcomRedirect yet, continue"
@@ -240,28 +297,48 @@ def getProductID(url):
 			print "we did not find the product id {0} we continue".format(e)
 	return productID
 
+def oldGetPage(browser, actualURL):
+	oldGetPage(actualURL, startTime)
+
+	browser = webdriver.Chrome()
+	browser.get(actualURL)
+
+	if not startImmediately:
+		holdClickTillTime(startTime)
+	#browser.get(hyatt30k)	
+	while(True):
+		if getPage(browser):
+			break
+		print "we re try it"	
 
 if __name__ == '__main__':
 
 	parser = OptionParser(usage="python firstComeFirstGet.py --start YES")
 	parser.add_option("--start", dest="start", help="YES for start the program immediately")
 	parser.add_option("--urlOption", dest="urlOption", help="urlOption")
+	parser.add_option("--usePDs", dest="usePDs", help="usePDs")
 	(options, args) = parser.parse_args()
-
-	startTime = "Fri May 31 10:00:00 2019"
-	if not options.start:
-		waitTillWeAreMinuteAway(startTime)
+	startTime = "Mon Jun 03 10:00:00 2019"
+	if not options.usePDs:
+		usePreDefinedProductID = False
 	urls = ["https://dailygetaways.ustravel.org/Home/Offer/B0582", "https://dailygetaways.ustravel.org/Home/Offer/B0584", "https://dailygetaways.ustravel.org/Home/Offer/B0585", "https://dailygetaways.ustravel.org/Home/Offer/B0586"]
 	if options.urlOption:
 		index = int(options.urlOption)
 		actualURL = urls[index]
 	
-	testurl = "https://dailygetaways.ustravel.org/Home/Offer/B0589"
-	actualURL = testurl
+	# testurl = "https://dailygetaways.ustravel.org/Home/Offer/B0555"
+	# actualURL = testurl
+
 	print "actualURL %s" % actualURL
+
+	if not options.start:
+		waitTillWeAreMinuteAway(startTime)
+		startImmediately = False
 
 
 	newGetPage(actualURL, startTime)
+
+	#oldGetPage(actualURL, startTime)
 
 	# browser = webdriver.Chrome()
 	# browser.get(actualURL)
