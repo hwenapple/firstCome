@@ -328,6 +328,8 @@ if __name__ == '__main__':
 	if options.urlOption:
 		index = int(options.urlOption)
 		actualURL = urls[index]
+	else:
+		actualURL = urls[0]
 	
 	# testurl = "https://dailygetaways.ustravel.org/Home/Offer/B0555"
 	# actualURL = testurl
