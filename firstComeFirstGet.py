@@ -243,7 +243,7 @@ def newGetPage(url, startTime):
 	if not startImmediately:
 		holdClickTillTime(startTime)
 	print "we start requests to get the product ID"
-	productID = getProductID(url)
+	productID = getProductID(url, browser)
 
 	print "we start infinete redirect on click"
 
@@ -275,11 +275,12 @@ def getEcomRedirectStr(content):
 	return resultStr
 	
 
-def getProductID(url):
+def getProductID(url, browser):
 	offerID = url.split('/')[-1]
 	productID = ''
 	if usePreDefinedProductID:
-		productID = productIDs[offerID]
+		productID = browser.find_element_by_id("ExternalLink").get_attribute('value')
+		#productID = productIDs[offerID]
 		print "we use predifined product ID {}".format(productID)
 		return productID
 	while True:
