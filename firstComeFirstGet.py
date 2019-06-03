@@ -18,7 +18,11 @@ startImmediately = True
 usePreDefinedProductID = True
 
 
-productIDs = {'B0582':'2bbeA029-6a17-4976-bbfe-92b66e0782db', 'B0584':'23eaA181-3e6e-4689-80bc-d987eff4f541', 'B0585':'2b55A292-5939-44c1-82f6-c2753befad7f','B0586':'2985A3de-d2fd-4b04-aa60-478e0e7994fa'}
+
+
+
+
+productIDs = {'B0582':'2a05A01f-a6f6-47d4-9916-b0740cf43e8a', 'B0584':'260eA1c1-4646-4548-b9ee-1634c586e1d0', 'B0585':'291bA26d-130c-4f3d-b9db-4fa19fc78897','B0586':'2bf1A334-1d86-4bc3-9da8-ef8b6acda951'}
 
 
 
@@ -287,7 +291,6 @@ def getProductID(url):
 					productID = sanitizeProductID(offerID, response.content)
 					#getEcomRedirectStr(response.content)
 					print response.content
-					sys.exit(0)
 					break
 				else:
 					print "No EcomRedirect yet, continue"
