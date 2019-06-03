@@ -220,9 +220,9 @@ def testOnclick():
 	time.sleep(1000)
 
 
-def inPaymentPage(browser):
+def inPaymentPage(browser, offerID):
 	print "checkIfInPayment {}".format(browser.current_url)
-	if 'CreditCard' in browser.current_url or 'Your Information' in browser.page_source:
+	if 'CreditCard' in browser.current_url or 'Your Information' in browser.page_source or 'Loyalty' in browser.current_url or offerID not in browser.current_url:
 		print "we got to payment page"
 		return True
 	return False
@@ -248,7 +248,7 @@ def newGetPage(url, startTime):
 	print "we start infinete redirect on click"
 
 	while True:
-		if inPaymentPage(browser):
+		if inPaymentPage(browser, offerID):
 			return True
 		try:
 			browser.execute_script("return EcomRedirect2('{0}', '{1}')".format(productID, offerID))
