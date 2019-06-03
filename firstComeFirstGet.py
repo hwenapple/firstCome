@@ -325,6 +325,8 @@ if __name__ == '__main__':
 	startTime = "Mon Jun 03 10:00:00 2019"
 	if not options.usePDs:
 		usePreDefinedProductID = False
+	#Looks like we can always use predefined productID
+	usePreDefinedProductID = True
 	urls = ["https://dailygetaways.ustravel.org/Home/Offer/B0582", "https://dailygetaways.ustravel.org/Home/Offer/B0584", "https://dailygetaways.ustravel.org/Home/Offer/B0585", "https://dailygetaways.ustravel.org/Home/Offer/B0586"]
 	if options.urlOption:
 		index = int(options.urlOption)
