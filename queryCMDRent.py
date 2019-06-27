@@ -92,7 +92,7 @@ def rentUp():
 	    'content-type': 'application/x-www-form-urlencoded',
 	    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
 	    'accept': 'text/html,application/xhtml xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-	    'referer': 'https://www.chineseinsfbay.com/f/page_viewtopic/t_216291.html',
+	    'referer': 'https://www.chineseinsfbay.com/f/page_viewtopic/t_241102.html',
 	    'accept-language': 'en-US,en;q=0.9',
 	}
 
@@ -101,9 +101,9 @@ def rentUp():
 	randomString = "One more time {}".format(randomNumber)
 	print "randomString {}".format(randomString)
 
-	data = 'quickreply=true&post=true&confirm=true&message=<p>{}</p>&t=215885'.format(randomString)
+	data = 'quickreply=true&post=true&confirm=true&message=<p>{}</p>&t=241102'.format(randomString)
 
-	data1 = 'quickreply=true&post=true&confirm=true&message=<p>{}</p>&t=216291'.format(randomString)
+	data1 = 'quickreply=true&post=true&confirm=true&message=<p>{}</p>&t=241102'.format(randomString)
 
 	response = requests.post('https://www.chineseinsfbay.com/f/page_pppping/f_5/mode_reply.html', headers=headers, cookies=cookies, data=data)
 	print response.status_code
@@ -130,7 +130,7 @@ def start():
 			sendErrorMessage(message)
 			traceback.print_exc()
 		print "\n-----------------------------------We have finised one loop, contine with another----------------------\n"
-		print "we have finished rent up, sleep for one hour"
+		print "we have finished rent up, sleep for 2 hour"
 		time.sleep(7200)
 
 
