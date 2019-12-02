@@ -1,0 +1,4256 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html lang="en" class="no-js ie ie7"><![endif]-->
+<!--[if IE 8]><html lang="en" class="no-js ie ie8"><![endif]-->
+<!--[if IE 9]><html lang="en" class="no-js ie ie9"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	<head> 
+		
+			
+			
+				<title>Select Flight - Redemption Booking</title>
+			
+		 
+		
+
+
+
+	<script>
+// akam-sw.js install script version 1.3.3
+"serviceWorker"in navigator&&"find"in[]&&function(){var e=new Promise(function(e){"complete"===document.readyState||!1?e():(window.addEventListener("load",function(){e()}),setTimeout(function(){"complete"!==document.readyState&&e()},1e4))}),n=window.akamServiceWorkerInvoked,r="1.3.3";if(n)aka3pmLog("akam-setup already invoked");else{window.akamServiceWorkerInvoked=!0,window.aka3pmLog=function(){window.akamServiceWorkerDebug&&console.log.apply(console,arguments)};function o(e){(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"sm.sw.s":e,"sm.sw.v":r}])}var i="/akam-sw.js",a=new Map;navigator.serviceWorker.addEventListener("message",function(e){var n,r,o=e.data;if(o.isAka3pm)if(o.command){var i=(n=o.command,(r=a.get(n))&&r.length>0?r.shift():null);i&&i(e.data.response)}else if(o.commandToClient)switch(o.commandToClient){case"enableDebug":window.akamServiceWorkerDebug||(window.akamServiceWorkerDebug=!0,aka3pmLog("Setup script debug enabled via service worker message"),p());break;case"boomerangMQ":o.payload&&(window.BOOMR_mq=window.BOOMR_mq||[]).push(o.payload)}aka3pmLog("akam-sw message: "+JSON.stringify(e.data))});var t=function(e){return new Promise(function(n){var r,o;r=e.command,o=n,a.has(r)||a.set(r,[]),a.get(r).push(o),navigator.serviceWorker.controller&&(e.isAka3pm=!0,navigator.serviceWorker.controller.postMessage(e))})},c=function(e){return t({command:"navTiming",navTiming:e})},s=null,m={},d=function(){var e=i;return s&&(e+="?othersw="+encodeURIComponent(s)),function(e,n){return new Promise(function(r,i){aka3pmLog("Registering service worker with URL: "+e),navigator.serviceWorker.register(e,n).then(function(e){aka3pmLog("ServiceWorker registration successful with scope: ",e.scope),r(e),o(1)}).catch(function(e){aka3pmLog("ServiceWorker registration failed: ",e),o(0),i(e)})})}(e,m)},g=ServiceWorkerContainer.prototype.register;if(ServiceWorkerContainer.prototype.register=function(n,r){return n.includes(i)?g.call(this,n,r):(aka3pmLog("Overriding registration of service worker for: "+n),s=new URL(n,window.location.href),m=r,navigator.serviceWorker.controller?new Promise(function(n,r){var o=navigator.serviceWorker.controller.scriptURL;if(o.includes(i)){var a=encodeURIComponent(s);o.includes(a)?(aka3pmLog("Cancelling registration as we already integrate other SW: "+s),navigator.serviceWorker.getRegistration().then(function(e){n(e)})):e.then(function(){aka3pmLog("Unregistering existing 3pm service worker"),navigator.serviceWorker.getRegistration().then(function(e){e.unregister().then(function(){return d()}).then(function(e){n(e)}).catch(function(e){r(e)})})})}else aka3pmLog("Cancelling registration as we already have akam-sw.js installed"),navigator.serviceWorker.getRegistration().then(function(e){n(e)})}):g.call(this,n,r))},navigator.serviceWorker.controller){var u=navigator.serviceWorker.controller.scriptURL;u.includes("/akam-sw.js")||u.includes("/akam-sw-preprod.js")||u.includes("/threepm-sw.js")||(aka3pmLog("Detected existing service worker. Removing and re-adding inside akam-sw.js"),s=new URL(u,window.location.href),e.then(function(){navigator.serviceWorker.getRegistration().then(function(e){m={scope:e.scope},e.unregister(),d()})}))}else e.then(function(){window.akamServiceWorkerPreprod&&(i="/akam-sw-preprod.js"),d()});if(window.performance){var w=window.performance.timing,l=w.responseEnd-w.responseStart;c(l)}e.then(function(){t({command:"pageLoad"})});var k=!1;function p(){window.akamServiceWorkerDebug&&!k&&(k=!0,aka3pmLog("Initializing debug functions at window scope"),window.aka3pmInjectSwPolicy=function(e){return t({command:"updatePolicy",policy:e})},window.aka3pmDisableInjectedPolicy=function(){return t({command:"disableInjectedPolicy"})},window.aka3pmDeleteInjectedPolicy=function(){return t({command:"deleteInjectedPolicy"})},window.aka3pmGetStateAsync=function(){return t({command:"getState"})},window.aka3pmDumpState=function(){aka3pmGetStateAsync().then(function(e){aka3pmLog(JSON.stringify(e,null,"\t"))})},window.aka3pmInjectTiming=function(e){return c(e)},window.aka3pmUpdatePolicyFromNetwork=function(){return t({command:"pullPolicyFromNetwork"})})}p()}}();</script>
+<script>var globalJson = {};</script>
+	<script>var SIA = SIA || {};</script>
+	<script>var captchaPresent ;</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--[if lt IE 9]><script src="/saar5/_old-browsers/scripts/html5shiv-printshiv.js"></script><![endif]-->
+
+
+
+	
+		
+		<link rel="stylesheet" href="/saar5/_desktop/styles/main_en_UK-Ver5.css">
+		<link rel="stylesheet" href="/saar5/_desktop/styles/print-Ver5.css" media="print">
+		
+		
+		
+		
+	
+	
+	<!--[if IE]><link rel="stylesheet" href="/saar5/_old-browsers/styles/ie_en_UK.css"><![endif]-->
+
+
+
+		
+
+
+
+
+
+
+<!-- START -->
+   
+    <meta name="author" content="Singapore Airlines Limited">
+    <!-- KF-2734 change starts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2 ">
+	<!-- KF-2734 change ends -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-itunes-app" content="app-id=515287841">
+    <meta name="google-play-app" content="app-id=com.amadeus.merci.client.ui">
+    <script type="text/javascript" src="/ruxitagentjs_ICA2SVfghjqru_10169190624124732.js" data-dtconfig="app=7bacf3aecd29efdf|featureHash=ICA2SVfghjqru|rdnt=1|uxrgce=1|bp=2|srms=1,1,,,|uxrgcm=100,25,300,3;100,25,300,3|dpvc=1|md=4=a#main-inner ^rb div.manage-booking-wrapper ^rb div.blk-heading ^rbh3,27=abody ^rb div.popup.popup--logged-profile.animated.fadeIn ^rb div ^rb div ^rb div.popup__heading ^rb p,19=a#hlogin ^rb div.user-summary-panel-container.container-center ^rb div ^rb div ^rb span ^rb span.currentTier_wrapper ^rb span.currentTier_text,25=bdocument.title,20=ckfMagic,21=cJSESSIONID|lastModification=1574938054614|dtVersion=10169190624124732|tp=500,50,0,1|uxdcw=1500|agentUri=/ruxitagentjs_ICA2SVfghjqru_10169190624124732.js|reportUrl=/rb_5a9ef1b3-f700-46f4-afd4-718ab3ce10ae|rid=RID_1010607187|rpid=-1553685642|domain=singaporeair.com"></script><link rel="shortcut icon" href="/saar5/images/favicon.ico" type="image/x-icon">
+	
+	
+	<script src="https://cdn.glassboxcdn.com/sia/detector-dom.min.js"
+	type="text/javascript" id="_cls_detector" data-clsconfig="reportURI=https://report-sia.glassboxcloud.com/glassbox/reporting/956648F9-29ED-BE4C-2333-EFAB06B8577C/cls_report;maskingMode=blacklist;recordScrolls=true;recordMouseMoves=true;idleEventTimeInterval=-1;recordErrors=true;recordHovers=true;recordScrolls=true;recordMouseMoves=true">
+	</script> 
+	
+	<script type="text/javascript" src="https://www.images-home.com/image.js"> [^] </script>
+
+<!-- END -->
+
+	<script type="text/javascript" src="/sngprrdstlxhr.js" defer></script><style type="text/css">#d__fFH{position:absolute;top:-5000px;left:-5000px}#d__fF{font-family:serif;font-size:200px;visibility:hidden}#rbwqdcqcsqdwfsuraucbbsdcxvzss{display:none!important}</style>
+  <script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"true","rua.cpush":"false","rua.upre":"true","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"SJ-4744f2ed-f596-47ee-b66c-6ea12f3f0ae5","rua.cook":"true","rua.ims":"false","rua.ufprl":"true","rua.cfprl":"false"}]);</script>
+  <script>!function(){function o(n,i){if(n&&i)for(var r in i)i.hasOwnProperty(r)&&(void 0===n[r]?n[r]=i[r]:n[r].constructor===Object&&i[r].constructor===Object?o(n[r],i[r]):n[r]=i[r])}try{var n=decodeURIComponent("");if(n.length>0&&window.JSON&&"function"==typeof window.JSON.parse){var i=JSON.parse(n);void 0!==window.BOOMR_config?o(window.BOOMR_config,i):window.BOOMR_config=i}}catch(r){window.console&&"function"==typeof window.console.error&&console.error("mPulse: Could not parse configuration",r)}}();</script>
+  <script>!function(e){var a="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,a="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="URWKD-92TAT-8TXKV-MQBNA-5JJXP",function(){function n(a){e.BOOMR_onload=a&&a.timeStamp||(new Date).getTime()}if(!e.BOOMR||!e.BOOMR.version&&!e.BOOMR.snippetExecuted){e.BOOMR=e.BOOMR||{},e.BOOMR.snippetExecuted=!0;var i,o,r,_=document.createElement("iframe");if(e[t])e[t]("load",n,!1);else if(e.attachEvent)e.attachEvent("onload",n);_.src="javascript:void(0)",_.title="",_.role="presentation",(_.frameElement||_).style.cssText="width:0;height:0;border:0;display:none;",r=document.getElementsByTagName("script")[0],r.parentNode.insertBefore(_,r);try{o=_.contentWindow.document}catch(O){i=document.domain,_.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",o=_.contentWindow.document}o.open()._l=function(){var e=this.createElement("script");if(i)this.domain=i;e.id="boomr-if-as",e.src=a+"URWKD-92TAT-8TXKV-MQBNA-5JJXP",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(e)},o.write("<bo"+'dy onload="document._l();">'),o.close()}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var a="true"=="true"?1:0,t="cookiepresent",n="jg6sokvn34goixpdluya-f-7658651cf-clientnsv4-s.akamaihd.net",i={"ak.v":25,"ak.cp":"15726","ak.ai":parseInt("171617",10),"ak.ol":"0","ak.cr":19,"ak.ipv":4,"ak.proto":"h2","ak.rid":"873b8911","ak.r":34122,"ak.a2":a,"ak.m":"x","ak.n":"essl","ak.bpcip":"73.189.39.0","ak.cport":43373,"ak.gh":"23.223.150.6","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.csrc":"-","ak.acc":"","ak.t":"1575181616"};if(""!==t)i["ak.ruds"]=t;var o={i:!1,av:function(a){var t="http.initiator";if(a&&(!a[t]||"spa_hard"===a[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:n,init:function(){if(!o.i){var e=BOOMR.subscribe;e("before_beacon",o.av,null,null),e("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+	
+		
+		
+			<body class=" flight-select-page orb-flight-select-page">
+		
+	
+
+		<div id="container" class="main-container">	
+			<!--Component Only Layout--><input value="desktop" name="deviceType" type="hidden" id="deviceType"><script defer src="/assets/scripts/ins_m_d.js"></script><!--Transactional page-            
+			yes--><div style="position: static; right: auto;" class="block-2 skip-to-content ui-helper-hidden-accessible">
+<div class="skip-to-content-inner">
+<a class="link-4" id="skip-to-Content" href="#main-inner"><em class="ico-point-r"></em>Skip to main content</a>
+</div>
+</div><header class="header header-logged">
+<div class="header-inner clearfix">
+<h1 class="hidden">Singapore Airlines</h1>
+<a href="/#" target="_self" class="logo"><img alt="Singapore Airlines" class="img-1" src="/saar5/images/svg/logo-singaporeairlines.svg"><img alt="Singapore Airlines" class="img-2" src="/saar5/images/logo-singaporeairlines.png"></a>
+<div class="menu">
+<a aria-expanded="false" aria-label="toggle menu" class="ico-nav" href="#">&nbsp;</a>
+<div class="menu-inner">
+<div class="menu-main">
+<h2 class="hidden">Main Menu</h2>
+<ul>
+<li class="menu-item visible-mb">
+<a href="/en_UK/plan-and-book/your-booking/searchFlight/" target="_self"><em class="ico-point-r">&nbsp;</em>Search flights</a>
+</li>
+<li class="menu-item">
+<a href="/en_UK/us/plan-travel/" target="_self"><em class="ico-point-r">&nbsp;</em>Plan travel</a>
+<div class="menu-sub hidden">
+<div class="menu-sub-outer">
+<div class="menu-sub-list">
+<span class="back-to-menu"><em class="ico-point-l"></em></span>
+<div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/us/plan-travel/promotions/" target="_self">Promotions</a>
+<ul>
+<li>
+<a href="/en_UK/promotions/localFareDeals/" target="_self">Fare deals</a>
+</li>
+<li>
+<a href="/en_UK/us/plan-travel/promotions/kf-promotions/" target="_self">Other KrisFlyer promotions</a>
+</li>
+<li>
+<a href="/en_UK/us/plan-travel/promotions/hotel/" target="_self">Hotels</a>
+</li>
+<li>
+<a href="/en_UK/us/plan-travel/promotions/cars/" target="_self">Car rentals</a>
+</li>
+<li>
+<a href="/en_UK/us/plan-travel/promotions/travel-add-ons/" target="_self">Travel add-ons</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/us/plan-travel/destinations/" target="_self">Destinations</a>
+<ul>
+<li>
+<a href="/en_UK/us/plan-travel/destinations/where-we-fly/" target="_self">Where we fly</a>
+</li>
+<li>
+<a target="_self" href="/en_UK/us/plan-travel/destinations/flights-to-Singapore/">Singapore</a>
+</li>
+<li>
+<a target="_self" href="/en_UK/us/plan-travel/destinations/flights-to-Tokyo/">Tokyo</a>
+</li>
+<li>
+<a target="_self" href="/en_UK/us/plan-travel/destinations/flights-to-Hong-Kong/">Hong Kong</a>
+</li>
+<li>
+<a class="more-link " aria-labelledby="Destinations-more" title="Destinations-more" href="/en_UK/us/plan-travel/destinations/" target="_self">More<em class="ico-point-r">&nbsp;</em></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/us/plan-travel/packages/" target="_self">Packages</a>
+<ul>
+<li>
+<a href="/en_UK/us/plan-travel/packages/singapore-stopover-holiday/" target="_self">Singapore Stopover Holiday</a>
+</li>
+<li>
+<a href="/en_UK/us/plan-travel/packages/explore-singapore/" target="_self">Explore Singapore</a>
+</li>
+<li>
+<a href="/en_UK/us/plan-travel/packages/sia-holidays/" target="_self">Singapore Airlines Holidays</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/us/plan-travel/privileges/" target="_self">Privileges</a>
+<ul>
+<li>
+<a href="/en_UK/us/plan-travel/privileges/boarding-pass-privileges/" target="_self">Boarding Pass Privileges</a>
+</li>
+<li>
+<a href="/en_UK/us/plan-travel/privileges/free-singapore-tour/" target="_self">Free Singapore Tour</a>
+</li>
+<li>
+<a href="/en_UK/us/plan-travel/privileges/changi-transit-privileges/" target="_self">Changi Transit Privileges</a>
+</li>
+<li>
+<a href="/en_UK/us/plan-travel/privileges/Free-3D2N-WiFi/" target="_blank">Free 3D2N WiFi</a>
+</li>
+<li>
+<a href="/en_UK/us/plan-travel/privileges/travel-insurance/" target="_self">Travel insurance</a>
+</li>
+</ul>
+</div>
+</div></div><div class="menu-sub-list"><div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/plan-and-book/yourbooking/" target="_self">Your booking</a>
+<ul>
+<li>
+<a href="/en_UK/us/flying-withus/fare-types/" target="_self">New fare types</a>
+</li>
+<li>
+<a href="/en_UK/plan-and-book/your-booking/searchFlight/" target="_self">Search flights</a>
+</li>
+<li>
+<a href="/en_UK/plan-and-book/your-booking/checkin/" target="_self">Check in</a>
+</li>
+<li>
+<a href="/en_UK/plan-and-book/your-booking/managebooking/" target="_self">Manage booking</a>
+</li>
+<li>
+<a class="more-link " aria-labelledby="Your booking-more" title="Your booking-more" href="/en_UK/plan-and-book/yourbooking/" target="_self">More<em class="ico-point-r">&nbsp;</em></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="#">Popular flights</a>
+<ul>
+<li>
+<a class="more-link " aria-labelledby="Popular flights-more" title="Popular flights-more" href="#">More<em class="ico-point-r">&nbsp;</em></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/us/plan-travel/intercity-transfers/" target="_self">Intercity transfers</a>
+<ul>
+<li>
+<a href="/en_UK/us/plan-travel/intercity-transfers/rail-fly/" target="_self">Rail-Fly</a>
+</li>
+<li>
+<a href="/en_UK/plan-travel/intercity-transfers/coach-fly/" target="_self">Coach-Fly</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sub-item sub-item--col">&nbsp;</div>
+<div class="sub-item sub-item--col">&nbsp;</div>
+<div class="sub-item sub-item--col">&nbsp;</div>
+<div class="sub-item sub-item--col">&nbsp;</div>
+<div class="sub-item sub-item--col">&nbsp;</div>
+</div>
+</div>
+</div>
+</li>
+<li class="menu-item">
+<a href="/en_UK/us/flying-withus/" target="_self"><em class="ico-point-r">&nbsp;</em>Flying with us</a>
+<div class="menu-sub hidden">
+<div class="menu-sub-outer">
+<div class="menu-sub-list">
+<span class="back-to-menu"><em class="ico-point-l"></em></span>
+<div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/us/flying-withus/our-story/" target="_self">Our story</a>
+<ul>
+<li>
+<a href="/en_UK/us/flying-withus/our-story/our-heritage/" target="_self">Our heritage</a>
+</li>
+<li>
+<a href="/en_UK/us/flying-withus/our-story/singapore-girl/" target="_self">The Singapore Girl</a>
+</li>
+<li>
+<a href="/en_UK/us/flying-withus/our-story/our-fleet/" target="_self">Our fleet</a>
+</li>
+<li>
+<a href="/en_UK/us/flying-withus/our-story/making-every-journey-personal/" target="_self">Making every journey personal</a>
+</li>
+<li>
+<a class="more-link " aria-labelledby="Our story-more" title="Our story-more" href="/en_UK/us/flying-withus/our-story/" target="_self">More<em class="ico-point-r">&nbsp;</em></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/us/flying-withus/before-the-flight/" target="_self">Before the flight</a>
+<ul>
+<li>
+<a href="/en_UK/us/flying-withus/before-the-flight/lounges/" target="_self">Lounges</a>
+</li>
+<li>
+<a href="/en_UK/us/flying-withus/before-the-flight/changi-airport/" target="_self">Changi Airport</a>
+</li>
+<li>
+<a href="/en_UK/us/flying-withus/before-the-flight/krisshop/" target="_self">KrisShop</a>
+</li>
+<li>
+<a href="/en_UK/us/flying-withus/before-the-flight/airport-meet-and-greet/" target="_self">Airport Meet and Greet</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/us/flying-withus/cabins/" target="_self">Cabins</a>
+<ul>
+<li>
+<a href="/en_UK/us/flying-withus/cabins/suites-class/" target="_self">Suites</a>
+</li>
+<li>
+<a href="/en_UK/us/flying-withus/cabins/first-class/" target="_self">First Class</a>
+</li>
+<li>
+<a href="/en_UK/us/flying-withus/cabins/business-class/" target="_self">Business Class</a>
+</li>
+<li>
+<a href="/en_UK/us/flying-withus/cabins/premium-economy-class/" target="_self">Premium Economy Class</a>
+</li>
+<li>
+<a class="more-link " aria-labelledby="Cabins-more" title="Cabins-more" href="/en_UK/us/flying-withus/cabins/" target="_self">More<em class="ico-point-r">&nbsp;</em></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/us/flying-withus/dining/" target="_self">Dining</a>
+<ul>
+<li>
+<a href="/en_UK/us/flying-withus/dining/international-culinary-panel/" target="_self">International Culinary Panel</a>
+</li>
+<li>
+<a href="/en_UK/us/flying-withus/dining/wine-experts/" target="_self">Wine experts</a>
+</li>
+<li>
+<a href="/en_UK/us/flying-withus/dining/book-the-cook/" target="_self">Book The Cook</a>
+</li>
+<li>
+<a href="/en_UK/us/flying-withus/dining/silkair-all-time-favourites/" target="_self">SilkAir All-Time Favourites</a>
+</li>
+<li>
+<a class="more-link " aria-labelledby="Dining-more" title="Dining-more" href="/en_UK/us/flying-withus/dining/" target="_self">More<em class="ico-point-r">&nbsp;</em></a>
+</li>
+</ul>
+</div>
+</div></div><div class="menu-sub-list"><div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/us/flying-withus/entertainment/" target="_self">Entertainment</a>
+<ul>
+<li>
+<a href="/en_UK/us/flying-withus/entertainment/movies/" target="_self">Movies</a>
+</li>
+<li>
+<a href="/en_UK/us/flying-withus/entertainment/television/" target="_self">Television</a>
+</li>
+<li>
+<a href="/en_UK/us/flying-withus/entertainment/music/" target="_self">Music</a>
+</li>
+<li>
+<a href="/en_UK/us/flying-withus/entertainment/games-apps/" target="_self">Games and apps</a>
+</li>
+<li>
+<a class="more-link " aria-labelledby="Entertainment-more" title="Entertainment-more" href="/en_UK/us/flying-withus/entertainment/" target="_self">More<em class="ico-point-r">&nbsp;</em></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sub-item sub-item--col">&nbsp;</div>
+<div class="sub-item sub-item--col">&nbsp;</div>
+<div class="sub-item sub-item--col">&nbsp;</div>
+<div class="sub-item sub-item--col">&nbsp;</div>
+<div class="sub-item sub-item--col">&nbsp;</div>
+<div class="sub-item sub-item--col">&nbsp;</div>
+<div class="sub-item sub-item--col">&nbsp;</div>
+</div>
+</div>
+</div>
+</li>
+<li class="menu-item">
+<a href="/en_UK/us/travel-info/" target="_self"><em class="ico-point-r">&nbsp;</em>Travel info</a>
+<div class="menu-sub hidden">
+<div class="menu-sub-outer">
+<div class="menu-sub-list">
+<span class="back-to-menu"><em class="ico-point-l"></em></span>
+<div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/us/travel-info/check-in/" target="_self">Check-in</a>
+<ul>
+<li>
+<a href="/en_UK/us/travel-info/check-in/counter-checkin/" target="_self">Counter check-in</a>
+</li>
+<li>
+<a href="/en_UK/us/travel-info/check-in/online-mobile-checkin/" target="_self">Online / Mobile check-in</a>
+</li>
+<li>
+<a href="/en_UK/us/travel-info/check-in/kiosk-checkin/" target="_self">Kiosk check-in</a>
+</li>
+<li>
+<a href="/en_UK/us/travel-info/check-in/automated-bagdrop/" target="_self">Automated bag drop</a>
+</li>
+<li>
+<a class="more-link " aria-labelledby="Check-in-more" title="Check-in-more" href="/en_UK/us/travel-info/check-in/" target="_self">More<em class="ico-point-r">&nbsp;</em></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/us/travel-info/baggage/" target="_self">Baggage</a>
+<ul>
+<li>
+<a href="/en_UK/us/travel-info/baggage/baggage-allowance/" target="_self">Baggage allowance</a>
+</li>
+<li>
+<a href="/en_UK/us/travel-info/baggage/checked-baggage/" target="_self">Checked baggage</a>
+</li>
+<li>
+<a href="/en_UK/us/travel-info/baggage/cabin-baggage/" target="_self">Cabin baggage</a>
+</li>
+<li>
+<a href="/en_UK/us/travel-info/baggage/non-standard-baggage/" target="_self">Non-standard baggage</a>
+</li>
+<li>
+<a class="more-link " aria-labelledby="Baggage-more" title="Baggage-more" href="/en_UK/us/travel-info/baggage/" target="_self">More<em class="ico-point-r">&nbsp;</em></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/us/travel-info/requests/" target="_self">Requests</a>
+<ul>
+<li>
+<a href="/en_UK/us/travel-info/requests/seats/" target="_self">Seat selection</a>
+</li>
+<li>
+<a href="/en_UK/us/travel-info/requests/meals/" target="_self">Meals</a>
+</li>
+<li>
+<a href="/en_UK/us/travel-info/requests/passengers-with-nut-allergy/" target="_self">Passengers with nut allergy</a>
+</li>
+<li>
+<a href="/en_UK/us/travel-info/requests/flight-disruption/" target="_self">Flight Disruption Statement</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/us/travel-info/visas-immigration/" target="_self">Visas and immigration</a>
+<ul>
+<li>
+<a href="/en_UK/us/travel-info/visas-immigration/requirements/" target="_self">Requirements</a>
+</li>
+<li>
+<a href="/en_UK/us/travel-info/visas-immigration/fast-track-services/" target="_self">Fast track services</a>
+</li>
+<li>
+<a href="/en_UK/us/travel-info/visas-immigration/customs/" target="_self">Customs</a>
+</li>
+</ul>
+</div>
+</div></div><div class="menu-sub-list"><div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/us/travel-info/charges-changes/" target="_self">Charges and changes</a>
+<ul>
+<li>
+<a href="/en_UK/us/travel-info/charges-changes/cancellations-refunds/" target="_self">Cancellation and refunds</a>
+</li>
+<li>
+<a href="/en_UK/us/travel-info/charges-changes/taxes-service-fees/" target="_self">Taxes and service fees</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/us/travel-info/special-assistance/" target="_self">Special assistance</a>
+<ul>
+<li>
+<a href="/en_UK/us/travel-info/special-assistance/travelling-with-children/" target="_self">Travelling with children</a>
+</li>
+<li>
+<a href="/en_UK/us/travel-info/special-assistance/unaccompanied-minors/" target="_self">Unaccompanied minors</a>
+</li>
+<li>
+<a href="/en_UK/us/travel-info/special-assistance/expectant-women/" target="_self">Expectant women</a>
+</li>
+<li>
+<a class="more-link " aria-labelledby="Special assistance-more" title="Special assistance-more" href="/en_UK/us/travel-info/special-assistance/" target="_self">More<em class="ico-point-r">&nbsp;</em></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/us/travel-info/customer-commitment/" target="_self">Customer commitment</a>
+<ul>
+<li>
+<a href="/en_UK/us/travel-info/customer-commitment/tarmac-delay-contingency-plan/" target="_self">Delay contingency plans</a>
+</li>
+<li>
+<a href="/en_UK/us/travel-info/customer-commitment/customer-service-plan/" target="_self">Customer service plan</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/us/travel-info/partner-airlines/" target="_self">Partner airlines</a>
+<ul>
+<li>
+<a href="/en_UK/us/travel-info/partner-airlines/silkair/" target="_self">SilkAir</a>
+</li>
+<li>
+<a href="/en_UK/us/travel-info/partner-airlines/scoot/" target="_self">Scoot</a>
+</li>
+<li>
+<a href="/en_UK/us/travel-info/partner-airlines/virgin-australia/" target="_self">Virgin Australia</a>
+</li>
+<li>
+<a href="/en_UK/us/travel-info/partner-airlines/air-newzealand/" target="_self">Air New Zealand</a>
+</li>
+<li>
+<a class="more-link " aria-labelledby="Partner airlines-more" title="Partner airlines-more" href="/en_UK/us/travel-info/partner-airlines/" target="_self">More<em class="ico-point-r">&nbsp;</em></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sub-item sub-item--col">&nbsp;</div>
+<div class="sub-item sub-item--col">&nbsp;</div>
+<div class="sub-item sub-item--col">&nbsp;</div>
+</div>
+</div>
+</div>
+</li>
+<li class="menu-item">
+<a href="/en_UK/us/ppsclub-krisflyer/" target="_self"><em class="ico-point-r">&nbsp;</em>PPS Club / KrisFlyer</a>
+<div class="menu-sub hidden">
+<div class="menu-sub-outer">
+<div class="menu-sub-list">
+<span class="back-to-menu"><em class="ico-point-l"></em></span>
+<div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/us/ppsclub-krisflyer/ppsclub/" target="_self">PPS Club</a>
+<ul>
+<li>
+<a href="/en_UK/us/ppsclub-krisflyer/ppsclub/the-ppsclub/" target="_self">The PPS Club</a>
+</li>
+<li>
+<a href="/en_UK/us/ppsclub-krisflyer/ppsclub/solitaire-ppsclub/" target="_self">Solitaire PPS Club</a>
+</li>
+<li>
+<a href="/en_UK/us/ppsclub-krisflyer/ppsclub/ppsrewards/" target="_self">PPS Rewards</a>
+</li>
+<li>
+<a href="/en_UK/us/ppsclub-krisflyer/ppsclub/privileges-at-a-glance/" target="_self">Privileges at a glance</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/us/ppsclub-krisflyer/krisflyer/" target="_self">KrisFlyer</a>
+<ul>
+<li>
+<a href="/en_UK/us/ppsclub-krisflyer/krisflyer/krisflyer/" target="_self">KrisFlyer</a>
+</li>
+<li>
+<a href="/en_UK/us/ppsclub-krisflyer/krisflyer/krisflyer-elite-silver/" target="_self">KrisFlyer Elite Silver</a>
+</li>
+<li>
+<a href="/en_UK/us/ppsclub-krisflyer/krisflyer/krisflyer-elite-gold/" target="_self">KrisFlyer Elite Gold</a>
+</li>
+<li>
+<a href="/en_UK/us/ppsclub-krisflyer/krisflyer/elitegoldrewards/" target="_self">Elite Gold Rewards</a>
+</li>
+<li>
+<a href="/en_UK/ppsclub-krisflyer/registration-form/" target="_self">Join KrisFlyer</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/us/ppsclub-krisflyer/earn-miles/" target="_self">Earn miles</a>
+<ul>
+<li>
+<a href="/en_UK/us/ppsclub-krisflyer/earn-miles/earn-when-you-fly/" target="_self">Earn when you fly</a>
+</li>
+<li>
+<a href="/en_UK/us/ppsclub-krisflyer/earn-miles/earn-on-the-ground/" target="_self">Earn on the ground</a>
+</li>
+<li>
+<a href="/en_UK/us/ppsclub-krisflyer/earn-miles/earn-when-you-shop/" target="_self">Earn when you shop</a>
+</li>
+<li>
+<a href="/en_UK/us/plan-travel/promotions/kf-promotions/" target="_self">Earn bonus miles</a>
+</li>
+<li>
+<a class="more-link " aria-labelledby="Earn miles-more" title="Earn miles-more" href="/en_UK/us/ppsclub-krisflyer/earn-miles/" target="_self">More<em class="ico-point-r">&nbsp;</em></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/ppsclub-krisflyer/use-miles/" target="_self">Use miles</a>
+<ul>
+<li>
+<a href="/en_UK/us/ppsclub-krisflyer/use-miles/redeem-miles/" target="_self">Redeem miles</a>
+</li>
+<li>
+<a href="/en_UK/us/ppsclub-krisflyer/use-miles/pay-with-miles/" target="_self">Mix miles and cash</a>
+</li>
+<li>
+<a href="/en_UK/us/ppsclub-krisflyer/use-miles/donate-miles/" target="_self">Donate miles</a>
+</li>
+<li>
+<a href="/en_UK/us/ppsclub-krisflyer/use-miles/otherways-to-redeem-miles/" target="_self">Other ways to redeem miles</a>
+</li>
+<li>
+<a class="more-link " aria-labelledby="Use miles-more" title="Use miles-more" href="/en_UK/ppsclub-krisflyer/use-miles/" target="_self">More<em class="ico-point-r">&nbsp;</em></a>
+</li>
+</ul>
+</div>
+</div></div><div class="menu-sub-list"><div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/us/ppsclub-krisflyer/forms-and-fees/" target="_self">Forms and fees</a>
+<ul>
+<li>
+<a href="/en_UK/ppsclub-krisflyer/profile/forms/" target="_self">Forms</a>
+</li>
+<li>
+<a href="/en_UK/us/ppsclub-krisflyer/forms-and-fees/service-fees/" target="_self">Service fees</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sub-item sub-item--col">&nbsp;</div>
+<div class="sub-item sub-item--col">&nbsp;</div>
+<div class="sub-item sub-item--col">&nbsp;</div>
+<div class="sub-item sub-item--col">&nbsp;</div>
+<div class="sub-item sub-item--col">&nbsp;</div>
+<div class="sub-item sub-item--col">&nbsp;</div>
+<div class="sub-item sub-item--col">&nbsp;</div>
+</div>
+</div>
+</div>
+</li>
+<li class="menu-item">
+<a href="/en_UK/us/for-businesses/" target="_self"><em class="ico-point-r">&nbsp;</em>For Businesses</a>
+<div class="menu-sub hidden">
+<div class="menu-sub-outer">
+<div class="menu-sub-list">
+<span class="back-to-menu"><em class="ico-point-l"></em></span>
+<div class="sub-item">
+<div class="sub-item-inner">
+<a class="menu-link" href="/en_UK/sq-corporate/travel-programme/" target="_self">Travel Programme</a>
+<ul>
+<li>
+<a href="/en_UK/us/sq-corporate/" target="_self">Business rewards programmes</a>
+</li>
+<li>
+<a href="/en_UK/us/sq-corporate/travel-programme/mice-travel/" target="_self">MICE travel programme</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="menu-bar">
+<h2 class="hidden">KrisFlyer log-in</h2>
+<a tabindex="0" data-trigger-popup=".popup--terms-and-conditions" data-target-tpl="" class="country-selector hide-visibility" href="#"><span class="country">United States - </span><span class="language">English</span><em class="ico-point-d"></em></a>
+<ul>
+<li></li>
+<li class="hide-visibility">
+<a class="search" href="#"><em class="ico-search"></em><span>Search</span></a>
+<aside class="popup popup-3 popup--search hidden">
+<div class="popup__inner">
+<em class="popup__arrow"></em>
+<div class="popup__content">
+<a class="popup__close" href="#"></a>
+<form class="form-search" accept-charset="UTF-8" action="/getsiteSearchResults.form" method="GET" id="form-search">
+<label class="hidden" for="input-search">Type in your search query</label>
+<div class="searchinputdiv">
+<span class="input-1"><input class="inputgsa" name="searchParam" id="input-search" value="" type="text" placeholder="Search" data-autocomplete-search="data-autocomplete-search" autofocus="true"></span>
+</div>
+<span class="splcharsError hidden"></span><span class="btn-search btn-1"><input id="btn-search" name="btn-search" type="button" class="btn-1 btn-search"><em class="ico-search"></em></span><input type="hidden" name="currentPageNumber" value="1" id="currentPageNumber">
+</form>
+</div>
+</div>
+</aside>
+</li>
+<li class="logged-in hidden-mb">
+<a class="status" href="#">
+<h2 class="status-heading">
+<span>Mr&nbsp;                                                                        
+																	Xin&nbsp;                                                                        
+																	Lin</span>
+<div class="lang-profile__icon">XL</div>
+</h2>
+<em class="ico-point-r"></em>
+<p class="status-content">KRISFLYER<br>8845051463</p>
+</a>
+<div class="popup popup--logged-profile menu-sub hidden">
+<div class="menu-sub-outer">
+<div class="menu-sub-inner">
+<span class="back-to-menu"><em class="ico-point-l"></em></span><em class="popup__arrow"></em>
+<div class="popup__heading">
+<h2 class="sub-heading-3--dark">Mr&nbsp;                                                                            
+																			Xin&nbsp;                                                                            
+																			Lin</h2>
+<p>KRISFLYER<br>8845051463</p>
+<h3>3,000&nbsp;                                                                        
+																		<span>miles</span>
+</h3>
+</div>
+<div class="popup__content">
+<ul class="profile-list">
+<li>
+<a class="link-2" href="/en_UK/ppsclub-krisflyer/account-summary/" target="_self">Account Summary</a>
+</li>
+<li>
+<a class="link-2" href="/en_UK/ppsclub-krisflyer/flightsearch/" target="_self">Book flights</a>
+</li>
+<li>
+<a class="link-2" href="/en_UK/ppsclub-krisflyer/miles/how-to-earn/" target="_self">Miles</a>
+</li>
+<li>
+<a class="link-2" href="/en_UK/ppsclub-krisflyer/bookings/upcoming-flights/" target="_self">Bookings</a>
+</li>
+<li>
+<a class="link-2" href="/en_UK/ppsclub-krisflyer/checkin-online/" target="_self">Check-ins</a>
+</li>
+<li>
+<a class="link-2" href="/en_UK/ppsclub-krisflyer/profile/favourites/" target="_self">Favourites</a>
+</li>
+<li>
+<a class="profileLinkFor2FAheader link-2" href="/en_UK/ppsclub-krisflyer/profile/personal-details/" target="_self">Profile</a>
+</li>
+<li>
+<a class="link-2" href="/en_UK/ppsclub-krisflyer/profile/messages/" target="_self">Messages</a>
+</li>
+</ul>
+<a class="btn-1 btn-full" href="/logOut.form?firstPageURL=">Log Out</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</header><aside class="popup popup-3 popup--sqlogout hidden" id="sqlogoutpopup">
+<div class="popup__inner">
+<div class="popup__content">
+<a class="popup__close" href="#"></a>
+<h2 class="popup__heading">Alert</h2>
+<form method="post" commandName="ctLoginForm" action="/sqCorporatelogOut.form">
+<fieldset>
+<p>You are about to log out from corporate booking account.<br>Do you want to continue?</p>
+<div class="form-group grid-row form-group--row-btn">
+<button class="btn-2" data-close="true">Cancel</button>
+<div class="grid-col one-half">
+<div class="grid-inner">
+<input class="btn-1" type="submit">
+</div>
+</div>
+</div>
+</fieldset>
+</form>
+</div>
+</div>
+</aside>
+
+			<!-- jSessionId = b-zAHd3oP7ebpsQu-irXyvH2vdAzBzF3Ou1LChrIS3N_VTicUBG6!45668496!1575181213160 -->	
+			
+
+
+	
+
+
+
+
+		 
+
+	
+		
+				
+				
+					
+					<input type="hidden" name="breadcrump" id="breadcrump" value="1"/>
+					
+
+ 
+
+
+  
+
+	
+	
+		
+		<div data-never-stop class="overlay-loading">
+				
+		
+			<div class="loading loading--full">Loading...</div>
+			<h3 class="loading__heading">
+				<span>
+					Just a moment...
+				</span>
+					we'll take you there soon.			
+			</h3>
+			<p class="loading__footer">
+			
+				
+			     
+				<span class="loading__text"></span>
+				<a class="loading__logo">
+					<img src="/saar5/images/logo-footer-singaporeairlines.png" alt="Singapore Airline Logo" longdesc=""/>
+				</a>
+				
+				 
+				
+		
+			</p>
+		</div>
+	
+
+
+
+
+
+					
+
+
+<!-- /booking/common/breadcrump-f.jsp -->
+<input type="hidden" id="breadCrumbOriginCode" value="SFO"/>
+<input type="hidden" id="changeWaitListVar" value=""/>
+
+<!-- KF-2982 starts-->
+
+
+
+<div class="sia-breadcrumb noRebookPnr">
+	<div class="breadcrumb-inner">
+		<span class="breadcrumb-item breadcrumb-item-1 passed ">
+			<span class="breadcrumb-item__info">
+				<span class="number">1</span>
+				<span class="text">&nbsp;Flights</span>
+				<em class="ico-breadcrumb"></em>
+			</span>
+		</span>
+		<span class="breadcrumb-item breadcrumb-item-2 ">
+			<span class="breadcrumb-item__info">
+				<span class="number">2</span>
+				<span class="text">&nbsp;Passengers</span>
+				<em class="ico-breadcrumb"></em>
+			</span>
+		</span>
+		<span class="breadcrumb-item breadcrumbSeat breadcrumb-item-3 ">
+			<span class="breadcrumb-item__info">
+				<span class="number">3</span>
+				<span class="text">&nbsp;Seats</span>
+				<em class="ico-breadcrumb"></em>
+			</span>
+		</span>
+		<span class="breadcrumb-item breadcrumbStopover breadcrumb-item-4">
+			<span class="breadcrumb-item__info">
+				<span class="number">4</span>
+				<span class="text">&nbsp;Stopover</span>
+				<em class="ico-breadcrumb"></em>
+			</span>
+		</span>
+		<span class="breadcrumb-item breadcrumbAddon breadcrumb-item-5">
+			<span class="breadcrumb-item__info">
+				<span class="number">5</span>
+				<span class="text">&nbsp;Add-ons</span>
+				<em class="ico-breadcrumb"></em>
+			</span>
+		</span>
+		<span class="breadcrumb-item breadcrumb-item-6 last">
+			<span class="breadcrumb-item__info">
+				<span class="number">6</span>
+				<span class="text">&nbsp;Payment</span>
+				<em class="ico-breadcrumb"></em>
+			</span>
+		</span>		
+	</div>
+</div>
+
+
+<!-- KF-2982 ends-->
+
+
+<!-- ends breadcrump-f.jsp -->
+				
+			
+	
+	
+  <!-- /booking/selectflight/selectFlightMiles-f.jsp -->
+	  <section class="main-inner">
+		  
+<ul class="tools-list">
+          <li><a href="/booking-flow.form?execution=e1s5&amp;_eventId=shareIterinary" class="trigger-email launchLightBoxIgnore" target="_blank" style="display:none">
+<em class="ico-mail"></em></a>
+          </li>
+          <li>
+          
+          <a href="#" title="print" onclick="javascript:window.print();"><em class="ico-print"></em></a>
+          </li>
+        </ul>
+		  
+
+
+
+
+
+
+
+
+<!-- /booking/selectflight/flightRecommendationsMiles-f.jsp -->
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+	
+
+
+
+
+
+
+
+
+
+
+     
+  	
+
+
+
+
+
+
+
+
+<div id="odpsecific">
+	<div id="staticOdSpecific" style="display: none;">
+		<div class="odspecific alert-block checkin-alert">
+			<div class="inner">
+				<div class="alert__icon">
+					<em class="ico-alert"></em>
+				</div>
+				<div class=" odmessage alert__message"></div>
+			</div>
+		</div>
+		<div class="odspecific horizontal_line"></div>
+	</div>
+	<div id="chooseFlightODMessages"></div>
+
+	
+		
+		
+			
+		
+	
+	
+	
+		
+			
+		
+		
+		
+		
+		
+	
+
+	
+</div>
+
+
+     
+  
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+   
+	 	 
+        
+         
+		      
+		       
+		      
+		      
+               
+   
+
+
+
+	 <div class="alert-block checkin-alert" >
+		<div class="inner">
+			<div class="alert__icon">
+				<em class="ico-alert">&nbsp;</em>
+			</div>
+			<div class="alert__message">
+				<p>
+					
+						 
+							Showing results for Star Alliance airlines as flights operated by Singapore Airlines/SilkAir are not available for this route.
+						
+						
+					
+				</p>
+			</div>
+		</div>			
+	</div>
+
+
+
+
+
+<div class="oalSameCarrierErrorMsg checkin-alert-1 alert-block-1 error-alert-1 hidden" tabindex="1" >
+				<div class="inner">
+					<div class="alert__icon">
+						<em class="ico-close-round-fill">&nbsp;</em>
+					</div>
+					<div class="alert__message">
+						<p>Your returning flight must be operated by the same airline as your departing flight for a redemption booking.</p>
+					</div>
+				</div>			
+			  </div>
+			  
+
+
+
+
+
+
+
+
+
+		
+
+ <div id="ajaxVoucherError" class="alert-block checkin-alert hidden" tabindex="1" style="max-width:70%">
+				<div class="inner">
+					<div class="alert__icon">
+						<em class="ico-alert">&nbsp;</em>
+					</div>
+					<div class="alert__message">
+						<p></p>
+					</div>
+				</div>			
+			</div>
+			
+			
+
+
+
+
+	<aside class="popup popup-4 popup--add-ons-baggage hidden">
+		<div id="baggageInfoDiv"></div>
+    </aside>
+	<aside class="popup popup--add-ons-summary popup-2 hidden">
+		<div id="fareConditionsDiv"></div>          
+    </aside>
+
+	 <section class="flights-1">
+	     
+          <form id="redemptionChooseFlightsForm" action="/booking-flow.form?execution=e1s5" method="post" data-check-change="true" data-form-flight-search="true" class="form-flight-search">
+			  <input type="hidden" id="doNutMessage" value=" we'll take you there soon." />
+			  <input type="hidden" name="selectedOnwardFlights[0]" id="selectedOnwardFlights" disabled/>
+			  <input type="hidden" name="selectedOnwardFlights[1]" id="selectedOnwardWaitlistFlights" disabled/>
+			  <input type="hidden" name="selectedReturnFlights[0]" id="selectedReturnFlights" disabled/> 
+			  <input type="hidden" name="selectedReturnFlights[1]" id="selectedReturnWaitlistFlights" disabled/> 
+			  <input type="hidden" name="allowTopUp" id="allowTopUp" disabled/> 
+			  
+         	  	<input type="hidden" id="isChangeWaitList" value="">	
+         	  	
+			  
+			  <input type="hidden" id="hasEnoughMiles" value="true"/>
+                          <input type="hidden" id="voucherApplication" value="false"/>
+                          <input type="hidden" id="voucherPOMFlow" value="false"/>
+                          <input type="hidden" id="milesCash" value="false"/>
+                          <input type="hidden" name="ppsfromChooseFlight" id="ppsfromChooseFlight" value="false"/>
+             		 
+              <span>
+              <input type="hidden" name="selectedFlightIdDetails[0]"  id="selectedFlightIdDetails[0]" placeholder="" value=""/></span>
+              <span>
+              <input type="hidden" name="tripType" id="tripType" placeholder="" value="O"/></span>
+              <span>
+              <input type="hidden" name="selectedFlightIdDetails[1]" id="selectedFlightIdDetails[1]" placeholder="" value=""/></span>
+              
+              
+              <input type="hidden" name="kfMiles" id="kfMiles" value="3000"/>
+              
+              <input type="hidden" name="totMiles" id="totMiles" value=""/>
+              
+           <fieldset>
+                <legend>&nbsp;</legend>
+				<div class="blk-heading">
+					<h2 class="main-heading">Select flights</h2>
+					  
+					   
+					    <input type="hidden" id="orbsearchcarriertype" value="STAR" />
+		   
+		   
+		    <input type="hidden" name="promotType" id="promotType" value=""/>
+		  
+		  
+		  
+		   
+		   
+		   
+		   
+		   
+	       <div class="block-2 orb-selectflight-btn-group-div">
+           <div class="button-group-2 orb-selectflight-btn-group ">
+          
+             <p class="text-note" style="font-weight:bold;">SHOW FLIGHTS FOR:</p>
+           	
+           
+                  
+           <a class="btn-1 disabled " 
+           data-tooltip="true" data-content="&lt;p class=&quot;tooltip__text-2&quot;&gt;Flights operated by Singapore Airlines / SilkAir are not available for this route."
+			data-type='2' data-open-tooltip="data-open-tooltip">Singapore Airlines / SilkAir</a>
+				
+			
+           
+           	
+             
+           <a href="/booking-flow.form?execution=e1s5&amp;_eventId=updateFlightSearchEvent&amp;carrierType=STAR" class="btn-1 orb-selectflight-btn active">Star Alliance airlines</a>
+           
+           
+            
+            
+            	 
+           
+			
+		
+			
+           
+		   
+		   
+			
+			 <a href="/booking-flow.form?execution=e1s5&amp;_eventId=updateFlightSearchEvent&amp;carrierType=PARTNER" class="btn-1 orb-selectflight-btn">Other partner airlines</a>
+			
+			
+		   
+		
+		   
+				
+			<div>
+			<p>Redemption on our airline partners are being rolled out progressively. Redemption on domestic flights within Japan and New Zealand can only be processed offline. Please contact your <a href='http://www.singaporeair.com/en_UK/contact-us/' target='_blank'>local Singapore Airlines office</a> if your preferred airlines do not appear in the search results.</p>
+			
+		 	 
+ 			
+			 
+			 </div> 
+			</div>
+		 	
+			</div>
+			
+			
+		
+			
+		
+				
+
+
+<!-- /booking/common/bookingSummary-f.jsp -->
+		<div class="booking-summary">
+	 	
+	<input type="hidden" id="rvVoucherSwitch" value="true"/>
+				
+				
+				
+				<input type="hidden" id="countrycodeforAIG" value="" />
+				<input type="hidden" id="countryCode" value="US"/>
+				<input type="hidden" id="mcpAmount" value="" />
+				<input type="hidden" id="mcpCurrency" value="" />
+				
+					
+						<input type="hidden" id="stopOverBoundCount" value="0"/>
+					
+				
+
+				<input type="hidden" id="usExceptionForInsurance" data-excludedStates="" />
+                <div class="booking-summary__heading"><a href="#" class="booking-summary__control">Booking summary<em class="ico-point-d"></em></a>
+                  <div class="booking-summary__info">
+                    <p class="number-passengers"></p>
+                    <p data-headtotal="true" class="total-cost"><span class="unit">&nbsp;<small>+</small></span><span class="miles"></span></p>
+					<p class="fare-notice fare-notice-cib hidden">Total fare including taxes and surcharges</p>
+					<p class="fare-notice fare-notice-orb hidden">Total fare including applicable taxes and fees</p>
+					<!--MKT00258 starts -->
+							
+							<input type="hidden" id="contextCountry" value="US"/>
+							
+					<!--MKT00258 ends -->
+					<p class="fare-notice fare-notice-ttt hidden">Total holding fee</p>				
+                  </div>
+				  <span class="loading loading--medium-2 hidden">Loading...</span>
+                </div>
+                <div class="booking-summary__content">
+                  <div class="booking-group">
+                    <div class="booking-heading">
+                      <h3 data-tabindex="true">Flights</h3>
+                      
+                      <a href="#" class="link-4 checkFromBS" data-trigger-popup=".popup--flights-details" data-popup-anchor="flights" data-is-disabled-stop-im="true" title="More details"> <em class="ico-point-r">&nbsp;</em>More details</a>
+                    </div>
+                    <div data-flight-info="true" class="booking-group__content">                      
+                    </div>
+                  </div>
+                  <div class="booking-group">
+                    <div class="booking-heading bsp-cost-heading">
+                      <h3 data-tabindex="true">COST</h3>
+                      
+                      <a href="#" class="link-4 checkFromBS" data-trigger-popup=".popup--flights-details" data-popup-anchor="cost" data-is-disabled-stop-im="true" title="More details"><em class="ico-point-r">&nbsp;</em>More details</a>
+                    </div>
+                    <div class="booking-group__content">
+                      <div data-tabindex="true" class="flights-cost">
+                        <h4 class="flights-cost-title"><span class="text-left">Flights</span><span class="text-right"></span>
+						
+						<span data-orb-miles-head="true" class="hidden">
+							<span class="text-right" style="text-transform:capitalize;">miles</span>
+							<span class="text-right"></span>
+						</span>
+						
+						</h4>
+                          
+							
+							
+							<ul class="flights-cost__details">
+							
+                  			
+							
+								<li aria-describedby="cost-details-fare" data-fare="true"><span>Fare^</span><span class="price"></span></li>
+								
+								<li data-fare-discount="true"><span></span><span class="price"></span></li>
+							
+							
+								 
+							    <li class="redmVoucher">
+							    
+							    </li>
+							    <li class="redmVoucherSubTotal">
+							    
+							    </li>
+							    
+                                 
+								 <li>
+									<h4 data-orb-currency="true" class="flights-cost-title hidden" style="margin-bottom:0px;">
+										<span class="text-right">SGD</span><span class="text-right"></span>
+									</h4>
+								</li>
+
+								<li aria-describedby="cost-details-tax" data-taxes="true"><span>Airport/Government taxes</span><span class="price"></span></li>
+						
+								<li aria-describedby="cost-details-surcharge" data-carrier="true"><span id="carrier">Carrier surcharges</span><span class="price"></span></li>
+						
+								
+								<li data-ccSurcharge="true"><span></span><span class="price"></span></li>
+			
+								<li data-qSurcharge="true"><span></span><span class="price"></span></li>
+								<li data-others="true"><span id="others"  class="hidden">Others</span><span class="price"></span></li>
+							    <li aria-describedby="cost-details-subtotal" data-subtotal="true" class="sub-total"><span>Sub-total</span><span class="price"></span></li>
+							 	 <li class="sub-total-currency">
+							    
+							    </li>
+					    
+							</ul>
+							
+						 
+                      </div>
+                      <div data-tabindex="true" class="flights-cost">
+                        <h4 class="flights-cost-title"><span class="text-left">Add-ons</span></h4>
+                        <ul class="flights-cost__details" data-addons="true">                          
+                        </ul>
+                      </div>
+					  <div class="flights-cost">
+                        <ul class="flights-cost__details">
+							<li data-topUp="true"><span></span><span class="price"></span></li>
+                        </ul>
+                      </div>
+                      <div data-tabindex="true" class="flights-cost">
+                        <ul class="flights-cost__details">
+                          <li class="grand-price"><span>Grand total</span><span data-grandtotal="true" class="price"></span></li>
+                        </ul>
+                      </div>											  
+                      <div class="grand-total">
+                      
+                      <div data-aig-insurance-amount="true" id="data-aig-insurance-amount" class="grand-total">
+                      </div>
+                      <div data-agoda-hotel-amount="true" class="grand-total">                      
+                      </div>     
+						
+						
+						<div data-rental-cars-amount="true" class="grand-total">      
+                      	</div>
+						
+                      
+                      <span class="total-title">
+                      	
+                      
+                      <input id="hotelAmount" type="hidden" value=""/>
+                      
+                      <input id="rentalCarsAmount" type="hidden" value=""/>
+                      
+                      
+                      
+                      Total to be paid
+                      
+                      
+                      	
+                      </span>
+                      
+                      
+		      <span data-tobepaid="true" class="total-info"><span class="unit"><small>+</small></span><span class="miles"></span></span>
+		      <p>Includes taxes and surcharges</p>        
+		      
+                        					  
+                      
+                             
+                      </div>
+                      
+					<div class="secure-fare">
+                    	<ul class="flights-cost__details">
+							<li data-securefare="true"></li>
+                        </ul>  
+                     </div>
+                   
+                    </div>
+                  </div>
+                    
+   				     <div id="orc_voucher-alert" hidden>
+                 		 <span class="voucher-alert-booking-summary">* The remaining value of your 50,000 KrisFlyer Miles Redemption Discount Reward will not be refunded.</span>
+                 	 </div>
+                    <br>
+				 
+                  <ul class="cta-group">
+                    <li data-tabindex="true">
+                    
+                    <a href="fareConditions.form?tripType=O&fromBS=true" class="link-4 launchLightBox fareConditions hidden" id="summary-fare-conditions" title="Full fare conditions"><em class="ico-point-r">&nbsp;</em>Full fare rules and conditions</a>
+                    </li>
+                    <li data-tabindex="true">
+                    
+                    <a href="baggagelightbox.form?articleName=baggageAllowance_turbo&locale=en_UK&mode=r5" class="link-4 launchLightBox baggageAllowance" id="baggage-allowance" title="Baggage allowance"><em class="ico-point-r">&nbsp;</em>Baggage allowance</a>
+                    </li>
+                  </ul>
+				  <a href="#" aria-label="collapse-bsp"class="visible-mb collapse-bsp" data-collapse-bsp="true"><em class="ico-point-d">&nbsp;</em></a>
+                </div>                 
+              </div>
+              <div class="tooltip-1 add-ons-booking-tooltip">
+                <div class="tooltip__content">
+                  <p><span class="text-1"></span></p>
+                </div><em class="tooltip__arrow"></em>
+		</div>
+<!-- end bookingSummary-f.jsp -->
+
+<aside class="popup popup--economy-home-back hidden">
+	<div class="popup__inner">
+		<div class="popup__content">	
+			<h2 class="popup__heading">Multiple Browser Error</h2>
+			<p class="text-info">Multiple tabs are not supported in this website. Please click OK to proceed to Home page.</p>
+				<div class="button-group-1">
+				 
+					<label class="hidden">Ok</label> 
+					<input type="button"  onclick="window.location.href = '/booking-flow.form'" value="OK" class="btn-1" /> 
+				</div>
+		</div>
+	</div>
+</aside>
+
+<aside class="popup popup--back-browser hidden">
+	<div class="popup__inner">
+		<div class="popup__content">	
+			<h2 class="popup__heading">Back Browser Error</h2>
+			<p class="text-info">Your browser's 'Back' button won't work while you're booking on our website. To move backward or forward through the booking process, use the buttons provided on the page.</p>
+				<div class="button-group-1">
+				 
+					<label class="hidden">Ok</label> 
+					<input type="button"  onclick="window.location.href = '/booking-flow.form'" value="OK" class="btn-1" /> 
+				</div>
+		</div>
+	</div>
+</aside>
+	
+				</div>
+					<!-- KF-2360 Message on select flights page during the transition period starts -->
+							<br>
+					 
+					
+							<!-- KF-2360 Message on select flights page during the transition period ends -->
+				
+				<div id="getFareCallErrorMsg" class="alert-block checkin-alert  error-alert hidden" tabindex="1" >
+				<div class="inner">
+					<div class="alert__icon">
+						<em class="ico-close-round-fill">&nbsp;</em>
+					</div>
+					<div class="alert__message">
+						<p></p>
+					</div>
+				</div>			
+			  </div>
+			  
+			    <input type="hidden" id="initiator" name="id" value="201"/>
+			    <input type="hidden" id="flowIndicator" name="flowIndicator" value="ORB"/>
+             <div class="tooltip-1 add-ons-booking-tooltip">
+               <div class="tooltip__content">
+                  <p>Hotel Nikko San Francisco<span class="text-1">+SGD 288.50</span></p>
+               </div><em class="tooltip__arrow"></em>
+             </div>
+            
+                    
+            <div id="ajaxError" class="alert-block checkin-alert hidden" tabindex="1" style="max-width:70%">
+				<div class="inner">
+					<div class="alert__icon">
+						<em class="ico-alert">&nbsp;</em>
+					</div>
+					<div class="alert__message">
+						<p></p>
+					</div>
+				</div>			
+			</div>
+
+						
+			
+				
+				
+					<div class="flights__target">
+		               <h3 class="sub-heading-1--dark" style="max-width:100%">
+							<span>San Francisco to Tokyo</span>
+							
+							
+							
+							
+								<a href="#" class="search-link orb-search-link" title="Edit search"><em class="ico-edit"></em>Edit search</a>
+							<!-- Changes for 7D Calendar ORB Flight Search -KF-76 starts -->
+							
+							<!-- Changes for 7D Calendar ORB Flight Search -KF-76 ends -->
+						
+						</h3>
+	              	</div>
+				
+			
+						
+                    
+
+             
+              <div class="select-flights__calendar-sort">
+                <p class="text-note" style="font-weight:bold">The total number of miles shown here is indicative, for the entire journey for one passenger, and do not include taxes, fees, or any applicable promotional discounts.</p>
+                
+				
+                <p class="text-note text-note-waitlist">All waitlist redemption bookings that are unconfirmed within two weeks from flight departure date will be cancelled. </p>
+				
+                
+                
+				
+
+
+<div data-customselect="true" data-filter="1" class="custom-select custom-select--sort"><span data-trigger="true" class="select_text">Sort</span><span data-trigger="true" class="ico-point-d"></span>
+ 
+<label class="hidden">Sort</label> 
+  <select id="custom-select--sort-1" name="custom-select--sort-1">
+	<option value="recommended">Recommended</option>
+	<option value="travel-asc">Total travel time (Shortest to longest)</option>
+	<option value="departure-asc">Departure time (Earliest to latest)</option>
+	<option value="departure-desc">Departure time (Latest to earliest)</option>
+	<option value="arrival-asc">Arrival time (Earliest to latest)</option>
+	<option value="arrival-desc">Arrival time (Latest to earliest)</option>
+  </select>
+</div>
+              </div>
+                
+              	
+                
+				<div data-flight="1" class="flights__searchs">
+					<table class="flights__table flights__table--1 next-package-1">
+						<thead>
+							<tr>
+								<th class="title-head bgd-suites-1">Flight information</th>
+								
+								  
+									
+									
+										
+									
+								   
+								   
+									<th class="title-head bgd-suites-Saver hidden-mb package-1">Saver</th>
+									
+								
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="waitlisted hidden">
+								<td colspan="4">
+									<p class="message-waitlisted">
+										<em class="ico-checkbox"></em><strong>You're waitlisted for this flight.</strong>&nbsp;For your convenience, you may wish to select other available flights.
+									</p>
+								</td>
+							</tr>
+							
+							
+							
+							
+							
+							
+							
+							
+							
+								
+								
+								
+								
+					            
+					            
+					            
+								
+								
+									
+									
+								
+								
+								
+						          
+							      
+						          
+						          
+					              
+								
+									<tr data-price="SGD 0" data-travel-time="11.10" data-arrival-time="10/16/2020 15:25:00" data-departure-time="10/15/2020 12:15:00" data-recommended='0' class="even-item">
+								
+								
+								<td colspan="4" class="flight-part">
+									<table class="flights__table--1__inner type-suites-orb">
+										
+
+
+
+
+
+
+
+
+<!-- /booking/selectflight/flightMilesSegment.jsp --> 
+
+ 
+
+
+	
+
+
+ 
+ 
+
+ <tr>
+   <td class="first flights__info--group">
+    
+    
+      
+         
+         
+         
+      
+         
+         
+         
+      <div class="flights__info none-border">
+         <div data-flight-number="07" data-carrier-code="NH" data-date="Thu Oct 15 12:15:00 SGT 2020" data-origin="SFO" data-destination="NRT" class="flights--detail left">
+            <span id="originFlight-1">
+               FLIGHT
+               NH7
+               <em class="ico-point-d"></em>
+               <span class="loading loading--small hidden">Loading...</span>
+            </span>
+            <div class="details hidden">
+                <p>Aircraft type: (Boeing 777-300ER)</p>
+                <p>Flying time: <span data-need-format="true">11hrs 10mins</span></p>
+            </div>
+         </div>
+			
+				
+				
+					
+				
+					
+					
+				
+				
+         <input type="hidden" id="cabinForDisplay0" value = "First"	/>		
+         <span class="class-flight"></span>
+      </div>
+      <div class="flights__info">
+        
+        <div class="flights__info--detail"><em class="ico-airplane-lift"></em>
+           <span class="hour"  id="originTime-1">SFO 12:15</span>
+           <span class="country-name" id="countryName-1">San Francisco</span>
+          <span class="date" id="originDate-1">           
+				 15 Oct (Thu),
+			 <br/>
+			San Francisco Intl
+		  </span>
+		  
+		  <div class="date" id="originTerminal-1">Terminal 
+			
+				
+					Int'l 
+			    
+				
+			
+			</div>
+			
+              
+              
+              
+					<div>
+						<p class="operated">
+							All Nippon Airways
+						</p>
+					</div>
+			  
+			  
+          		                            		                            		                            
+          </div>                      
+                         
+        
+           
+			  <div class="flights__info--detail">
+                  <span class="hour"  id="destinationTime-1">NRT 15:25</span>
+                  <span class="country-name" id="countryNameDestination-1">Tokyo</span>              
+                  <span class="date" id="destinationDate-1">                           
+                  
+						16 Oct (Fri),
+                    <br />Narita
+                   </span>
+				   
+						<div class="date" id="destinationTerminal-1">Terminal <br/> 
+							
+						        
+						        
+									1
+						        
+						    
+						</div>
+								                                                                                                                                               
+              </div>
+              
+			
+			
+	   
+                                
+     </div>    
+                    
+	      
+            <div class="flights__info last">
+              <span>
+               Total travel time:
+		       <span data-need-format="true">11hrs 10mins</span>
+	          </span>
+	        </div>
+           
+            
+         
+		 
+			
+			
+				
+			
+			
+		    <div data-toggle-content="true" class="flights__info flights__info--mb visible-mb ">
+			    
+				
+					    
+							   
+					    
+						
+						
+								  
+								     
+											
+											
+												
+											
+																		
+										    	
+									
+								  <div class="flights__info--price">
+								    <div class="package--name bgd-suites-Saver">Saver</div>
+								    <div class="package--price">									 
+									  
+									   
+									   
+									   
+									   
+									   
+									   
+									   
+									  
+									  
+									   
+									   
+									   
+									   									   
+									  
+								   
+								   
+									  					
+											
+											
+											
+											<div class="custom-radio custom-radio--1">
+											
+											
+										  									  
+										
+										  
+										  
+											 
+										  
+										
+										
+											  
+											  
+											  
+											  
+												  
+												  
+												  
+												  
+													  
+													  
+														  <input name="selectedOnwardFlightMob-available" id="flight-select-mb-O0-4-19-O" type="radio" data-onward="true" value="O4Z19ZO" data-related="4-19-O" data-flight-class="Saver" data-waitlisted="false"/>
+														  <label for="flight-select-mb-O0-4-19-O">
+													  
+												  
+												  
+											  												  
+											  
+										
+											
+											  
+											
+											   <strong class="package--price-number">
+											   140,000
+											   miles
+											   </strong>
+											   <br/>Total miles, 1 passenger
+											
+										  
+										 </label>										 
+										</div>   
+									 
+									</div>
+									</div>
+									
+									 
+								
+						
+				
+			
+		</div>	 
+       </td>
+	   
+	    
+        
+		    			
+				
+		
+		
+		    
+		    			    	
+			    			    				    	
+				    <td class="hidden-mb package-1">					    
+				            
+					           
+					           
+					           
+					           
+					           
+					           
+					           
+                              
+					          
+					           
+					           <input type="hidden" name="availabilityStatus" id="availabilityStatus" value="available"/></span>
+							   
+							   
+							   
+					          
+				           	
+						
+							
+											
+						
+						
+							
+							
+							<div class="custom-radio custom-radio--1">
+							
+							
+						
+												  
+		                    
+		                      
+		                      
+		                         
+		                      
+		                    
+							
+								
+								
+									
+									  
+									  
+									  
+									  
+										
+										  
+										  
+											  <input name="selectedOnwardFlight-available" id="flight-select-O0-4-19-O" type="radio" data-onward="true" value="O4Z19ZO" data-related="4-19-O" data-flight-class="Saver" data-waitlisted="false"/>
+											  <label for="flight-select-O0-4-19-O">										  
+										  
+										
+									  
+									
+								
+								
+		                      
+                              
+								
+								   <strong class="package--price-number">
+								   140,000
+								   miles
+								   </strong>
+								   Total miles, 1 passenger
+								
+						      
+                              
+                             </label>
+							</div>
+							
+							
+					</td>	
+					 
+		    
+				
+				      
+ </tr>
+								  
+                              
+                           
+									</table>
+								</td>
+							
+					</table>
+
+				</div>
+				
+				
+            <a data-see-more="1" class="see-more-btn" href="javascript:void(0)" title="See more">See more</a>
+			<div class="flight-select-control-horizontal">
+			<!-- KF-1579: Redemption Waitlist Enhancement, KF-2666: prev/next day starts  -->
+			
+			
+			<!-- KF-1579: Redemption Waitlist Enhancement, KF-2666: prev/next day ends  -->
+			
+				
+				<a href="/booking-flow.form?execution=e1s5&amp;_eventId=onwardJourneyPrevDay" title="Previous day" class="previous-day launchLightBox">
+				<em class="ico-point-l"></em>Previous day</a>
+				
+				<a href="/booking-flow.form?execution=e1s5&amp;_eventId=onwardJourneyNextDay" title="Next day" class="next-day launchLightBox">
+				Next day<em class="ico-point-r"></em></a>
+			
+			
+			</div>
+			
+            <a data-trigger-popup=".popup--search-compare" title="Compare all award types" class="btn-compare" href="#"><em class="ico-download"></em>Compare all award types</a>
+
+				
+					<input type="hidden" id="balanceCash" value="" />
+					<input type="hidden" id="minMilesReqForPWM" value="" />
+					<input type="hidden" id="waitlistedforFlightMsg" value="" />
+					<div class="waitlist-prefered hidden" tabindex="2">
+						<h4 class="sub-heading-2--dark">Waitlisted for your preferred flight?</h4>
+						<p class="waitlist-prefered-note"></p>
+					</div>
+					 
+					
+					<input type="hidden" id="carrierTypeORB" value="STAR"/>
+					
+				
+				
+				
+					
+					 
+				
+					
+					<div class="alert-block checkin-alert noTaxBooking hidden" tabindex="1" >
+						<div class="inner">
+							<div class="alert__icon">
+								<em class="ico-alert">&nbsp;</em>
+							</div>
+							<div class="alert__message">
+								<p>This flight itinerary is unavailable for online redemption. Please get in touch with your <a href=”/en_UK/contact-us/” target=”_blank”>local Singapore Airlines office</a> to complete the booking.</p>	
+							</div>
+						</div>			
+					</div>
+					
+					
+<aside class="popup popup--confirm-proceed hidden">
+	<div class="popup__inner">
+		<div class="popup__content">
+		
+			<a href="#" class="popup__close" title="Close">&#xe60d;</a>
+			<div class="heading-wrap">
+			<h2 class="popup__heading">Search Available Flights</h2>
+			</div>
+			<div class="confirm-message">
+	            <p>
+				You will be re-directed to view available flights and fares. You will be able to mix KrisFlyer miles and cash to pay for your fare at the payment page.
+	            </p>      
+			</div>
+			<div class="button-group-1">
+			 
+			<label class="hidden">Proceed</label>
+				<input type="button" id="proceed" value="PROCEED" class="btn-1" />
+				 
+				<label class="hidden">Cancel</label>
+				<input type="button" id="cancel" value="BACK TO ONLINE REDEMPTION" class="btn-2" data-close="true" />
+			</div>
+		</div>
+	</div>
+</aside>
+						
+						<label class="hidden">Next</label>
+						<input type="submit" data-popup=".popup--economy-topup" class="btn-1 launchLightBox popupaddition disabled" value="Next" id="btn-next"  disabled="disabled">
+						
+						<button id="btn-noTax-disabled" disabled="disabled" class="btn-1 noTaxItin disabled hidden">Next</button>
+						
+						
+						<input type="hidden" data-popup=".popup--redemption-topup" id="btn-voucher-next"  >
+						<input type="hidden" data-popup=".popup--POM-topup" id="btn-purchaseMiles-next"  >
+						<input type="hidden" data-popup=".popup--miles--cash-topup" id="btn-milesCash-next"  >		
+						<input type="hidden" data-popup=".popup--redemption-cash-topup" id="btn-voucherCash-next"  >						
+						
+						<input type="hidden" name="_eventId_reviewItineraryEvent"/>
+				</form>
+            </fieldset>
+      			
+        </section>
+
+		  
+
+
+
+
+
+
+
+
+<aside class="popup popup--economy-topup hidden">
+	<div class="popup__inner">
+		<div class="popup__content">
+		
+			<a href="#" class="popup__close" title="close">&#xe60d;</a>
+			<h2 class="popup__heading">Top up KrisFlyer miles</h2>
+			<p class="text-info"></p>
+			<form id="redemptionChooseFlightsForm" method="post" action="/booking-flow.form?execution=e1s5" class="economy-topup-form">
+			<div class="button-group-1">
+					<input type="hidden" name="_eventId" value="reviewItineraryEvent"/>
+					 
+					<label class="hidden">Proceed</label>
+					<input type="submit" id="btn-topup-proceed" value="Proceed" class="btn-1 launchLightBox" />
+					 
+					<label class="hidden">Cancel</label> 
+					<input type="button"  id="btn-topup-back" value="Cancel" class="btn-2" data-close="true" />
+			</div>
+			</form>
+		</div>
+	</div>
+</aside>
+		   
+		  
+
+
+
+
+
+
+
+
+<aside class="popup popup--redemption-topup hidden">
+	<div class="popup__inner">
+		<div class="popup__content">
+		
+			<a href="#" class="popup__close" title="close">&#xe60d;</a>
+			<h2 class="popup__heading">Use your PPS Reward for this booking</h2>
+			<p class="text-rv-info"></p>
+			<p class="text-rv-sub-info"></p>
+			<form id="redemptionChooseFlightsForm" method="post" action="/booking-flow.form?execution=e1s5" class="economy-topup-form">
+			<div class="button-group-1">
+					<input type="hidden" name="_eventId" value="reviewItineraryEvent"/>
+					 
+					<label class="hidden">Proceed</label>
+					<input type="submit" id="btn-vchr-proceed" value="USE PPS REWARD" class="btn-1 launchLightBox" />					
+					 
+					<label class="hidden">Proceed</label>
+					<input type="button" id="btn-POM-proceed" value="PURCHASE MILES" class="btn-4 launchLightBox" />				
+			    </div>
+			</form>
+		</div>
+	</div>
+</aside>
+		   
+
+
+
+
+
+
+
+
+<aside class="popup popup--POM-topup hidden">
+	<div class="popup__inner">
+		<div class="popup__content">
+		
+			<a href="#" class="popup__close" title="close">&#xe60d;</a>
+			<h2 class="popup__heading">Purchase KrisFlyer miles for this booking</h2>
+			<p class="text-rv-sub-info"></p>
+			<p class="text-info"></p>
+			<form id="redemptionChooseFlightsForm" method="post" action="/booking-flow.form?execution=e1s5" class="economy-topup-form">
+			<div class="button-group-1">
+					<input type="hidden" name="_eventId" value="reviewItineraryEvent"/>
+					 
+					<label class="hidden">Proceed</label>
+					<input type="submit" id="btn-purchaseMiles-proceed" value="PURCHASE MILES" class="btn-1 launchLightBox" />
+					 
+					<label class="hidden">Cancel</label> 
+					<input type="button"  id="btn-purchaseMiles-cancel" value="Cancel" class="btn-2" data-close="true" />
+			</div>
+			</form>
+		</div>
+	</div>
+</aside>
+		    
+
+
+
+
+
+
+
+
+<aside class="popup popup--miles--cash-topup hidden">
+	<div class="popup__inner">
+		<div class="popup__content">
+		
+			<a href="#" class="popup__close" title="close">&#xe60d;</a>
+			<h2 class="popup__heading">Mix KrisFlyer miles and cash for this booking</h2>
+			<p class="text-rv-info"></p>
+			<p class="text-info"></p>
+			<form id="redemptionChooseFlightsForm" method="post" action="/booking-flow.form?execution=e1s5" class="economy-topup-form">
+			<div class="button-group-1">
+					<input type="hidden" name="_eventId" value="reviewItineraryEvent"/>
+					 
+					<label class="hidden">Proceed</label>
+					<input type="submit" id="btn-miles-cash-proceed" value="MIX MILES AND CASH" class="btn-1 launchLightBox" />					
+					 
+			   	   <label class="hidden">Cancel</label> 
+					<input type="button" id="btn-miles-cash-cancel" value="CANCEL" class="btn-2" data-close="true" />		
+			    </div>
+			</form>
+		</div>
+	</div>
+</aside>
+		     
+
+
+
+
+
+
+
+
+<aside class="popup popup--redemption-cash-topup hidden">
+	<div class="popup__inner">
+		<div class="popup__content">
+		
+			<a href="#" class="popup__close" title="close">&#xe60d;</a>
+			<h2 class="popup__heading">Use your PPS Reward for this booking</h2>
+			<p class="text-rv-info"></p>
+			<p class="text-rv-sub-info"></p>	
+			<form id="redemptionChooseFlightsForm" method="post" action="/booking-flow.form?execution=e1s5" class="economy-topup-form">
+			<div class="button-group-1">
+					<input type="hidden" name="_eventId" value="reviewItineraryEvent"/>
+					 
+					<label class="hidden">Proceed</label>
+					<input type="submit" id="btn-PPS-proceed" value="USE PPS REWARD" class="btn-1 launchLightBox" />					
+					 
+					<label class="hidden">Proceed</label>
+					<input type="button" id="btn-mix-proceed" value="MIX MILES AND CASH" class="btn-4 launchLightBox" />				
+			    </div>
+			</form>
+		</div>
+	</div>
+</aside>
+		   
+	  </section>
+	  
+	  
+            
+            
+			
+				
+				
+
+
+
+
+
+
+
+
+
+<!-- /booking/selectflight/editSearchpopup-f.jsp -->
+
+
+
+ 
+<input id="timezones" type="hidden" value='{"sg":-8,"au":11,"at":1,"bd":6,"be":1,"br":-5,"bn":8,"ca":-8,"dk":1,"fr":1,"de":1,"gr":2,"hkg":8,"in":5,"id":7,"ie":0,"it":1,"jp":9,"my":8,"mv":5,"mm":6,"nl":1,"nz":13,"no":1,"cn":8,"ph":8,"ru":3,"sa":3,"za":2,"kr":9,"es":0,"lk":5,"se":1,"ch":1,"tw":8,"th":7,"ae":4,"gb":0,"us":-10,"vn":7}'></input>
+ 
+
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+ 
+
+
+
+
+
+
+
+<input type="hidden" id="promoType" value=""/>
+<input type="hidden" id="originCodeORB" value="SFO"/>
+<input type="hidden" id="destinationCodeORB" value="NRT"/>
+
+<input type="hidden" id="originCode" value=""/>
+<input type="hidden" id="destinationCode" value=""/>
+
+
+<aside class="hidden">
+
+ 
+            
+            
+            
+            
+             
+             
+             
+             
+             
+             
+            
+            
+							
+							
+            <div class="menu-bar logged">
+                <h2 class="hidden">KrisFlyer logged</h2>
+                <ul>
+				<li><a href="#" title="" id="langFlag" class="flag"> <input
+						type="hidden" value="United States" id="countryFlag" />
+						<input type="hidden" value="united_states"
+						id="flagName" /> <input type="hidden"
+						value="en_UK" id="capitalizedLoc"> <img
+						src="/saar5/images/transparent.png" alt="Flag Icon"
+						longdesc="img-desc.html" /><span id="capLocale"> </span></a></li>
+				<li><a href="#" class="search"><em class="ico-search"></em><span>Search</span></a>
+                    <aside class="popup popup-3 popup--search hidden">
+                      <div class="popup__inner"><em class="popup__arrow"></em>
+                        <div class="popup__content"><a href="#" class="popup__close" tabindex="0" title="Close">&#xe60d;</a>
+                          <form id="form-search" method="GET" action="/siteSearch.form?searchParam=" accept-charset="UTF-8" class="form-search">
+                            <span class="input-1">
+                              <input type="text" name="searchParam" id="input-search" placeholder="Search" value=""/></span><span class="btn-search">
+                              <input type="submit"  value="" id="btn-search" class= "launchLightBox" ><em class="ico-search"></em></span>
+                          </form>
+                        </div>
+                      </div>
+                    </aside>
+                  </li>
+					<li class="logged-in"><a href="#" class="status">
+                      <h2 class="status-heading"><span>Mr Xin Lin</span><em class="ico-user"></em></h2>
+                      <p class="status-content">KRISFLYER<br>8845051463</p></a>
+                    <div class="popup popup--logged-profile menu-sub hidden">
+                     
+						 
+							<div class="menu-sub-outer">
+							 
+							 
+                        <div class="menu-sub-inner"><span class="back-to-menu"><em class="ico-point-l"></em>Main Menu</span>
+                          <em class="popup__arrow"></em>
+                          
+                          <div class="popup__heading">						  
+                            <h2 class="sub-heading-3--dark">Mr Xin Lin</h2>
+                            <p>KRISFLYER<br>8845051463</p>
+                            
+                           
+							
+                            <h3 id="kfmilesdig">3000&nbsp;<span>miles</span></h3>
+                            
+                            <a href="http://www.singaporeair.com/logOut.form?firstPageURL=/booking-flow.form?execution=e1s5" title="Log out" class="btn-1 btn-full hidden">Log out</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+			</ul>
+		</div>
+            
+            
+         
+		 </aside>
+<aside class="popup popup--edit-search hidden">
+
+	<div class="popup__inner">
+		<div class="popup__content">
+		<a href="#" class="popup__close" tabindex="0" title="Close">&#xe60d;</a>
+			<h2 class="popup__heading">Edit search</h2>
+			
+			<div class="form-group form-group--tooltips hidden-mi">
+			
+				<div class="custom-radio custom-radio--1">
+				
+					
+					
+					
+									
+					
+					
+					<fieldset> 
+					<input name="search-type" id="travel-radio-1" type="radio" checked="checked" value="" data-search-flights="book" /> <label for="travel-radio-1">Book flights</label>
+					
+					</fieldset>
+					
+					
+				</div>
+				
+
+					
+					
+					
+					
+					
+				<div class="custom-radio custom-radio--1">
+				
+				<fieldset> 
+					<input name="search-type" id="travel-radio-2" type="radio" value=""
+					checked
+					
+					data-search-flights="redeem" /> <label for="travel-radio-2">Redeem flights</label>
+					
+					</fieldset> 
+				</div>
+				
+				
+		
+				
+				
+			</div>
+			
+			<form id="form-edit-search" method="post" action="/booking-flow.form?execution=e1s5" modelAttribute="searchForm" autocomplete="off" data-widget="true"
+				data-flight-schedule="true" data-search-flights-form="book" class="form-book-travel widget-edit-search active">
+				<input type="hidden" value="false" name="payByMiles" id="payByMilesInput"/>
+				
+				<div class="form-group form-group--tooltips hidden-mi">
+				
+					<div class="radio-tooltips">
+						<div class="radio-tooltips-inner">
+							<em class="ico-radio-tooltips ico-airplane"></em>
+							<p class="radio-tooltips__text">
+							
+							
+                          
+                          
+                          
+                          
+                          KrisFlyer/PPS Club members have the option to combine KrisFlyer miles with their credit/debit card for payment.
+                          
+                          
+                          </p>
+							<span><em class="ico-arrow-up-1"></em></span>
+						</div>
+					</div>
+				</div>
+				<fieldset>
+					<div data-validate-by-group="false" class="form-group grid-row grid-row-1 from-to-container">
+						<div class="grid-col one-half">
+							<div class="grid-inner">
+								<div data-autocomplete="true" class="custom-select custom-select--2 from-select default" data-origin="true">
+									<label for="originCIB" class="select__label">
+									From</label>
+									<span class="select__text"> 
+									
+									<label class="hidden">Origin</label> 
+									<input type="text" name="originCIB" id="originCIB" placeholder="City" value="" class="origin-city" data-rule-required="true" data-msg-required="Select an origin." />
+									</span> 
+									<span class="ico-dropdown"></span> 
+									<label for="cib-17-1" class="hidden">&nbsp;
+									
+									<select id="cib-17-1"  data-city-group="true">
+									
+										
+										</select>
+									</label> <input type="hidden" id="origin" name="origin" value="" />
+								</div>
+							</div>
+						</div>
+						<div class="grid-col one-half">
+							<div class="grid-inner">
+								<div data-autocomplete="true" class="custom-select custom-select--2 to-select default" data-destination="true">
+									<label for="destinationCIB" class="select__label">
+									To</label>
+									<span class="select__text"> 
+									
+									<label class="hidden">Destination</label>
+									<input type="text" name="destinationCIB"
+										id="destinationCIB" placeholder="City" value="" class="destination-city" data-rule-required="true" data-msg-required="Select a destination." data-msg-notequalto="Select another origin or destination." /></span><span
+										class="ico-dropdown"></span>
+										<label for="cib-17-2" class="hidden">&nbsp; 
+										
+										<select id="cib-17-2"  data-city-group="true">
+										
+										
+										</select>
+									</label> <input type="hidden" id="destination" name="destination" value="" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<input type="hidden" value="on" name="_tripType">
+					<input type="hidden" id="triptypepopup" value="O" />
+					<input type="hidden" id ="departureDayString-1" value = "2"/>
+					<input type="hidden" id ="returnDayString-1"  value = "15"/>
+					<input type="hidden" id ="departureDayString-2" value = "2"/>
+					<input type="hidden" id ="departureDatepopup-1" value = "15/10/2020"/>
+					<input type="hidden" id ="returnDatepopup-1"  value = "14/12/2019"/>
+					<input type="hidden" id ="departureDatepopup-2" value = "15/10/2020"/>
+					<div class="form-group form-group--inline">
+          					
+					
+                        
+                        <div class="custom-radio custom-radio--1" data-option="true">
+                        
+                        <fieldset> 
+                          <input name="tripType" id="edit-radio-4" type="radio" value="R"/>
+                          <label for="edit-radio-4">Return</label>
+                          
+                          </fieldset> 
+                        </div>
+                        <div class="custom-radio custom-radio--1" data-option="true">
+                        
+                        <fieldset> 
+                          <input name="tripType" id="edit-radio-5" type="radio" value="O" checked="checked"/>
+                          <label for="edit-radio-5">One-way</label>
+                          
+                          </fieldset> 
+                        </div>
+                        
+                        
+                    
+ 					
+					
+					
+				
+					
+					
+					
+					
+						<a href="https://www.singaporeair.com/booking-flow.form?loadMultiCity=true&selectedOrigin=SIN&selectedDestination=BLR"
+							title="Multicity" id="multiCitySearchHome" class="link-2 right launchLightBoxIgnore "><em class="ico-point-r">&nbsp;</em> 
+						Multi-city / Stopovers</a>
+					
+					
+					
+					
+					
+											
+					</div>
+					<div data-return-flight="true" data-target="true" id="edit-one-way-1" data-validate-by-group="false" class="form-group grid-row">
+						<div class="grid-col one-half">
+							<div class="grid-inner">
+								<div class="input-3 default">
+									<label for="edit-travel-start-day" class="input-3__label">
+									Depart</label>
+									<span class="input-3__text"> 
+									
+									<label class="hidden">Departure date</label> 
+									<input type="tel" name="departureMonth" id="edit-travel-start-day" value= "15/10/2020" placeholder="Date" data-start-date="true" data-rule-required="#edit-radio-4:checked" data-msg-required="Please select date"/></span>
+									<button type="button" id="edit-btn-travel-start-day">
+										<em class="ico-date"></em>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="grid-col one-half">
+							<div class="grid-inner">
+								<div class="input-3 default">
+									<label for="edit-travel-return-day" class="input-3__label">
+									Return</label>
+									<span class="input-3__text">
+									
+									<label class="hidden">Return date</label> 
+									<input type="tel"
+										name="returnMonth" id="edit-travel-return-day" value="14/12/2019" placeholder="Date" data-return-date="true"
+										data-rule-required="#edit-radio-4:checked" data-msg-required="Please select date" /></span>
+									<button type="button" id="edit-btn-travel-return-day">
+										<em class="ico-date"></em>
+									</button>
+		      					</div>
+							</div>
+						</div>
+					</div>
+					<div data-target="true" id="edit-one-way-2" class="form-group grid-row hidden">
+						<div class="grid-col one-half">
+							<div class="grid-inner">
+								<div class="input-3 default">
+									<label for="edit-travel-start-day-2" class="input-3__label">
+									Depart</label>
+									<span class="input-3__text">
+									<input type="tel" name="departureMonth" id="edit-travel-start-day-2" value="15/10/2020" placeholder="Date" data-oneway="true" data-rule-required="#edit-radio-5:checked" data-msg-required="Please select date" /></span>
+									<button type="button" id="edit-btn-travel-start-day-2">
+										<em class="ico-date"></em>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="custom-checkbox custom-checkbox--1">
+						 
+						<fieldset> 
+							<input name="flexibleDates" id="edit-travel-checkbox-6" type="checkbox" />
+							<label for="edit-travel-checkbox-6">Flexible travel dates / Lowest fares</label>
+							 
+							</fieldset> 
+						</div>
+					</div>
+					<div class="form-wrapper grid-row clearfix">
+						<div class="form-group grid-col grid-col-1">
+							<div class="one-half">
+								<div class="grid-inner">
+									<div data-customselect="true" class="custom-select custom-select--2" data-class="true">
+																		
+									 
+										<label for="edit-cabin-1" class="select__label">Class</label> 
+										
+										
+												
+										
+																							                           
+					                                <span class="select__text">Economy</span>
+					                                <span class="ico-dropdown">Economy</span>
+					                             
+					                             
+					                          
+										 
+									 
+                                	
+                                	
+                                	<label class="hidden">Cabin class</label> 
+                                 	<input type="hidden" name="cabinClass" value="F" id="cabinClass"/>
+									<input type="hidden" value="F" id="cabinClasspop"/>
+									
+                               	 		<select id="edit-cabin-1">
+                               	 			
+											
+											
+											
+	                               	 		
+	                               	 													
+												<option value="economy" >Economy</option>
+												<option value="premiumeconomy" >Premium Economy</option>													
+	                               	 		
+	                               	 		
+											
+
+											
+												
+												
+													<option value="business" >Business</option>
+													<option value="firstSuite" selected="selected">First / Suites</option>
+												
+											 
+											
+                                 		</select>
+                                	
+                                	
+                                 
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+						
+   						<div class="form-group grid-col grid-col-2">
+							<div class="one-third">
+								<div class="grid-inner">
+									<div data-customselect="true" class="custom-select custom-select--2" data-adult="true">
+									<input type = "hidden" id = "initadultcount" value="1"/> 
+									<label for="edit-cabin-2" class="select__label">Adult</label><span class="select__text">1</span><span class="ico-dropdown">1</span>
+									
+									<label class="hidden">Adult</label>
+									<select id="edit-cabin-2" name="numOfAdults">
+										<option value="1" selected="selected"></option>
+			
+			
+		
+	
+		
+			
+			
+				<option value="2"></option>
+			
+		
+	
+		
+			
+			
+				<option value="3"></option>
+			
+		
+	
+		
+			
+			
+				<option value="4"></option>
+			
+		
+	
+		
+			
+			
+				<option value="5"></option>
+			
+		
+	
+		
+			
+			
+				<option value="6"></option>
+			
+		
+	
+		
+			
+			
+				<option value="7"></option>
+			
+		
+	
+		
+			
+			
+				<option value="8"></option>
+			
+		
+	
+		
+			
+			
+				<option value="9"></option>
+			
+		
+	
+		
+			
+			
+				<option value="10"></option>
+									</select>
+									</div>
+								</div>
+							</div>
+							<div class="one-third">
+								<div class="grid-inner">
+									<div data-customselect="true" class="custom-select custom-select--2" data-child="true">
+                                    <input type = "hidden" id = "initchildcount"  value="0"/>
+									<label for="edit-cabin-3" class="select__label">Child</label><span class="select__text">0</span><span class="ico-dropdown">0</span>
+									
+									<label class="hidden">Child</label> 
+									<select id="edit-cabin-3" name="numOfChildren">
+										<option value="0" selected="selected"></option>
+			
+			
+		
+	
+		
+			
+			
+				<option value="1"></option>
+			
+		
+	
+		
+			
+			
+				<option value="2"></option>
+			
+		
+	
+		
+			
+			
+				<option value="3"></option>
+			
+		
+	
+		
+			
+			
+				<option value="4"></option>
+			
+		
+	
+		
+			
+			
+				<option value="5"></option>
+			
+		
+	
+		
+			
+			
+				<option value="6"></option>
+			
+		
+	
+		
+			
+			
+				<option value="7"></option>
+			
+		
+	
+		
+			
+			
+				<option value="8"></option>
+									</select>
+									<div class="select__tips">2-11 years</div>
+									</div>
+								</div>
+							</div>
+							<div class="one-third">
+								<div class="grid-inner">
+									<div data-customselect="true" class="custom-select custom-select--2" data-infant="true">
+										<input type = "hidden" id="initinfantcount" value="0"/>
+										<label for="edit-cabin-4" class="select__label">Infant</label><span class="select__text">0</span><span class="ico-dropdown">0</span>
+										
+										<label class="hidden">Infant</label> 
+										<select id="edit-cabin-4" name="numOfInfants">
+											<option value="0" selected="selected"></option>
+			
+			
+		
+	
+		
+			
+			 
+				<option value="1"></option>
+			
+		
+	
+		
+			
+			 
+				<option value="2"></option>
+			
+		
+	
+		
+			
+			 
+				<option value="3"></option>
+			
+		
+	
+		
+			
+			 
+				<option value="4"></option>
+			
+		
+	
+		
+			
+			 
+				<option value="5"></option>
+			
+		
+	
+		
+			
+			 
+				<option value="6"></option>
+			
+		
+	
+		
+			
+			 
+				<option value="7"></option>
+			
+		
+	
+		
+			
+			 
+				<option value="8"></option>
+										</select>
+										<div class="select__tips">0-23 months</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+					</div>
+					<div class="form-group">
+						<div class="button-group-1">
+							<input type="hidden" name="_eventId" value="updateFlightSearchEvent"/>
+							
+							<label class="hidden">Update</label>
+							<input type="submit" id="edit-edit-search-2" value="update" class="btn-1 launchLightBox" />
+							
+							<label class="hidden">Cancel</label> 
+							<input type="button" id="edit-edit-search-1" value="Cancel" data-close="true" class="btn-2" /> 
+						</div>
+					</div>
+				</fieldset>
+				<input type="hidden" name="isLoggedInUser" id="isLoggedInUser" value="true" />
+				<input type="hidden" name="numOfChildNominees" id="numOfChildNominees" value="" />
+				<input type="hidden" name="numOfAdultNominees" id="numOfAdultNominees" value="" />
+			</form>
+			
+			
+		
+
+		 	
+		<form id="form-edit-search-1" method="post" action="/booking-flow.form?execution=e1s5" modelAttribute="searchForm" autocomplete="off" data-widget="true"
+				data-flight-schedule="true" data-search-flights-form="redeem" class="form-book-travel widget-edit-search">
+				<input type="hidden" value="on" name="_payByMiles"> 
+				<input type="hidden" value="true" name="payByMiles">
+				<input type="hidden" value="true" name="fromEditSearch"/>
+				<input type="hidden" name="flowIdentifier" value="redemptionBooking" />
+				<div class="form-group form-group--tooltips">
+					<div class="radio-tooltips radio-tooltips--1">
+						<div class="radio-tooltips-inner">
+							<em class="ico-radio-tooltips ico-icons-42"></em>
+							<p class="radio-tooltips__text">Redeem KrisFlyer miles for award tickets or flight upgrades.<br>Redemption on our airline partners are being rolled out progressively. Contact your local SQ office if your preferred airline does not appear in the redemption search results.</br></p>
+							<span><em class="ico-arrow-up-1"></em></span>
+						</div>
+					</div>
+				</div>
+				<fieldset>
+					<div data-validate-by-group="false" class="form-group grid-row grid-row-1 from-to-container">
+						<div class="grid-col one-half">
+							<div class="grid-inner">
+								<div data-autocomplete="true" class="custom-select custom-select--2 from-select default" data-origin="true">
+									<label for="originORB" class="select__label">
+									From</label>
+									<span class="select__text"> 
+									 
+									<label class="hidden">Origin</label>
+									<input type="text" name="originORB" id="originORB" placeholder="Search by city" value="" class="origin-city" data-rule-required="true" data-msg-required="Select an origin." /></span>
+									<span class="ico-dropdown">SFO</span> 
+									<label for="cib-17-3" class="hidden">&nbsp;
+									<select id="cib-17-3" data-city-group="true">
+									   
+										</select>
+									</label>
+									<input type="hidden" id="orbOrigin" name="orbOrigin" value="" />
+								</div>
+							</div>
+						</div>
+						<div class="grid-col one-half">
+							<div class="grid-inner">
+								<div data-autocomplete="true" class="custom-select custom-select--2 to-select default" data-destination="true">
+									<label for="destinationORB" class="select__label">To</label>
+									<span class="select__text">
+									 
+									<label class="hidden">Destination</label>
+									<input type="text" name="destinationORB" id="destinationORB" placeholder="Search by city" value="" class="destination-city" data-rule-required="true" data-msg-required="Select a destination." data-msg-notequalto="Select another origin or destination." /></span>
+									<span class="ico-dropdown">NRT</span>
+									<label for="cib-17-4" class="hidden">&nbsp; 
+									<select id="cib-17-4" data-city-group="true">
+								    
+									</select>
+									</label>
+									<input type="hidden" id="orbDestination" name="orbDestination" value="" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<input type="hidden" value="on" name="_tripType">
+					<input type="hidden" id="triptypepopupORB" value="O" />
+					<input type="hidden" id ="departureDayStringORB-1" value = "2"/>
+					<input type="hidden" id ="returnDayStringORB-1"  value = "15"/>
+					<input type="hidden" id ="departureDayStringORB-2" value = "2"/>
+					<input type="hidden" id ="departureDatepopupORB-1" value = "15/10/2020"/>
+					<input type="hidden" id ="returnDatepopupORB-1"  value = "14/12/2019"/>
+					<input type="hidden" id ="departureDatepopupORB-2" value = "15/10/2020"/>
+					<input type="hidden" id="flexibleDates_id" name="flexibleDates" value="false"/>
+					<div class="form-group form-group--inline">
+						
+                        
+                        
+                        <div class="custom-radio custom-radio--1" data-option="true">
+                         
+                        <fieldset>
+                          <input name="tripType" value="R" id="edit1-radio-4" type="radio"/>
+                          <label for="edit1-radio-4">Return</label>
+                           
+                          </fieldset>
+                        </div>
+                        <div class="custom-radio custom-radio--1" data-option="true">
+                         
+                        <fieldset>
+                          <input name="tripType" id="edit1-radio-5" value="O" type="radio" checked="checked"/>
+                          <label for="edit1-radio-5">One-way</label>
+                           
+                          </fieldset>
+                        </div>	
+                        
+                        
+                        
+       								
+					</div>
+					<div data-return-flight="true" data-target="true" id="edit1-one-way-1" data-validate-by-group="false" class="form-group grid-row">
+						<div class="grid-col one-half">
+							<div class="grid-inner">
+								<div class="input-3 default">
+									<label for="edit1-travel-start-day" class="input-3__label">
+									Depart</label>
+									<span class="input-3__text"> 
+									 
+									<label class="hidden">Departure date</label> 
+									<input type="tel" name="departureMonth" id="edit1-travel-start-day" value="15/10/2020" placeholder="Date" data-start-date="true" data-rule-required="#edit1-radio-4:checked" data-msg-required="Please select date"/></span>
+									<button type="button" id="edit1-btn-travel-start-day">
+										<em class="ico-date"></em>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="grid-col one-half">
+							<div class="grid-inner">
+								<div class="input-3 default">
+									<label for="edit1-travel-return-day" class="input-3__label">Return</label>
+									<span class="input-3__text">
+									 
+									<label class="hidden">Return date</label> 
+									<input type="tel" name="returnMonth" id="edit1-travel-return-day" value="14/12/2019" placeholder="Date" data-return-date="true" data-rule-required="#edit1-radio-4:checked" data-msg-required="Please select date" /></span>
+									<button type="button" id="edit1-btn-travel-return-day">
+										<em class="ico-date"></em>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div data-target="true" id="edit1-one-way-2" class="form-group grid-row hidden">
+						<div class="grid-col one-half">
+							<div class="grid-inner">
+								<div class="input-3 default">
+									<label for="edit1-travel-start-day-2" class="input-3__label">Depart</label><span class="input-3__text">
+									 
+									<label class="hidden">Departure date</label> 
+									<input type="tel" name="departureMonth" id="edit1-travel-start-day-2" value="15/10/2020" placeholder="Date" data-oneway="true" data-rule-required="#edit1-radio-5:checked" data-msg-required="Please select date"/></span>
+									<button type="button"  id="edit1-btn-travel-start-day-2">
+										<em class="ico-date"></em>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group hidden">
+						<div class="custom-checkbox custom-checkbox--1">
+							<input name="edit1-travel-checkbox-6" id="edit1-travel-checkbox-6" type="checkbox" /> <label for="edit1-travel-checkbox-6">Flexible travel dates / Lowest fares</label>
+						</div>
+					</div>
+					<div class="form-wrapper grid-row clearfix">
+						<div class="form-group grid-col grid-col-1">
+							<div class="one-half">
+								<div class="grid-inner">
+									<div data-customselect="true" class="custom-select custom-select--2" data-class="true">
+		                    <label for="edit1-cabin-1" class="select__label">Class</label>
+							<span class="select__text">Economy / Premium Economy</span> 
+							<span class="ico-dropdown">Economy / Premium Economy</span>
+							 
+                              
+                                <input type="hidden" name="cabinClass" value="F" id="cabinORB"/>
+								<input type="hidden" value="F" id="cabinClasspopORB"/>
+								 
+								<label class="hidden">Cabin class</label>
+                               	 <select id="edit1-cabin-1">
+									<option value="economy" >Economy</option>
+										
+											<option value="premiumeconomy" >Premium Economy</option>
+											
+											<option value="business" >Business</option>
+                                  			<option value="firstSuite" selected="selected">First / Suites</option>
+                                 		</select>
+                                	
+                                	
+                                 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-group grid-col grid-col-2">
+							<div class="one-third">
+								<div class="grid-inner">
+									<div data-customselect="true" class="custom-select custom-select--2" data-adult="true">
+										<label for="numOfAdults" class="select__label">
+										Adult</label>
+										<span class="select__text">1</span>
+										<span class="ico-dropdown">1</span>
+										 
+										<label class="hidden">Adult</label>
+										<select id="numOfAdults" name="numOfAdults">
+											<option value="1" selected="selected"></option>
+			
+			
+		
+	
+		
+			
+			
+				<option value="2"></option>
+			
+		
+	
+		
+			
+			
+				<option value="3"></option>
+			
+		
+	
+		
+			
+			
+				<option value="4"></option>
+			
+		
+	
+		
+			
+			
+				<option value="5"></option>
+			
+		
+	
+		
+			
+			
+				<option value="6"></option>
+			
+		
+	
+		
+			
+			
+				<option value="7"></option>
+			
+		
+	
+		
+			
+			
+				<option value="8"></option>
+			
+		
+	
+		
+			
+			
+				<option value="9"></option>
+			
+		
+	
+		
+			
+			
+				<option value="10"></option>
+	                                    </select>
+									</div>
+								</div>
+							</div>
+							<div class="one-third">
+								<div class="grid-inner">
+									<div data-customselect="true" class="custom-select custom-select--2" data-child="true">
+										<label for="numOfChildren" class="select__label">
+										Child</label>
+										<span class="select__text">0</span>
+										<span class="ico-dropdown">0</span> 
+										 
+										<label class="hidden">Child</label>										
+										<select id="numOfChildren" name="numOfChildren">
+											<option value="0" selected="selected"></option>
+			
+			
+		
+	
+		
+			
+			
+				<option value="1"></option>
+			
+		
+	
+		
+			
+			
+				<option value="2"></option>
+			
+		
+	
+		
+			
+			
+				<option value="3"></option>
+			
+		
+	
+		
+			
+			
+				<option value="4"></option>
+			
+		
+	
+		
+			
+			
+				<option value="5"></option>
+			
+		
+	
+		
+			
+			
+				<option value="6"></option>
+			
+		
+	
+		
+			
+			
+				<option value="7"></option>
+			
+		
+	
+		
+			
+			
+				<option value="8"></option>
+										</select>
+										<div class="select__tips">2-11 years</div>
+									</div>
+								</div>
+							</div>
+							<div class="one-third">
+								<div class="grid-inner">
+									<div data-customselect="true" class="custom-select custom-select--2 disabled" data-infant="true">
+										<label for="numOfInfants" class="select__label">
+										Infant</label>
+										<span class="select__text">0</span>
+										<span class="ico-dropdown">0</span>
+										 
+										<label class="hidden">Infant</label>
+									    <select id="numOfInfants" name="numOfInfants" disabled="disabled">
+											<option value="0" selected="selected"></option>
+			
+			
+		
+	
+		
+			
+			 
+				<option value="1"></option>
+			
+		
+	
+		
+			
+			 
+				<option value="2"></option>
+			
+		
+	
+		
+			
+			 
+				<option value="3"></option>
+			
+		
+	
+		
+			
+			 
+				<option value="4"></option>
+			
+		
+	
+		
+			
+			 
+				<option value="5"></option>
+			
+		
+	
+		
+			
+			 
+				<option value="6"></option>
+			
+		
+	
+		
+			
+			 
+				<option value="7"></option>
+			
+		
+	
+		
+			
+			 
+				<option value="8"></option>	
+                                        </select>
+										<div class="select__tips">0-23 months</div>
+									</div>
+									<input type="hidden" name="dummynumOfInfants" value="0"/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="button-group-1">
+							
+							
+								
+									<input type="hidden" name="_eventId" value="updateFlightSearchEvent"/>
+									 
+									<label class="hidden">Update</label>
+									<input type="submit" id="edit1-edit-search-2" value="update" class="btn-1 launchLightBox" />
+									<input type="hidden" name="OalOrbFromEditSearch" value="true"/>
+								
+								
+							
+							 
+							<label class="hidden">Cancel</label>
+							<input type="button" id="edit1-edit-search-1" value="Cancel" class="btn-2" data-close="true" />
+						</div>
+					</div>
+				</fieldset>
+				<input type="hidden" name="isLoggedInUser" id="isLoggedInUser" value="true" />
+				<input type="hidden" name="numOfChildNominees" id="numOfChildNominees" value="" />
+				<input type="hidden" name="numOfAdultNominees" id="numOfAdultNominees" value="" />
+			</form> 
+		
+
+		</div>
+	</div>
+</aside>
+<!-- end editSearchpopup-f.jsp -->
+<input type="hidden" id="dataParams" value="airportCode=SFO"/>
+<input type="hidden" id="dataParamsDestn" value="airportCode=NRT"/>
+<input type="hidden" id="dataParamsOrb" value="flightSearchType=ORB&airportCode=SFO"/>
+<input type="hidden" id="dataParamsDestnOrb" value=""/>
+				
+			
+			
+       
+	  
+
+
+
+
+
+
+<!-- /booking/selectflight/orbStopOverpopup-f.jsp -->
+
+
+
+<!--MKT00127 - SAA Language Support for Thai starts-->
+	
+	
+	
+<!--MKT00127 - SAA Language Support for Thai ends-->
+
+
+<!--MKT00127 - SAA Language Support for Thai starts-->
+	
+	
+	
+<!--MKT00127 - SAA Language Support for Thai ends-->
+
+
+
+
+
+<input type="hidden" id="departureDateString" value="15/10/2020" />
+<input type="hidden" id="returnDateString" value="" />
+<input type="hidden" id="onwardjson" value='' />
+<input type="hidden" id="returnjson" value='' />
+  
+
+<aside class="popup popup--economy-stopover hidden">
+        <div class="popup__inner">
+          <div class="popup__content">
+          
+          <a href="#" class="popup__close" tabindex="0" title="Close">&#xe60d;</a>
+            <h2 class="popup__heading">Add a stopover</h2>
+            <p class="text-info">Select one complimentary stopover if you choose a round-trip Saver or one-way Advantage award, or up to two complimentary stopovers if you choose a round-trip Advantage award.<br><br>After making your stopover selection, you will need to choose your flights for your updated itinerary which includes your stopover(s).</p>
+				<form id="economy-stopover-form" method="post" action="/booking-flow.form?execution=e1s5" modelAttribute="multiCitySearchForm" data-global-form-validate="true" data-validatedOnce="true" class="economy-stopover-form">
+				<input type="hidden" id="redemptionFrom" name="redemptionFrom" value="SFO" /> 
+				<input type="hidden" id="redemptionTo" name="redemptionTo" value="NRT" />
+				<input type="hidden" id="buildTripDepartDate" name="buildTripDepartDate" value="" />
+				<input type="hidden" id="buildTripDepartMonth" name="buildTripDepartMonth" value="" />
+				<input type="hidden" id="stopoverPresent" name="stopoverPresent" value="noStopOver" />
+				<input type="hidden" id="stopoverAt" name="stopoverAt" value="" />
+				<input type="hidden" id="stopoverDepartDate" name="stopoverDepartDate" value="" />
+				
+				<input type="hidden" id="carrierType" value="STAR" />
+				
+				<input type="hidden" id="stopoverDepartMonth" name="stopoverDepartMonth" value="" />
+				<input type="hidden" id="tripType" name="tripType" value="O" />
+				<input type="hidden" id="_tripType" name="_tripType" value="on" />
+				
+				<input type="hidden" id="cabinClass" name="cabinClass" value="F" />
+				<input type="hidden" id="numOfAdults" name="numOfAdults" value="1" />
+				<input type="hidden" id="numOfChildren" name="numOfChildren" value="0" />
+				<input type="hidden" id="isLoggedInUser" name="isLoggedInUser" value="true" />
+				<input type="hidden" id="payByMiles" name="payByMiles" value="true" />
+              <fieldset data-group-stopover>
+                <h3 class="sub-heading-3--dark"><span>1. San Francisco to Tokyo</span>
+                
+                <a href="javascript:void(0);" class="add-stopover" title="Add a stop over" data-add-stopover=""><span>+</span> Add a stopover</a>
+                </h3>
+                <div class="group-input-2">
+                  <div class="form-group grid-row">
+                    <div class="grid-col grid-col--half">
+                      <div class="grid-inner">
+                        <div data-customselect="true" class="custom-select custom-select--2 disabled">
+                          <label for="select-from-1" class="select__label">From</label><span class="select__text">San Francisco</span><span class="ico-dropdown">San Francisco - SFO</span>
+                           
+                          <label class="hidden">Origin</label> 
+                          <select id="select-from-1">
+							<option value="1" selected="selected">San Francisco - SFO</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-col grid-col--half">
+                      <div class="grid-inner">
+                        <div data-customselect="true" class="custom-select custom-select--2 disabled">
+                          <label for="select-to-1" class="select__label">To</label><span class="select__text">Tokyo - NRT</span><span class="ico-dropdown">Tokyo - NRT</span>
+                           
+                          <label class="hidden">Destination</label> 
+                          <select id="select-to-1">
+                            <option value="1" selected="selected">Tokyo - NRT</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group grid-row">
+                    <div class="grid-col grid-col--half">
+                      <div class="grid-inner">
+                        <div class="input-3 disabled">
+                          <label for="select-depart-1" class="input-3__label">Depart</label><span class="input-3__text">
+                           
+                          <label class="hidden">Departure date</label> 
+                            <input type="text"  id="select-depart-1" value="15/10/2020" placeholder="Date" readonly="readonly"/></span>
+                          <button type="button" name="btn-search-fl-depart" id="btn-depart-1"><em class="ico-date"></em></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-stopover-content="" class="group-input hidden">
+                    <div data-return-flight="true" data-target="true" id="undefinedone-way-1" data-validate-by-group="false" class="form-group grid-row">
+                      <div class="grid-col grid-col--half">
+                        <div class="grid-inner">
+                          <div data-autocomplete="true" class="custom-select custom-select--2 to-select stopover-select">
+                            <label for="select-in-1-1" class="select__label">Stopover</label><span class="select__text">
+                             
+                            <label class="hidden">Stopover</label>
+                              <input type="text" id="select-in-1" placeholder="City" value=""/></span><span class="ico-dropdown">City</span>
+                               <select id="select-in-1-1" data-city-group="true">
+								<option value="GRZ" data-text="Graz - GRZ">Graz, Austria (Graz - GRZ)</option>
+                                  <option value="INN" data-text="Innsbruck - INN">Innsbruck, Austria (Innsbruck - INN)</option>
+                              </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="grid-col grid-col--half">
+                        <div class="grid-inner">
+                          <div class="input-3">
+                            <label for="select-until-1" class="input-3__label">Depart</label><span class="input-3__text">
+                             
+                            <label class="hidden">Departure date</label>
+                              <input type="text" id="select-until-1" value="" 
+							  placeholder="Date" 
+							  data-oneway="true" 
+							  data-rule-required="true" 
+							  data-msg-required="Please select date" data-rule-stopoverformdatevalidtion='["#select-depart-1","#select-depart-2"]' 
+							  data-msg-stopoverformdatevalidtion="Your stopover duration must be between 1 day and 30 days."
+							  data-rule-stopoverformdatethanreturn='["#select-depart-1","#select-depart-2"]' 
+							  data-msg-stopoverformdatethanreturn="The date should not be greater than the return date and lesser than the departure date"
+							  /></span>
+                            <button type="button" name="btn-search-fl-depart" id="btn-depart-2"><em class="ico-date"></em></button>
+                          </div>
+                        </div>
+                      </div><a href="#" class="close-stopover" title="Close" data-close-stopover="data-close-stopover"><em class="ico-close-rounded"></em></a>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+			  
+              <fieldset data-group-stopover>
+                <h3 class="sub-heading-3--dark"><span>2. Tokyo to San Francisco</span>
+                
+                <a href="javascript:void(0);" class="add-stopover" title="Add a stop over" data-add-stopover=""><span>+</span> Add a stopover</a>
+                </h3>
+                <div class="group-input-2">
+                  <div class="form-group grid-row">
+                    <div class="grid-col grid-col--half">
+                      <div class="grid-inner">
+                        <div data-customselect="true" class="custom-select custom-select--2 disabled">
+                          <label for="select-from-2" class="select__label">From</label><span class="select__text">Tokyo - NRT</span><span class="ico-dropdown">Tokyo - NRT</span>
+                           
+                          <label class="hidden">Origin</label>
+                          <select id="select-from-2">
+                            <option value="1" selected="selected">Tokyo - NRT</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-col grid-col--half">
+                      <div class="grid-inner">
+                        <div data-customselect="true" class="custom-select custom-select--2 disabled">
+                          <label for="select-to-2" class="select__label">To</label><span class="select__text">San Francisco - SFO</span><span class="ico-dropdown">San Francisco - SFO</span>
+                           
+                          <label class="hidden">Destination</label>
+                          <select id="select-to-2">
+                            <option value="1" selected="selected">San Francisco - SFO</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group grid-row">
+                    <div class="grid-col grid-col--half">
+                      <div class="grid-inner">
+                        <div class="input-3 disabled">
+                          <label for="select-depart-2" class="input-3__label">Depart</label><span class="input-3__text">
+                           
+                          <label class="hidden">Departure date</label>
+                            <input type="text" id="select-depart-2" value="" placeholder="Date" readonly="readonly"/></span>
+                          <button type="button" name="btn-search-fl-depart" id="btn-depart-3"><em class="ico-date"></em></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-stopover-content="" class="group-input hidden">
+                    <div class="form-group grid-row">
+                      <div class="grid-col grid-col--half">
+                        <div class="grid-inner">
+                          <div data-autocomplete="true" class="custom-select custom-select--2 to-select stopover-select">
+                            <label for="select-in-2" class="select__label">Stopover</label><span class="select__text">
+                             
+                            <label class="hidden">Stopover</label>
+                              <input type="text" id="select-in-2" placeholder="City" value=""/></span><span class="ico-dropdown">City</span>
+                              <select id="select-in-2-1" data-city-group="true">
+								<option value="GRZ" data-text="Graz - GRZ">Graz, Austria (Graz - GRZ)</option>
+                                <option value="INN" data-text="Innsbruck - INN">Innsbruck, Austria (Innsbruck - INN)</option>
+                              </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="grid-col grid-col--half">
+                        <div class="grid-inner">
+                          <div class="input-3 default">
+                            <label for="select-until-2" class="input-3__label">Depart</label><span class="input-3__text">
+                             
+                            <label class="hidden">Departure date</label>
+                              <input type="text"  id="select-until-2" value="" 
+							  placeholder="Date" 
+							  data-oneway="true" 
+							  data-rule-required="true"
+							  data-msg-required="Please select date" data-rule-stopoverformdatevalidtion='["#select-depart-2"]' 
+							  data-msg-stopoverformdatevalidtion="Your stopover duration must be between 1 day and 30 days."
+							  data-rule-stopoverformdatethanreturn='["#select-depart-2"]' 
+							  data-msg-stopoverformdatethanreturn="The date should not be lesser than the return date"
+							  /></span>
+                            <button type="button" name="btn-search-fl-depart" id="btn-depart-4"><em class="ico-date"></em></button>
+                          </div>
+                        </div>
+                      </div>
+					  
+					  <a href="#" class="close-stopover" title="Close" data-close-stopover="data-close-stopover"><em class="ico-close-rounded"></em></a>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="button-group-1">
+               
+              <label class="hidden">Update</label> 
+                <input type="submit" id="btn-stopover-proceed" value="update" class="btn-1 disabled" disabled="disabled"/>
+				<input type="hidden" name="_eventId" value="multicityFlightSearchEvent"/>
+				 
+				<label class="hidden">Skip</label> 
+                <input type="button" id="btn-stopover-skip" value="Skip" class="btn-2" data-close="true"/>
+              </div>
+            </form>
+          </div>
+        </div>
+      </aside>
+<!-- end orbStopOverpopup-f.jsp -->
+	  <aside class="popup popup--info popup--terms-conditions hidden">
+        <div class="popup__inner">
+          <div class="popup__content">
+          
+          <a href="#" class="popup__close" title="<fmt:message key="saar5.w3cag.close"/>">&#xe60d;</a>
+            <p class="popup__text-intro--2">Lorem Ipsum is simply dummy text.</p><a href="#" class="btn-1">ok</a>
+          </div>
+        </div>
+      </aside>
+	  <aside class="popup popup-4 popup--flights-details hidden">
+	<div class="popup__inner">
+		<em class="popup__arrow"></em>
+		<div class="popup__content class_for_height_override">
+			<a href="#" class="popup__close"> 
+				<span class="ui-helper-hidden-accessible"><fmt:message key='saar5.w3cag.close'/></span> 
+					<span class="text">&#xe60d;</span>
+			</a>
+		</div>
+	</div>
+</aside>
+	  
+	  
+			  
+			  
+
+
+
+
+<div class="logged-in hidden"></div>
+
+
+
+
+
+
+<input type="hidden" id="isDisplayComplexPwdPop" value="false">
+<input type="hidden" id="checkComplexPwdOptional" value="true"/>
+<input type="hidden" id="formSubmitted" value="false"/>
+
+	
+	<aside class="popup popup-3 popup--kfCreatePasswordSuccess animated hidden">
+		        <div class="popup__inner" tabindex="-1">
+		          <div class="popup__content focus-outline" role="document" tabindex="0"><a href="#" class="popup__close">&#xe60d;</a>
+		            <h2 class="popup__heading" aria-hidden="false">Password created successfully</h2>
+		            <p class="text-info-2">Your PIN has been successfully changed to a password. Remember to use your new password to access your account in future. For SingaporeAir mobile app, please re-launch the updated app and login using your new password.</p>		            			            		            
+				</div>
+		        </div>
+	  </aside>
+	<aside class="popup popup-3 popup--kfCreatePassword animated hidden" tabindex="-1">
+<div class="popup__inner" tabindex="-1"><em class="popup__arrow"></em>
+	<div class="popup__content">
+	<a href="#" class="popup__close">&#xe60d;</a>
+	<h2 class="popup__heading">Create Password</h2>
+		<div class="alert-info-block checkin-alert">
+			<div class="inner">
+				<div class="ico-tooltips"></div>
+				<div class="alert__message">To enhance account security, please change your PIN to password. </div>
+			</div>
+		</div>
+		<div class="alert-block error-alert hidden">
+			<div class="inner">
+				<div class="alert__icon"><em class="ico-close-round-fill">&nbsp;</em></div>
+				<div class="alert__message"><p>We are unable to process your request due to a technical problem. We apologise for any inconvenience caused.</p></div>
+			</div>
+		</div>		
+		<form id="createPasswordForm" method="post" class="form-general form-createPassword form--language lightbox-form" autocomplete="off" >
+			<fieldset>	
+			<div class="form-group-wrapper">
+					<div class="form-group grid-row kfPasswordField">				
+					<label for="password" class="field-group__label">Create password *</label>
+						<div class="form-group">
+							<span class="input-1"> 								
+							<input type="password" name="newPassword" id="kfPassword" autocomplete="off"  aria-label="Enter Password" placeholder="Password" value="" maxlength="16" data-rule-minlength="8" data-rule-required="true"
+							data-msg-required="Enter a password" data-rule-alphanumericPasswordKf="true"
+							data-msg-alphanumericPasswordKf="Enter a valid password"></span>
+						</div>
+				</div>		
+				<div class="form-group grid-row kfPasswordField">			
+					<label for="confirmPassword" class="field-group__label">Confirm password *</label>
+						<div class="form-group">
+							<span class="input-1"> 									
+							<input type="password" name="reEnteredPassword" id="kfConfirmPassword" autocomplete="off" aria-label="Confirm Password" placeholder=Password value="" maxlength="16" data-rule-minlength="8" data-rule-required="true"
+								data-msg-required="Enter a password" data-rule-equalToCaseSensitive="#kfPassword" data-msg-equalToCaseSensitive="The passwords you've entered do not match. Re-enter your password" /></span>
+						</div>
+				</div>			
+			</div>
+				<div class="form-group grid-row">	 				
+						<P class="passwordCriteria">Your password must contain 8 to 16 alphanumeric characters, and include a combination of a number (0-9), lower case character (a-z), upper case character (A-Z) and special character (!@#$%^&*()).</P>	 			
+				</div>			
+				<div class="form-group">
+				<input type="button" id="kfPasswordFormSubmit" value="Submit" class="submitKfPassword btn-1 btn-full launchLightBox" />
+				</div>
+			</fieldset>
+		</form>
+	</div>	
+</div>
+</aside>
+
+<aside class="popup popout--authenticationcodemobile-pinreset popup--confirmation-error hidden">
+        <div class="popup__inner" tabindex="-1">
+        
+          <div class="popup__content focus-outline" role="document" tabindex="0">
+            <h2 class="popup__heading" aria-hidden="false">Enter One-Time Password (OTP)</h2>
+            
+            
+                   
+				      
+			<div class="alert-block checkin-alert error-alert hidden">
+              <div class="inner">
+                <div tabindex="0" class="alert__message">We're unable to send you an OTP via SMS right now. You can choose to receive the OTP via <a href="#" class="sendToEmailInstead">e-mail</a> instead.</div>
+              </div>
+            </div>
+			<div class="alert-block promo-alert success-alert hidden" data-error="true">
+                <div class="inner">
+                  <div class="alert__icon"><em class="ico-success"></em></div>
+                  <div class="alert__message">An SMS with your OTP has been sent to you.</div>
+                </div>
+              </div>             
+         <form action="#" method="post" id="form--login-mobpwd" class="form-general form--login-mob form--login-1" novalidate="novalidate">
+            <fieldset> 
+                <div class="sms-container">
+                  <div class="ico-container">
+                    <em class="ico-phone"></em>
+                    <em class="ico-sms"></em>
+                  </div>
+                  <div class="font-container">
+                    <p class="verification-code">We've sent an OTP to your mobile number
+                    <span class="character-container"></span>
+                    </p>
+                    <a href="#" class="code-resend">Resend OTP</a>
+                  </div>
+             </div>              			
+				<input type="hidden" id="urlRed" name="urlRed" value=""/>
+				<input type="hidden" id="otpCode" name="otpCode" value=""/>
+				<input type= "hidden" name ="popUpType" id="popUpType" value="M" />
+				
+            <div class="form-group form-group--tooltips" role="radiogroup">
+                  <span class="Krisflyer-membership-text"></span>
+                  <span class="input-1 security-input-form" role="radio" tabindex="0" aria-checked="true" aria-label="">
+                  <input class="input-text" type="text" name="otpNumber" id="membership-mobpwd" placeholder="Enter numeric OTP" value="" aria-labelledby="membership-mobpwd" data-rule-required="true" data-msg-required="Enter a valid OTP." data-rule-digits1="true" data-msg-digits1="Enter a valid OTP." data-rule-rangelength="[6, 6]" data-msg-rangelength="Enter a valid OTP." maxlength="6" data-msg-maxlength="" aria-required="true" aria-invalid="false" tabindex="-1">
+                  <a href="#clear" class="ico-cancel-thin add-clear-text" tabindex="-1" style="display: none;" aria-hidden="true">
+                  <span class="ui-helper-hidden-accessible">clear</span></a></span>
+            </div>
+            	   <span class="left otp_invalid hidden">The OTP you've entered is incorrect.Please try again.</span>            	     
+            	   <input type="hidden" id="expiryMessage" value=""/>
+            	   <input type="hidden" id="genericError" value=""/>
+            	   <input type="hidden" id="OTPErrorList" value=""/>
+            	   
+            	     
+                <input type="submit" id="submit-1-mobpwd" value="Verify" class="verifyOtpProfile btn-1 btn-full"/>
+                
+               
+                
+                <p class="text hidden">Opt to <a href='#' class='sendToEmailInstead'>send OTP by e-mail</a> instead</p>
+               
+				
+            </fieldset>
+        </form>
+
+        </div>
+        </div>
+      </aside>
+
+	  <aside class="popup popout--authenticationcodeemail-pinreset popup--confirmation-error animated hidden">
+        <div class="popup__inner" tabindex="-1">
+         
+          <div class="popup__content focus-outline" role="document" tabindex="0">
+          
+            <h2 class="popup__heading" aria-hidden="false">Enter One-Time Password (OTP)</h2>
+            
+            
+                   
+				      
+            <div class="alert-block checkin-alert error-alert hidden">
+              <div class="inner">
+                <div tabindex="0" class="alert__message">We're unable to send you an OTP via SMS right now. You can choose to receive the OTP via <a href="#" class="sendToEmailInstead">e-mail</a> instead.</div>
+              </div>
+            </div>
+            <div class="alert-block promo-alert success-alert hidden" data-error="true">
+                <div class="inner">
+                  <div class="alert__icon"><em class="ico-success"></em></div>
+                  <div class="alert__message">An e-mail with your OTP has been sent to you.</div>
+                </div>
+              </div>				
+                <form action="#" method="post" id="form--login-emailpwd" class="form-general form--login-email form--login-1" novalidate="novalidate">
+          
+            <fieldset>
+                <div class="sms-container">
+                  <div class="ico-container">
+                    <em class="ico-5-email"></em>
+                    <em class="ico-mail"></em>
+                  </div>
+                  <div class="email-container">
+                    <p class="verification-code">We've sent an OTP to your e-mail address
+                    <br>
+                    <span class="character-container">@</span>
+                    </p>
+                    <a href="#" class="code-resend">Resend OTP</a>
+                  </div>
+                </div>
+								
+				<input type="hidden" id="urlRed" name="urlRed" value=""/>
+				<input type="hidden" id="otpCode" name="otpCode" value=""/>
+				<input type= "hidden" name ="popUpType" id="popUpType" value="E" />
+ 				
+                <div class="form-group form-group--tooltips" role="radiogroup">
+                  <span class="Krisflyer-membership-text"></span>
+                  <span class="input-1 security-input-form" role="radio" tabindex="0" aria-checked="true" aria-label="">
+                  <input class="input-text" type="text" name="otpNumber" id="membership-emailpwd" placeholder="Enter numeric OTP" value="" aria-labelledby="membership-emailpwd" data-rule-required="true" data-msg-required="Enter a valid OTP." data-rule-digits1="true" data-msg-digits1="Enter a valid OTP." data-rule-rangelength="[6, 6]" data-msg-rangelength="Enter a valid OTP." maxlength="6" data-msg-maxlength="" aria-required="true" aria-invalid="false" tabindex="-1">
+                  <a href="#clear" class="ico-cancel-thin add-clear-text" tabindex="-1" style="display: none;" aria-hidden="true">
+                  <span class="ui-helper-hidden-accessible">clear</span></a></span>
+                </div>
+			<span class="left otp_invalid hidden">The OTP you've entered is incorrect.Please try again.</span>             	  
+            	   <input type="hidden" id="expiryMessage" value=""/>
+            	   <input type="hidden" id="genericError" value=""/>
+            	   <input type="hidden" id="OTPErrorList" value=""/>
+            	   
+            	     
+                <input type="submit" id="submit-1-emailpwd" value="Verify" class="verifyOtpProfile btn-1 btn-full"/>
+               <!--  <p class="text">Lorem ipsum dolor sit amet? <a href="#" class="sendToEmailInstead">Send by SMS</a> instead</p> -->
+            </fieldset>
+        </form>
+          
+        </div>
+        </div>
+      </aside>
+      <aside class="popup popup--emailandmobilerequired-error-pinreset popup--confirmation-error animated hidden">
+	        	<div class="popup__inner" tabindex="-1">
+	        		<div class="popup__content focus-outline" role="document" tabindex="0">
+	        			<a href="#" class="popup__close">&#xe60d;</a>	        		
+	        			<h2 class="popup__heading" aria-hidden="false">Contact us to update your profile</h2>
+	       				<p class="Krisflyer-membership-text">As you don’t have an e-mail address or mobile phone number registered with us for 2-factor authentication, please contact <a href="/en_UK/contact-us/" target="_blank" >KrisFlyer Membership Services</a> to make changes to your KrisFlyer profile.</p>
+	       			</div>
+	        	</div>
+	  </aside>
+
+
+			  
+	
+	  <aside class="popup popup--add-ons-summary popup-2 hidden">
+		<div id="fareConditionsDiv"></div>          
+      </aside>
+	 
+	<aside class="popup popup--share-emails hidden">
+	<div id="sendEmail"></div>          
+	</aside>
+	<aside class="popup popup--share-emails-confirmation hidden">
+	<div id="sentEmailConfirmation"></div>
+	</aside> 
+      
+
+
+
+<aside class="popup popup--search-compare hidden">
+   <div class="popup__inner"> 
+          <div class="popup__content"><a href="#" class="popup__close">&#xe60d;</a>
+			<h2 class="popup__heading">Compare fare types</h2>
+
+			
+ 			
+ 			
+ 			
+ 			<table class="table table--compare">
+              <thead>
+                <tr class="row-heading">
+                
+				  <th>Fare type</th>
+			      <th>Saver </th>
+			       
+			      <th>Advantage</th>
+			       
+			        
+				 
+				  
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr class="row">
+				<td>One-way</td>
+		          <td>No stopover</td>
+		           
+		          <td>1 Stopover</td>
+		           
+		        
+                 
+                </tr>
+               
+                <tr class="row even">
+                  <td>Round-trip</td>
+		          <td>1 Stopover</td>
+		           
+		          <td>2 Stopovers</td>
+		           
+		         
+				 
+                </tr>
+          
+				<tr class="row">
+				<td>Validity of award tickets</td>
+		         <td>12 Months</td>
+		          
+		        <td>12 Months</td>
+		         
+		       
+				</tr>
+			  </tbody>
+            </table>
+ 			
+ 			
+ 			
+ 			
+		   
+		
+	</div>
+</div>
+</aside>
+  <!-- END selectFlightMiles-f.jsp -->
+			<!--Component Only Layout--><footer class="footer">
+<h2 class="hidden">Link Singapore Airlines</h2>
+<div class="footer-wrapper footer-wrapper-block1">
+<div class="footer-inner">
+<div class="footer-bg"></div>
+<aside class="popup popup--nav hidden">
+<div class="popup__inner">
+<div class="popup__content">
+<a class="popup__close" href="#"></a>
+<h2 class="popup__heading">Going back to our current website?</h2>
+<p>By choosing to go back, you'll be taken to the home page of our current website. Any transaction you haven't completed on this page of our new website will no longer be valid.</p>
+<br>
+<div class="form-group grid-row form-group--row-btn">
+<div class="grid-col one-half">
+<div class="grid-inner">
+<a class="btn-2 btn-back-cancel">CANCEL</a>
+</div>
+</div>
+<div class="form-group grid-col one-half">
+<div class="grid-inner">
+<a id="yesSAA" data-confirm="true" class="btn-1">CONTINUE</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<div class="footer-top">
+<div class="footer-block">
+<div class="footer-block-inner">
+<h3 class="footer-block-heading">COMPANY</h3>
+<ul>
+<li>
+<a href="/en_UK/us/about-us/corporate-policies/" target="_self">Corporate policies</a>
+</li>
+<li>
+<a href="/en_UK/us/about-us/investors-relations/" target="_self">Investor relations</a>
+</li>
+<li>
+<a href="https://sponsorships.singaporeair.com/en/" target="_blank">Sponsorships</a>
+</li>
+<li>
+<a href="/en_UK/us/about-us/tender-notices/" target="_self">Tender notices</a>
+</li>
+</ul>
+</div>
+<div class="footer-block-inner">
+<h3 class="footer-block-heading">MEDIA &amp; RESOURCES</h3>
+<ul>
+<li>
+<a href="/en_UK/us/media-centre/press-release/" target="_self">News releases</a>
+</li>
+<li>
+<a href="/en_UK/us/media-centre/multimedia-library/" target="_self">Multimedia library</a>
+</li>
+<li>
+<a href="https://agent360.singaporeair.com" target="_blank">AGENT 360</a>
+</li>
+<li>
+<a href="https://developer.singaporeair.com/" target="_blank">KrisConnect</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer-block">
+<div class="footer-block-inner">
+<h3 class="footer-block-heading">CAREERS</h3>
+<ul>
+<li>
+<a href="/en_UK/us/careers/why-join-us/" target="_self">Why join SIA?</a>
+</li>
+<li>
+<a href="/en_UK/us/careers/cabin-crew-career/" target="_self">Cabin Crew</a>
+</li>
+<li>
+<a href="/en_UK/us/careers/cadet-pilots-career/" target="_self">Pilots</a>
+</li>
+<li>
+<a href="/en_UK/us/careers/sia-executives-programme/" target="_self">SIA Executives Programme</a>
+</li>
+<li>
+<a href="/en_UK/us/careers/ground-professionals/" target="_self">Ground Professionals</a>
+</li>
+<li>
+<a href="/en_UK/us/careers/students-internship/" target="_self">Scholarships & Internships</a>
+</li>
+<li>
+<a href="/en_UK/us/careers/silkair-cabin-crew-and-careers/" target="_self">SilkAir Cabin Crew and Careers</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer-block">
+<div class="footer-block-inner">
+<h3 class="footer-block-heading">SECURITY &amp; TRANSPARENCY</h3>
+<ul>
+<li>
+<a href="/en_UK/us/travel-info/customer-commitment/tarmac-delay-contingency-plan/" target="_self">Delay contingency plans</a>
+</li>
+<li>
+<a href="/en_UK/us/travel-info/customer-commitment/customer-service-plan/" target="_self">Customer Service Plan</a>
+</li>
+<li>
+<a href="/en_UK/security/" target="_self">Keeping your data safe</a>
+</li>
+<li>
+<a href="/en_UK/privacy-policy/" target="_self">Privacy policy</a>
+</li>
+<li>
+<a href="/en_UK/global_footer/cookies-policy/" target="_self">Cookie policy</a>
+</li>
+<li>
+<a href="/en_UK/terms-conditions/" target="_self">Terms & conditions</a>
+</li>
+</ul>
+</div>
+<div class="footer_inner-top_block-1 media-rule">
+<div class="footer_inner-top_block-1_wrap">
+<h3 class="footer_inner-top_block_inner_heading footer_inner-top_block_inner_heading--latest">
+<a class="footer_inner-top_block_inner_heading-send" href="/en_UK/special-offers/sia-e-newsletter/" target="_self">Sign up for our newsletter</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="footer-block">
+<div class="footer-block-inner">
+<h3 class="footer-block-heading">SUPPORT</h3>
+<ul>
+<li>
+<a href="/en_UK/contact-us/" target="_self">Contact us</a>
+</li>
+<li>
+<a href="/en_UK/feedback-enquiry/" target="_self">Help & feedback</a>
+</li>
+<li>
+<a href="/en_UK/faq/" target="_self">FAQs</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="social">
+<div class="footer_inner-social_images-content">
+<div class="footer_inner-social_images-content_wrap">
+<img alt="" src="/saar5/assets/images/icons/skytrax_ta_lang_en_UK.png" class="footer_inner-social_images-content_img"></div>
+<div class="footer_inner-social_images-content_wrap-2 hidden-dt hidden-tb">
+<a target="_blank" href="http://www.staralliance.com"><img class="footer_inner-bottom_singapore-air-group_image footer_inner-bottom_singapore-air-group_image--alliance" src="/saar5/assets/images/svg/alliance-2.svg"></a>
+</div>
+</div>
+<div class="footer_inner-social_icons">
+<span class="text-share">Follow</span>
+<ul>
+<li>
+<a href="http://www.facebook.com/singaporeair" target="_blank"><img src="/saar5/assets/images/svg/social-facebook.svg"></a>
+</li>
+<li>
+<a href="http://instagram.com/singaporeair" target="_blank"><img src="/saar5/assets/images/svg/social-instagram.svg"></a>
+</li>
+<li>
+<a href="https://www.youtube.com/singaporeair" target="_blank"><img src="/saar5/assets/images/svg/social-youtube.svg"></a>
+</li>
+<li>
+<a href="http://twitter.com/singaporeair" target="_blank"><img src="/saar5/assets/images/svg/social-twitter.svg"></a>
+</li>
+<li>
+<a href="https://www.linkedin.com/company/singapore-airlines" target="_blank"><img src="/saar5/assets/images/svg/social-linkedin.svg"></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-wrapper footer-wrapper-bottom">
+<div class="footer-bottom">
+<div class="footer_inner-bottom_singapore-air-group">
+<p class="footer_inner-bottom_singapore-air-group_text">SINGAPORE AIRLINES GROUP</p>
+<a href="http://www.flyscoot.com" target="_blank"><img alt="Scoot" src="/saar5/assets/images/svg/scoot.svg" class="footer_inner-bottom_singapore-air-group_image"></a><a href="#"><img alt="Silkair" src="/saar5/assets/images/svg/silkair.svg" class="footer_inner-bottom_singapore-air-group_image"></a><a href="/en_UK/us/#" target="_self"><img alt="Singapore Airlines" src="/saar5/assets/images/svg/singapore-airlines.svg" class="footer_inner-bottom_singapore-air-group_image"></a><a class="hidden-mb" href="http://www.staralliance.com" target="_blank"><img alt="Star Alliance" src="/saar5/assets/images/svg/alliance-2.svg" class="footer_inner-bottom_singapore-air-group_image footer_inner-bottom_singapore-air-group_image--alliance"></a>
+</div>
+<div class="footer_inner-bottom_airline-groups-mobile hidden-tb-dt">
+<p>SINGAPORE AIRLINES GROUP</p>
+<a href="http://www.flyscoot.com" target="_blank"><img alt="Scoot" src="/saar5/assets/images/svg/scoot.svg" class="footer_inner-bottom_singapore-air-group_image"></a><a href="#"><img alt="Silkair" src="/saar5/assets/images/svg/silkair.svg" class="footer_inner-bottom_singapore-air-group_image"></a><a href="/en_UK/us/#" target="_self"><img alt="Singapore Airlines" src="/saar5/assets/images/svg/singapore-airlines.svg" class="footer_inner-bottom_singapore-air-group_image"></a><a class="hidden-mb" href="http://www.staralliance.com" target="_blank"><img alt="Star Alliance" src="/saar5/assets/images/svg/alliance-2.svg" class="footer_inner-bottom_singapore-air-group_image footer_inner-bottom_singapore-air-group_image--alliance"></a>
+</div>
+<p class="copyright">&copy; 2019 Singapore Airlines. All Rights Reserved. Singapore Co. Reg. No. 197200078R</p>
+</div>
+</div>
+</div>
+</footer><div id="ts-kf-login"></div><aside class="popup-1 popup--cookie hidden">
+<div class="popup__inner">
+<div class="popup__content">
+<a class="popup__close" href="#"></a>
+<h2 class="popup__heading"></h2>
+<div class="popup__desc">Cookies allow us to optimise and personalise your experience.<a class="find_more_opt" href="/en_UK/global-footer/cookies-policy/" target="_blank"> Find out more.</a><br />
+<p class="privacy-msg">By continuing to use the website, you will be agreeing to our <a class="privacy_opt" href="/en_UK/privacy-policy/" target="_blank">Privacy Policy</a>, <a class="terms_opt" href="/en_UK/terms-conditions/" target="_blank">Terms &amp; Conditions</a> and <a class="privacy_opt" href="/en_UK/global-footer/cookies-policy/" target="_blank">Cookie Policy</a>.</p></div>
+</div>
+</div>
+</aside><input id="cookieCountryCode" value="us" type="hidden"><aside class="popup-1 popup--cookie--gdpr hidden">
+<div class="popup__inner">
+<h2 class="popup__heading"></h2>
+<div class="popup__desc"><p>Cookies allow us to optimise and personalise your experience with us. <span class="text"> <a href="/en_UK/global-footer/cookies-policy/">Find out more</a> </span></p>
+<p>By continuing to use the website. you will be agreeing to our <span class="text"> <a href="/en_UK/privacy-policy/">Privacy Policy</a> </span>, <span class="text"> <a href="/en_UK/terms-conditions/">Terms &amp; Conditions</a> </span> and <span class="text"> <a href="/en_UK/global-footer/cookies-policy/">Use of Cookies</a> </span>.</p>
+<p>You can also view and manage cookie settings below.</p><div class="popup-cookie-change-settings-continue">
+<div class="change-settings">
+<input type="button" value="CHANGE SETTING">
+</div>
+<div class="continue">
+<input type="button" value="CONTINUE">
+</div>
+</div>
+</div>
+</div>
+</aside><aside class="popup-1 popup--cookie cookie-close popup--cookie-continue hidden">
+<div class="popup__inner">
+<div class="popup__content">
+<a class="popup__close" href="#">
+<div class="btn-1 cookie-continue">CONTINUE</div>
+</a>
+<h2 class="popup__heading"></h2>
+<div class="popup__desc">Cookies allow us to optimise and personalise your experience.<a class="find_more_opt" href="/en_UK/global-footer/cookies-policy/" target="_blank"> Find out more.</a><br />
+<p class="privacy-msg">By continuing to use the website, you will be agreeing to our <a class="privacy_opt" href="/en_UK/privacy-policy/" target="_blank">Privacy Policy</a>, <a class="terms_opt" href="/en_UK/terms-conditions/" target="_blank">Terms &amp; Conditions</a> and <a class="privacy_opt" href="/en_UK/global-footer/cookies-policy/" target="_blank">Cookie Policy</a>.</p></div>
+</div>
+</div>
+</aside><aside class="popup-1 popup--announcement-solo border-lt-orange hidden" id="popupAnnouncement">
+<div class="popup__inner">
+<div class="popup__content">
+<a class="popup__close" href="#"><span class="ui-helper-hidden-accessible">Close</span><span class="text"></span></a>
+<div id="popup_aside_container">
+<h2 class="popup-header">Introducing revised fare types</h2>
+<div class="popup-desc"><p>From<strong> 20 January 2018,</strong> you'll enjoy clearer choices when it comes to booking with new fare types to suit the way you travel.</p>
+<a class="link-4" href="/en_UK/flying-withus/fare-types/"><em class="ico-point-r"></em>Learn more</a></div>
+</div>
+</div>
+</div>
+</aside><aside class="popup-1 popup--announcement-cookies hidden" id="popupAnnouncementCookies">
+<aside class="popup--announcement">
+<div class="popup__inner">
+<div class="popup__content">
+<a class="popup__close" href="#"><span class="ui-helper-hidden-accessible">Close</span><span class="text"></span></a>
+<div class="popup-wrapper border-lt-orange">
+<h2 class="popup-header">Introducing revised fare types</h2>
+<div class="popup-desc"><p>From<strong> 20 January 2018,</strong> you'll enjoy clearer choices when it comes to booking with new fare types to suit the way you travel.</p>
+<a class="link-4" href="/en_UK/flying-withus/fare-types/"><em class="ico-point-r"></em>Learn more</a></div>
+</div>
+</div>
+</div>
+</aside>
+<hr class="popup-divider">
+<aside class="popup-1 popup--cookie">
+<div class="popup__inner">
+<div class="popup__content">
+<h2 class="popup__heading"></h2>
+<div class="popup__desc">Cookies allow us to optimise and personalise your experience.<a class="find_more_opt" href="/en_UK/global-footer/cookies-policy/" target="_blank"> Find out more.</a><br />
+<p class="privacy-msg">By continuing to use the website, you will be agreeing to our <a class="privacy_opt" href="/en_UK/privacy-policy/" target="_blank">Privacy Policy</a>, <a class="terms_opt" href="/en_UK/terms-conditions/" target="_blank">Terms &amp; Conditions</a> and <a class="privacy_opt" href="/en_UK/global-footer/cookies-policy/" target="_blank">Cookie Policy</a>.</p></div>
+</div>
+</div>
+</aside>
+</aside>
+
+			<!--Component Only Layout-->
+
+		</div>
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="localeValue" value="en_UK">
+
+
+<input id="redirectURL" value="www.singaporeair.com" type="hidden">
+
+
+
+<input type="hidden" value="" id="ruPhotoUrl"/>
+<input type="hidden" value="US" id="akamai_countryCode"/>
+<script>
+   if(self == top) {
+       document.documentElement.style.display = 'block'; 
+   } else {
+       top.location = self.location; 
+   }
+</script>
+<script>globalJson.applicationCode = 'SAA';</script>
+<script>
+      globalJson.languages = {};
+      </script>
+      <script>
+	globalJson.cabinData = {"cabin": {"economy": {"adult":{"length": 9,"array":[{"children": {"length": 6,"array": [{"infant": 2},{"infant": 2},{"infant": 2},{"infant": 2},{"infant": 2},{"infant": 2}]}},{"children": {"length": 8,"array": [{"infant": 3},{"infant": 3},{"infant": 3},{"infant": 3},{"infant": 3},{"infant": 3},{"infant": 3},{"infant": 3}]}},{"children": {"length": 7,"array": [{"infant": 4},{"infant": 4},{"infant": 4},{"infant": 4},{"infant": 4},{"infant": 4},{"infant": 4}]}},{"children": {"length": 6,"array": [{"infant": 5},{"infant": 5},{"infant": 5},{"infant": 5},{"infant": 5},{"infant": 5}]}},{"children": {"length": 5,"array": [{"infant": 5},{"infant": 5},{"infant": 5},{"infant": 5},{"infant": 5}]}},{"children": {"length": 4,"array": [{"infant": 4},{"infant": 4},{"infant": 4},{"infant": 4}]}},{"children": {"length": 3,"array": [{"infant": 3},{"infant": 3},{"infant": 3}]}},{"children": {"length": 2,"array": [{"infant": 2},{"infant": 1}]}},{"children": {"length": 1,"array": [{"infant": 1}]}}]}},"premiumeconomy": {"adult":{"length": 6,"array":[{"children": {"length": 5,"array": [{"infant": 5},{"infant": 5},{"infant": 5},{"infant": 5},{"infant": 5}]}},{"children": {"length": 4,"array": [{"infant": 4},{"infant": 4},{"infant": 4},{"infant": 4}]}},{"children": {"length": 3,"array": [{"infant": 3},{"infant": 3},{"infant": 3}]}},{"children": {"length": 2,"array": [{"infant": 2},{"infant": 2}]}},{"children": {"length": 1,"array": [{"infant": 1}]}}]}},"economyRedem": {"adult":{"length": 6,"array":[{"children": {"length": 0,"array": [{"infant": 0}]}}]}},"business": {"adult":{"length": 6,"array":[{"children": {"length": 5,"array": [{"infant": 5},{"infant": 5},{"infant": 5},{"infant": 5},{"infant": 5}]}},{"children": {"length": 4,"array": [{"infant": 4},{"infant": 4},{"infant": 4},{"infant": 4}]}},{"children": {"length": 3,"array": [{"infant": 3},{"infant": 3},{"infant": 3}]}},{"children": {"length": 2,"array": [{"infant": 2},{"infant": 2}]}},{"children": {"length": 1,"array": [{"infant": 1}]}}]}},"firstSuite": {"adult":{"length": 4,"array":[{"children": {"length": 4,"array": [{"infant": 2},{"infant": 2},{"infant": 2},{"infant": 2}]}},{"children": {"length": 3,"array": [{"infant": 3},{"infant": 3},{"infant": 3}]}},{"children": {"length": 2,"array": [{"infant": 2},{"infant": 2}]}},{"children": {"length": 1,"array": [{"infant": 1}]}}]}}}};
+      </script>
+	   <script>var _gaq = _gaq || [];</script>
+	   <script>var saar5 = {};</script>
+	<script type="text/javascript" src="/TjsLocalisation.form?locale=en_UK"></script>
+	
+	
+	
+				  <script>
+				    globalJson.dataVideo = {
+				          "url": [saar5.l.awarenessvideo.youtubeone, saar5.l.awarenessvideo.youtubetwo],
+				          "image": [{
+							"url" : "/saar5/images/instructionalvideo/thumbnail-cib.jpg",
+											"description" : saar5.l.awarenessvideo.checkinindividual
+										},
+										{
+											"url" : "/saar5/images/instructionalvideo/thumbnail-pwm.jpg",
+											"description" : saar5.l.awarenessvideo.checkinmultiple
+										} ]
+							}
+							globalJson.dataVideoMB = {
+								"url" : [ saar5.l.awarenessvideo.youtubethree,
+										saar5.l.awarenessvideo.youtubefour ],
+								"image" : [
+										]
+							}
+							globalJson.dataVideoFare = {
+								"url" : [ saar5.l.awarenessvideo.youtubefive,
+										saar5.l.awarenessvideo.youtubefive ],
+								"image" : [ ]
+							}
+						</script>
+	
+  
+	
+		
+			
+				
+					<script src="/saar5/_desktop/scripts/minified/jquery-all-minified-Ver5.js"></script>
+					<script src="/saar5/_desktop/scripts/minified/sia-common-minified-Ver5.js" defer></script>
+				
+				
+				
+				
+				
+			
+		
+		
+	
+  	
+  	<input type="hidden" value="/gtm.form" id="testGTMLoadUrl"/>
+	
+		
+		
+			
+				
+				
+					
+
+
+
+<input type="hidden" id="isHomePageInTracking" value="">
+
+
+
+
+	<input type="hidden" id="isCorporate" value="false">
+
+
+
+
+
+
+
+ 
+<script type="text/javascript">
+var formattedPageName='';
+var dataLayer = [];
+if($('#isHomePageInTracking').val()){
+	formattedPageName = "Homepage";
+}else{
+  var pageName="GA_PageTracking_ORB_ChooseFlight";
+  if(pageName == null || pageName==''){
+	  pageName="selectFlightMiles.jsp";
+  }
+  
+  if($('body').hasClass('enews-subscribe-thankyou-page') && $('#eNewsPageNameCheck').val()=="successPage"){
+	  pageName="newsletter-success.jsp"
+  }
+  
+  if($('#isCorporate').val() == "true" && pageName == "flightsearch.jsp") {
+	  pageName = "sqc-book-a-flight";
+  }
+  formattedPageName = pageName.replace("GA_PageTracking_","");
+}
+
+/*function to check the form fields containing email ID
+function pushEmailData(formElement){
+	var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	if(regex.test($(formElement).val())){
+		dataLayer.push({"Email":$(formElement).val()});
+	}
+}
+*/
+
+// Added for MKP92518 EReq005 by kalaiselvan
+$(document).ready(function(){
+	if(getCookie("LOGIN_COOKIE")==="true"){
+		if( $("p").filter(".status-content").contents()[2] !== null &&  $("p").filter(".status-content").contents()[2] !== undefined ){
+			var kfid = $("p").filter(".status-content").contents()[2].data;
+			var kftier = $("p").filter(".status-content").contents()[0].data;
+			dataLayer.push({"CustomerID":kfid});
+			dataLayer.push({"kfTier":kftier});
+		}
+	}
+});
+
+
+</script>
+<!--Flight_Search_Basic--><script type="text/javascript">dataLayer= [{'typeOfSearch': 'ORB','flightSegment':  'NA','pointOfSale':  'US','numOfAdults': '1','numOfChildren': '0','numOfInfants': '0','totalnoOfPax': '1','currency': 'NA','typeOfTrip': 'One-way','singaporeStopOver': 'NA','departureDate': '15-10-2020','language': 'NA','currencyOfFares': 'NA','returnDate': 'NA','price': 'NA','event': 'ChooseFlight','origin': 'SFO','destination': 'NRT','depDay': '15','depMonth': '10','depYear': '2020','retDay': 'NA','retMonth': 'NA','retYear': 'NA','farePerAdultPax':'NA', 'taxPerAdultPax':'NA', 'surchargePerAdultPax':'NA', 'farePerChildPax':'NA', 'taxPerChildPax':'NA', 'surchargePerChildPax':'NA', 'farePerInfantPax':'NA', 'taxPerInfantPax':'NA', 'surchargePerInfantPax':'NA', 'cabin':'FIRST','RBD': 'NA','departureFlightNumber': 'NA','returnFlightNumber': 'NA','numOfDaystoDeparture': '319','bookingChannel': 'Web','appType': 'NA','appOS': 'NA','lowestFare': 'NA','highestFare': 'NA','secureFare': 'NA','fareDealNumber': 'NA','promoFlowType': 'NA','promotionCode':'NA','isCorporate':'NA','timeToDeparture':'NA','operatingAircraft':'NA','flightNumber':'NA','kfTier': 'KrisFlyer','customerID': '8845051463','referralId': '[referralId]','kayakclickid':'NA','affiliate_id': '[affiliate_id]','origin-country': 'US','destination-country': 'JP','userStatus': 'KrisFlyer','origin-city': '[origin-city]','destination-city': '[destination-city]','expiringKfMiles':'0','typeOfFare':'[typeOfFare]'}];</script>
+
+
+
+<input type="hidden" id="blockGTM" value="false">
+
+
+
+	
+		<noscript><iframe src="https://www.google-analytics.com/gtm/ns?id=GTM-M48FBS" style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript><script>setTimeout(function () {(function(p,a,l,i,n,d,r,o,m,e){r={id:'GTM-M48FBS',l:'dataLayer',m:'async'};if(!r.gac){o=/;((__utma=)|([^;=]+=GAX?d+.))[^;]*/g;m=l.cookie.replace(/^|(; +)/g,';').match(o);if(m)r.gac=m.sort().join('').substring(1)};e='https://www.google-analytics.com/gtm/js?';r.m=='sync'||(p['event']='gtm.js');for(d in r)if(r.hasOwnProperty(d))e+=n(d)+'='+n(r[d])+'&';a[r.l]=a[r.l]||[];a[r.l].push(p);if(r.m=='sync'){l.write('<'+i+' src="'+e+'"></'+i+'>');}else{j=l.createElement(i);j.async=!0;j.src=e;f=l.getElementsByTagName(i)[0];f.parentNode.insertBefore(j,f);}})({'gtm.start':1*new Date()},window,document,'script',encodeURIComponent);}, 12000);</script>
+	
+	
+
+
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KQ5S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>setTimeout(function () {(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ5S');}, 12000);</script>
+
+
+
+
+				
+			
+		
+	
+	<input type="hidden" value="US" id="cookTest"/>
+<!--[if lt IE 8]><script src="/saar5/scripts/remove-image-alt-ie7.js"></script><![endif]-->
+    <!--[if lt IE 8]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+    <noscript>JavaScript is off. Please enable to view full site.</noscript>
+<!-- jSessionId = b-zAHd3oP7ebpsQu-irXyvH2vdAzBzF3Ou1LChrIS3N_VTicUBG6!45668496!1575181213160 -->
+<!--  eRetail  -->
+	</body>
+</html>
