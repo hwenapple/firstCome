@@ -1,42 +1,62 @@
 import requests
-import json
 
-headers = None
-cookies = None
+cookies = {
+    '_ga': 'GA1.2.1799542677.1558501176',
+    'QuantumMetricUserID': 'b97eebfe031cb99aaf593bbfc25605b0',
+    'LPVID': 'NiZDA1ZDc4MTA3MDM0MGJl',
+    'TLTUID': '7D720B7D491C5C3CC50BC9A3285C3DA0',
+    '_gcl_au': '1.1.38493150.1558501301',
+    'v1st': 'CAAC6D50E70220BB',
+    'Locale': 'POS=US&Lang=en&UMID=e8383a97-6c79-4299-b7b1-a81cc632494e&POSCODE=L',
+    '_fbp': 'fb.1.1562183395199.1251713961',
+    'IsRemembered': 'True',
+    'Device': 'Num=2BC7T0EL85A9KL1VTFkglifAzGpxdc509iDMXk3+9+LIm6/zgsozWhrkZcQJYXGg',
+    '_up': '1.2.1183273955.1574467902',
+    'User': 'RememberID=PzABH39SU2F126XNwVkTp4jYotlXIwUi7llpOJZ4cTs%3D&LoyaltyID=%2FWmnAgEphDsp4FJrS%2BRYwydBS%2F59aSobfCfaYiKlihY%3D&SecondID=bzERhfN5%2B9g5pZ5nweEP62b4%2FEZj2OWMvazyGMpN49o%3D&FName=haoran&CustomerId=iZQQeDC1fTXDCmwCUNdGjbuOQ7XxkSLTxoMTx7o3h0I%3D&CurrentELiteLevel=5QPkvpwk%2B0V5OQFMvNQ2lnDQLbsTedBUvpbhAD7jhFY%3D',
+    '_gid': 'GA1.2.878322604.1575172824',
+    'optimizely_id': '1575266482.96743374',
+    'oo_inv_percent': '0',
+    'TLTSID': '494C2F8F40FA955049A2DC9215B98168',
+    'uasession': 'UASessionId=a34b34b1-0519-4908-82f2-66add950bad4&TabId=3a7bc03c-cd1e-4075-876f-514596fa79c9',
+    'bm_sz': '39AB4969FEBF87D63B6786F4DD79595E~YAAQRXXZF0wQlH1uAQAAhSYcyQWBzPhoavKfAy12TyV7+T4sVoeWggcUWKu/7W6xshuncquv5slAmxYBvdoQ1I2hcirHh7TjDZ9EWFwkJuzy2r1hr+6Sg7rdF5e+R0YhLnUHHx+YtlDhxoTUhHAheB3pW7SwwJZuQogEj0xUN94FkRhw+ll2KP0WLTlATHgo',
+    'ASP.NET_SessionId': '2klgayd3pdzvrb4dd2olazka',
+    'SID': '2AA378E27B8B48BE9BE264359A486666',
+    'cocom': 'si=False',
+    '1stSID': '2AA378E27B8B48BE9BE264359A486666',
+    'LPSID-84608747': 'S5DX7MXPTE6735RlTnVfvg',
+    'QuantumMetricSessionID': '5a575d46746be5fb43269b300e077e4d',
+    'newHP': 'true',
+    'Session': 'AuthToken=jyatSkXMSbMVmZ6OoAEWwTzwIisdaisBzeWv4l6mHeFu3qlUvpJBxPqwVJwsHrqC%2fbjNZp0nCoYCQCkIIs0XOA%3d%3d',
+    'oo_OODynamicRewrite_weight': '0',
+    'oo_inv_hit': '3',
+    'mmcore.bid': 'lvsvwcgus03',
+    'flightSearchSession': '1191121656387920.7313105604722177',
+    'CachedSearchInput': '{"UaSessionId":"a34b34b1-0519-4908-82f2-66add950bad4","CarrierPref":0,"PreferredConn":null,"UnpreferredConn":null,"HiddenPreferredConn":null,"HiddenUnpreferredConn":null,"Trips":[{"NonStop":true,"OneStop":false,"TwoPlusStop":false,"PreferredTime":"","PreferredTimeReturn":null,"ClearAllFilters":false}]}',
+    '_derived_epik': 'dj0yJnU9LWxROC1qZXFUM25zR2lBR3JLVWdZTmZETUVYaV9rN3gmbj15V1A2eFJXRHJKVG9yWjFmV2pac2JBJm09NyZ0PUFBQUFBRjNsdEM4',
+    'utag_main': 'v_id:016c130eae81001378c5e129d87303079006707100838$_sn:49$_se:11$_ss:0$_st:1575336781245$ses_id:1575334571717%3Bexp-session$_pn:7%3Bexp-session',
+    'SearchInput': '{"Origin":"SFO","Destination":"TYO","Trips":null,"DepartDate":"Oct 15, 2020","ReturnDate":"","searchTypeMain":"oneWay","realSearchTypeMain":"oneWay","awardTravel":"True","cabinType":"econ","awardCabinType":"awardEcon","numOfAdults":"1","numOfSeniors":"0","numOfChildren04":"0","numOfChildren03":"0","numOfChildren02":"0","numOfChildren01":"0","numOfInfants":"0","numOfLapInfants":"0","numberOfTravelers":"1","isFlexible":false,"FlexibleDays":0,"FlexibleDate":"Oct 15, 2020","isNonStop":true,"Cached":{"UaSessionId":"a34b34b1-0519-4908-82f2-66add950bad4","CarrierPref":0,"PreferredConn":null,"UnpreferredConn":null,"HiddenPreferredConn":null,"HiddenUnpreferredConn":null,"Trips":[{"NonStop":true,"OneStop":false,"TwoPlusStop":false,"PreferredTime":"","PreferredTimeReturn":null,"ClearAllFilters":false}]}}',
+    'akavpau_ualwww': '1575335618~id=aa7a9649502072d916f34907591771ae',
+    'RT': 'sl=13&ss=1575334570865&tt=34633&obo=0&sh=1575334982721%3D13%3A0%3A34633%2C1575334981629%3D12%3A0%3A32192%2C1575334961089%3D11%3A0%3A29751%2C1575334959955%3D10%3A0%3A27247%2C1575334942417%3D9%3A0%3A24743&dm=united.com&si=ce79c1e9-84af-4a55-9d5f-f71f699d4d46&bcn=%2F%2F173e2544.akstat.io%2F&ld=1575334982722&r=https%3A%2F%2Fwww.united.com%2Fual%2Fen%2Fus%2Fflight-search%2Fbook-a-flight&ul=1575335016612&hd=1575335018468',
+    'mmcore.tst': '0.187',
+    'mmapi.store.p.0': '%7B%22mmparams.d%22%3A%7B%7D%2C%22mmparams.p%22%3A%7B%22pd%22%3A%221606871018674%7C%5C%22-1947878937%7CjQEAAApVAwDu9nkGrBHl0gABEgABQgBCa80ZLwAgbpOhjHfXSIe4OVdy3tZIAAAAAP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FAA53d3cudW5pdGVkLmNvbQJtEgcABAACAAAAAAA2FwAANhcAADYXAAAEALOmAABoqsIUdWUSAB2KAAAFJxJlEv%2F%2FAgAAAfXdr08B238BAGZJAgABNhcAACYAAACwAwEAtADoGdInEgD%2F%2F%2F%2F%2FAScSZRL%2F%2FwMAAAEAAAAAARhcAgDtlQMAATYXAABWAAAAQQwBAMiPdo2aZRIAbMkAAAVlEmUS%2F%2F8CAAABAAAAAAGycgIAkrQDAAE2FwAAMgAAAEAMAQAE6W6QOmUSAP%2F%2F%2F%2F8BZRJlEv%2F%2FAgAAAQAAAAABsXICAIq0AwABNhcAACwAAAAAAAAAAAFF%5C%22%22%2C%22bid%22%3A%221575335618295%7C%5C%22lvsvwcgus03%5C%22%22%2C%22srv%22%3A%221606871018684%7C%5C%22lvsvwcgus03%5C%22%22%7D%2C%22BookingPath_International%20Baggage%22%3A%7B%7D%2C%22BookingPath_Relocate%20RTI%22%3A%7B%7D%2C%22BookingPath_Lowest_Price_On_RTI%22%3A%7B%7D%2C%22Relative%20Pricing%20on%20FSR%22%3A%7B%7D%2C%22CTA%20Alignment%22%3A%7B%7D%2C%22Fare_Header_UI_on_FSR%22%3A%7B%7D%7D',
+    'mmapi.store.s.0': '%7B%22mmparams.d%22%3A%7B%7D%2C%22mmparams.p%22%3A%7B%7D%7D',
+    '_abck': 'A58EBC3BD38EED5D935D259804544A6F~-1~YAAQDXeXP1h1/cRuAQAAkMFIyQKYuXKda08BqmHmNiH4nwfQCKdEuziV8NzqrPok/u4/VQ6ExQQeFLpCxkIGVo8NuMIbVh8hC/x7wYKDz930OGdOLVKGjabPbzZj09wHAJaxHiNLKvUfz5XtTBIVBwvZr9sUxq6desI6lbUSxeliV9cY40geCoTBLe36vbVOdNmlYZsiczgEhytlkNLXbH/WfUvajnXmPugkcv7Qm9BcnoaQ/d7Y6bwuXdFusrCX4nSNi5T7tgwZsvEKUESGeGevIY8Dz7PFfgSTwRkiQIlksRhREhVnZAAxKjuNM18GFIcDF2YT9Y2EpldfnWO5BMxDa9XaSmRbssnt~-1~-1~-1',
+}
 
-def parseHarObjects(original):
-    newObj = {}
-    for item in original:
-        newObj[item['name']] = item['value']
-    return  newObj
+headers = {
+    'Host': 'www.united.com',
+    'UASessionTabId': '3a7bc03c-cd1e-4075-876f-514596fa79c9',
+    'Accept': 'application/json, text/javascript, */*; q=0.01',
+    'Origin': 'https://www.united.com',
+    'X-Requested-With': 'XMLHttpRequest',
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+    'Content-Type': 'application/json; charset=UTF-8',
+    'Sec-Fetch-Site': 'same-origin',
+    'Sec-Fetch-Mode': 'cors',
+    'Referer': 'https://www.united.com/ual/en/us/flight-search/book-a-flight/results/awd?f=San+Francisco,+CA,+US+(SFO+-+All+Airports)&t=Tokyo,+JP+(TYO+-+All+Airports)&d=2020-10-15&EditSearchCartId=8C2847C2-25DE-440E-A487-BFDA58BCFC7D&tt=1&st=bestmatches&at=1&rm=1&cbm=-1&cbm2=-1&sc=1&px=1&taxng=1&idx=1',
+    'Accept-Language': 'en-US,en;q=0.9',
+}
 
-with open('dataU.json') as json_file:
-    data = json.load(json_file)
-    for entry in data['log']['entries']:
-        if 'getflightresults' in entry['request']['url']:
-            headers = entry['request']['headers']
-            cookies = entry['request']['cookies']
-            break
-headers = parseHarObjects(headers)
-cookies = parseHarObjects(cookies)
-# print(headers)
-# print(cookies)
+data = '{"Revise":false,"UnaccompaniedMinorDisclamer":false,"IsManualUpsellFromBasicEconomy":false,"StartFlightRecommendation":false,"FareWheelOrCalendarCall":false,"RelocateRti":false,"ConfirmationID":null,"searchTypeMain":"oneWay","realSearchTypeMain":"oneWay","Origin":"San Francisco, CA, US (SFO - All Airports)","Destination":"Tokyo, JP (TYO - All Airports)","DepartDate":"Oct 15, 2020","DepartDateBasicFormat":"2020-10-15","ReturnDate":"Oct 15, 2020","ReturnDateBasicFormat":null,"awardTravel":true,"MaxTrips":null,"numberOfTravelers":1,"numOfAdults":1,"numOfSeniors":0,"numOfChildren04":0,"numOfChildren03":0,"numOfChildren02":0,"numOfChildren01":0,"numOfInfants":0,"numOfLapInfants":0,"travelerCount":1,"revisedTravelerKeys":null,"revisedTravelers":null,"OriginalReservation":null,"RiskFreePolicy":null,"EmployeeDiscountId":null,"IsUnAccompaniedMinor":false,"MilitaryTravelType":null,"MilitaryOrGovernmentPersonnelStateCode":null,"tripLength":0,"MultiCityTripLength":null,"IsParallelFareWheelCallEnabled":false,"flexMonth":null,"flexMonth2":null,"SortType":"bestmatches","SortTypeV2":null,"cboMiles":"-1","cboMiles2":"-1","Trips":[{"BBXCellIdSelected":null,"BBXSession":null,"BBXSolutionSetId":null,"DestinationAll":false,"returnARC":null,"connections":null,"nonStopOnly":true,"nonStop":true,"oneStop":false,"twoPlusStop":false,"ChangeType":0,"DepartDate":"Oct 15, 2020","ReturnDate":null,"PetIsTraveling":false,"PreferredTime":"","PreferredTimeReturn":null,"Destination":"TYO","Index":1,"Origin":"SFO","Selected":false,"NonStopMarket":false,"FormatedDepartDate":"Thu, Oct 15, 2020","OriginCorrection":null,"DestinationCorrection":null,"OriginAll":true,"Flights":null,"SelectedFlights":null,"OriginTriggeredAirport":false,"DestinationTriggeredAirport":false,"StopCount":0,"HasNonStopFlights":false,"Ignored":false,"Sequence":0,"IsDomesticUS":false,"ClearAllFilters":false}],"nonStopOnly":1,"CalendarOnly":false,"Matrix3day":false,"InitialShop":true,"IsSearchInjection":false,"CartId":"2186999E-4328-42B7-ACBD-E12F708C69E0","CellIdSelected":null,"BBXSession":null,"SolutionSetId":null,"SimpleSearch":true,"RequeryForUpsell":false,"RequeryForPOSChange":false,"YBMAlternateService":false,"ShowClassOfServiceListPreference":false,"SelectableUpgradesOriginal":null,"RegionalPremierUpgradeBalance":0,"GlobalPremierUpgradeBalance":0,"RegionalPremierUpgrades":null,"GlobalPremierUpgrades":null,"FormattedAccountBalance":null,"GovType":null,"TripTypes":1,"RealTripTypes":1,"flexible":false,"flexibleAward":false,"FlexibleDaysAfter":0,"FlexibleDaysBefore":0,"hiddenPreferredConn":null,"hiddenUnpreferredConn":null,"carrierPref":0,"chkFltOpt":0,"portOx":0,"travelwPet":0,"NumberOfPets":0,"cabinType":0,"cabinSelection":"ECONOMY","awardCabinType":0,"FareTypes":0,"FareWheelOnly":false,"EditSearch":false,"buyUpgrade":0,"offerCode":null,"IsPromo":false,"TVAOfferCodeLastName":null,"ClassofService":null,"UpgradeType":null,"AdditionalUpgradeIds":null,"BillingAddressCountryCode":null,"BillingAddressCountryDescription":null,"IsPassPlusFlex":false,"IsPassPlusSecure":false,"IsOffer":false,"IsMeetingWorks":false,"IsValidPromotion":false,"IsCorporate":0,"CalendarDateChange":null,"CoolAwardSpecials":false,"LastResultId":null,"IncludeLmx":false,"NGRP":true,"calendarStops":0,"IsAwardNonStopDisabled":false,"IsWeeklyAwardCalendarEnabled":true,"IsMonthlyAwardCalendarEnabled":true,"AwardCalendarType":0,"IsAwardCalendarEnabled":true,"IsAwardCalendarNonstop":false,"corporateBooking":false,"IsCorporateLeisure":false,"CorporateDiscountCode":"","IsAutoUpsellFromBasicEconomy":false,"CurrencyDescription":"International POS Cuurency","CurrentTripIndex":0,"LowestNonStopEconomyFare":0,"FromFlexibleCalendar":false,"TripIndex":0,"Cached":{"UaSessionId":"a34b34b1-0519-4908-82f2-66add950bad4","CarrierPref":0,"PreferredConn":null,"UnpreferredConn":null,"HiddenPreferredConn":null,"HiddenUnpreferredConn":null,"Trips":[{"NonStop":true,"OneStop":false,"TwoPlusStop":false,"PreferredTime":"","PreferredTimeReturn":null,"ClearAllFilters":false}]},"isReshopPath":false}'
 
-
-
-
-
-data = '{"Revise":false,"UnaccompaniedMinorDisclamer":false,"IsManualUpsellFromBasicEconomy":false,"StartFlightRecommendation":false,"FareWheelOrCalendarCall":false,"RelocateRti":false,"ConfirmationID":null,"searchTypeMain":"oneWay","realSearchTypeMain":"oneWay","Origin":"SFO","Destination":"NRT","DepartDate":"Oct 21, 2020","DepartDateBasicFormat":"2020-10-21","ReturnDate":"Oct 21, 2020","ReturnDateBasicFormat":null,"awardTravel":true,"MaxTrips":null,"numberOfTravelers":1,"numOfAdults":1,"numOfSeniors":0,"numOfChildren04":0,"numOfChildren03":0,"numOfChildren02":0,"numOfChildren01":0,"numOfInfants":0,"numOfLapInfants":0,"travelerCount":1,"revisedTravelerKeys":null,"revisedTravelers":null,"OriginalReservation":null,"RiskFreePolicy":null,"EmployeeDiscountId":null,"IsUnAccompaniedMinor":false,"MilitaryTravelType":null,"MilitaryOrGovernmentPersonnelStateCode":null,"tripLength":0,"MultiCityTripLength":null,"IsParallelFareWheelCallEnabled":false,"flexMonth":null,"flexMonth2":null,"SortType":"bestmatches","SortTypeV2":null,"cboMiles":"-1","cboMiles2":"-1","Trips":[{"BBXCellIdSelected":null,"BBXSession":null,"BBXSolutionSetId":null,"DestinationAll":false,"returnARC":null,"connections":null,"nonStopOnly":true,"nonStop":true,"oneStop":false,"twoPlusStop":false,"ChangeType":0,"DepartDate":"Oct 21, 2020","ReturnDate":null,"PetIsTraveling":false,"PreferredTime":"","PreferredTimeReturn":null,"Destination":"NRT","Index":1,"Origin":"SFO","Selected":false,"NonStopMarket":false,"FormatedDepartDate":"Wed, Oct 21, 2020","OriginCorrection":null,"DestinationCorrection":null,"OriginAll":false,"Flights":null,"SelectedFlights":null,"OriginTriggeredAirport":false,"DestinationTriggeredAirport":false,"StopCount":0,"HasNonStopFlights":false,"Ignored":false,"Sequence":0,"IsDomesticUS":false,"ClearAllFilters":false}],"nonStopOnly":1,"CalendarOnly":false,"Matrix3day":false,"InitialShop":true,"IsSearchInjection":false,"CartId":"C8B504FA-CF93-4044-849A-567C55B43941","CellIdSelected":null,"BBXSession":null,"SolutionSetId":null,"SimpleSearch":true,"RequeryForUpsell":false,"RequeryForPOSChange":false,"YBMAlternateService":false,"ShowClassOfServiceListPreference":false,"SelectableUpgradesOriginal":null,"RegionalPremierUpgradeBalance":0,"GlobalPremierUpgradeBalance":0,"RegionalPremierUpgrades":null,"GlobalPremierUpgrades":null,"FormattedAccountBalance":null,"GovType":null,"TripTypes":1,"RealTripTypes":1,"flexible":false,"flexibleAward":false,"FlexibleDaysAfter":0,"FlexibleDaysBefore":0,"hiddenPreferredConn":null,"hiddenUnpreferredConn":null,"carrierPref":0,"chkFltOpt":0,"portOx":0,"travelwPet":0,"NumberOfPets":0,"cabinType":0,"cabinSelection":"BUSINESS","awardCabinType":2,"FareTypes":0,"FareWheelOnly":false,"EditSearch":false,"buyUpgrade":0,"offerCode":null,"IsPromo":false,"TVAOfferCodeLastName":null,"ClassofService":null,"UpgradeType":null,"AdditionalUpgradeIds":null,"BillingAddressCountryCode":null,"BillingAddressCountryDescription":null,"IsPassPlusFlex":false,"IsPassPlusSecure":false,"IsOffer":false,"IsMeetingWorks":false,"IsValidPromotion":false,"IsCorporate":0,"CalendarDateChange":null,"CoolAwardSpecials":false,"LastResultId":null,"IncludeLmx":false,"NGRP":true,"calendarStops":0,"IsAwardNonStopDisabled":false,"IsWeeklyAwardCalendarEnabled":true,"IsMonthlyAwardCalendarEnabled":true,"AwardCalendarType":0,"IsAwardCalendarEnabled":true,"IsAwardCalendarNonstop":false,"corporateBooking":false,"IsCorporateLeisure":false,"CorporateDiscountCode":"","IsAutoUpsellFromBasicEconomy":false,"CurrencyDescription":"International POS Cuurency","CurrentTripIndex":0,"LowestNonStopEconomyFare":0,"FromFlexibleCalendar":false,"TripIndex":0,"Cached":{"UaSessionId":"76bf0217-f673-4869-afa6-e917c4bd3763","CarrierPref":0,"PreferredConn":null,"UnpreferredConn":null,"HiddenPreferredConn":null,"HiddenUnpreferredConn":null,"Trips":[{"NonStop":true,"OneStop":false,"TwoPlusStop":false,"PreferredTime":"","PreferredTimeReturn":null,"ClearAllFilters":false}]},"isReshopPath":false}'
-
-
-data = '{"Revise":false,"UnaccompaniedMinorDisclamer":false,"IsManualUpsellFromBasicEconomy":false,"StartFlightRecommendation":false,"FareWheelOrCalendarCall":false,"RelocateRti":false,"ConfirmationID":null,"searchTypeMain":"oneWay","realSearchTypeMain":"oneWay","Origin":"SFO","Destination":"NRT","DepartDate":"Sep 16, 2020","DepartDateBasicFormat":"2020-09-16","ReturnDate":"Sep 16, 2020","ReturnDateBasicFormat":null,"awardTravel":true,"MaxTrips":null,"numberOfTravelers":1,"numOfAdults":1,"numOfSeniors":0,"numOfChildren04":0,"numOfChildren03":0,"numOfChildren02":0,"numOfChildren01":0,"numOfInfants":0,"numOfLapInfants":0,"travelerCount":1,"revisedTravelerKeys":null,"revisedTravelers":null,"OriginalReservation":null,"RiskFreePolicy":null,"EmployeeDiscountId":null,"IsUnAccompaniedMinor":false,"MilitaryTravelType":null,"MilitaryOrGovernmentPersonnelStateCode":null,"tripLength":0,"MultiCityTripLength":null,"IsParallelFareWheelCallEnabled":false,"flexMonth":null,"flexMonth2":null,"SortType":"bestmatches","SortTypeV2":null,"cboMiles":"-1","cboMiles2":"-1","Trips":[{"BBXCellIdSelected":null,"BBXSession":null,"BBXSolutionSetId":null,"DestinationAll":false,"returnARC":null,"connections":null,"nonStopOnly":true,"nonStop":true,"oneStop":false,"twoPlusStop":false,"ChangeType":0,"DepartDate":"Sep 16, 2020","ReturnDate":null,"PetIsTraveling":false,"PreferredTime":"","PreferredTimeReturn":null,"Destination":"NRT","Index":1,"Origin":"SFO","Selected":false,"NonStopMarket":false,"FormatedDepartDate":"Wed, Sep 16, 2020","OriginCorrection":null,"DestinationCorrection":null,"OriginAll":false,"Flights":null,"SelectedFlights":null,"OriginTriggeredAirport":false,"DestinationTriggeredAirport":false,"StopCount":0,"HasNonStopFlights":false,"Ignored":false,"Sequence":0,"IsDomesticUS":false,"ClearAllFilters":false}],"nonStopOnly":1,"CalendarOnly":false,"Matrix3day":false,"InitialShop":true,"IsSearchInjection":false,"CartId":"ACD33A44-E39F-46C9-8A03-68F7F4460A32","CellIdSelected":null,"BBXSession":null,"SolutionSetId":null,"SimpleSearch":true,"RequeryForUpsell":false,"RequeryForPOSChange":false,"YBMAlternateService":false,"ShowClassOfServiceListPreference":false,"SelectableUpgradesOriginal":null,"RegionalPremierUpgradeBalance":0,"GlobalPremierUpgradeBalance":0,"RegionalPremierUpgrades":null,"GlobalPremierUpgrades":null,"FormattedAccountBalance":null,"GovType":null,"TripTypes":1,"RealTripTypes":1,"flexible":false,"flexibleAward":false,"FlexibleDaysAfter":0,"FlexibleDaysBefore":0,"hiddenPreferredConn":null,"hiddenUnpreferredConn":null,"carrierPref":0,"chkFltOpt":0,"portOx":0,"travelwPet":0,"NumberOfPets":0,"cabinType":1,"cabinSelection":"BUSINESS","awardCabinType":2,"FareTypes":0,"FareWheelOnly":false,"EditSearch":false,"buyUpgrade":0,"offerCode":null,"IsPromo":false,"TVAOfferCodeLastName":null,"ClassofService":null,"UpgradeType":null,"AdditionalUpgradeIds":null,"BillingAddressCountryCode":null,"BillingAddressCountryDescription":null,"IsPassPlusFlex":false,"IsPassPlusSecure":false,"IsOffer":false,"IsMeetingWorks":false,"IsValidPromotion":false,"IsCorporate":0,"CalendarDateChange":null,"CoolAwardSpecials":false,"LastResultId":null,"IncludeLmx":false,"NGRP":true,"calendarStops":0,"IsAwardNonStopDisabled":false,"IsWeeklyAwardCalendarEnabled":true,"IsMonthlyAwardCalendarEnabled":true,"AwardCalendarType":0,"IsAwardCalendarEnabled":true,"IsAwardCalendarNonstop":false,"corporateBooking":false,"IsCorporateLeisure":false,"CorporateDiscountCode":"","IsAutoUpsellFromBasicEconomy":false,"CurrencyDescription":"International POS Cuurency","CurrentTripIndex":0,"LowestNonStopEconomyFare":0,"FromFlexibleCalendar":false,"TripIndex":0,"Cached":{"UaSessionId":"a34b34b1-0519-4908-82f2-66add950bad4","CarrierPref":0,"PreferredConn":null,"UnpreferredConn":null,"HiddenPreferredConn":null,"HiddenUnpreferredConn":null,"Trips":[{"NonStop":true,"OneStop":false,"TwoPlusStop":false,"PreferredTime":"","PreferredTimeReturn":null,"ClearAllFilters":false}]},"isReshopPath":false}'
 response = requests.post('https://www.united.com/ual/en/us/flight-search/book-a-flight/flightshopping/getflightresults/awd', headers=headers, cookies=cookies, data=data)
-result = response.content
-
-my_json = result.decode('utf8').replace("'", '"')
-# print(result)
-
-my_json = json.loads(my_json)
-
-with open('unitedResult.json', 'w') as outfile:
-    json.dump(my_json, outfile)
