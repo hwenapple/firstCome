@@ -198,7 +198,7 @@ def startCharles():
     cmd = "open -a Charles"
     executeCMD(cmd)
     print("we launched Charles")
-    time.sleep(10)
+    time.sleep(15)
     cmd = "curl -v -x http://127.0.0.1:8888 http://control.charles/recording/stop"
     executeCMD(cmd)
     print("charles recording stopped")
@@ -314,9 +314,9 @@ def setFlightQuery():
     ANACloseDay3 = plusDay(ANACloseDay, 3)
     # Check when ANA will release award ticket
     flightQuerys.append(
-        {"Origin": "NRT", "Destination": "SFO", "DepartDate": '20201124', "Class": "First", "Predicates": [p1]})
+        {"Origin": "NRT", "Destination": "SFO", "DepartDate": '20201125', "Class": "First", "Predicates": [p1]})
     flightQuerys.append(
-        {"Origin": "SFO", "Destination": "NRT", "DepartDate": "20201124", "Class": "First", "Predicates": [p1]})
+        {"Origin": "SFO", "Destination": "NRT", "DepartDate": "20201125", "Class": "First", "Predicates": [p1]})
     flightQuerys.append(
         {"Origin": "SFO", "Destination": "NRT", "DepartDate": ANACloseDay, "Class": "First", "Predicates": [p1]})
     flightQuerys.append(

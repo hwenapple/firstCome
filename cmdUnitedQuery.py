@@ -60,7 +60,7 @@ def analyzeQueryData(data):
             if isValid:
                 flightCandidates.append(validFlight)
         print("we have got possible number of flights", nonStops)
-    print(flightCandidates)
+    #print(flightCandidates)
     return flightCandidates
 
     # print(flight)
@@ -151,9 +151,11 @@ def queryRequest(headers, cookies, data):
 def reloadHeaderAndCookie():
     global browser
     browsermob_path = '/usr/local/browsermob-proxy-2.1.4/bin/browsermob-proxy'
-    server = Server(browsermob_path)
+    server = Server(browsermob_path, {'port':8090})
 
+    time.sleep(1)
     proxy = server.create_proxy()
+    time.sleep(1)
 
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument("--proxy-server={0}".format(proxy.proxy))
@@ -176,6 +178,8 @@ def reloadHeaderAndCookie():
     server.stop()
     browser.quit()
 
+# reloadHeaderAndCookie()
+# sys.exit(0)
 
 # testTicket = [{'Type': 'Economy (lowest award)', 'numberOfSeats': 'X3', 'Price': 35000}, {'Type': 'Business Saver Award ', 'numberOfSeats': 'I2', 'Price': 80000}, {'Type': 'Business Everyday Award ', 'numberOfSeats': 'I2', 'Price': 175000}]
 # testP = [b1, f1]
@@ -307,6 +311,6 @@ def setFlightQuery():
         testDay = plusDay(ANACloseDay, i)
         flightQuerys.append({"Origin": "SIN", "Destination": "TPE", "DepartDate": testDay, "Predicates": [b2]})
 
-
+#
 if __name__ == '__main__':
     start()
