@@ -221,38 +221,53 @@ def textMessage(message):
     time.sleep(5)
 
 
+def executeQuery(flightQuery):
+    print("flightQuery", flightQuery)
+    data = {}
+    try:
+        checkIFCharlesIsRunning()
+        data = getQueryData(flightQuery['Origin'], flightQuery['Destination'], flightQuery['DepartDate'])
+    except Exception as e:
+        print("We have error query the flight result", e)
+        traceback.print_exc()
+        print("we now try reload the cookie and header via selenium")
+        try:
+            reloadHeaderAndCookie()
+            print("we have reloaded cookie and header")
+        except Exception as e:
+            print("we have error reload cookie", e)
+            browser.quit()
+        return False
+    if 'status' in data:
+        if data['status'] == 'success':
+            flightCandidates = analyzeQueryData(data)
+            checkForTextAlerts(flightCandidates, flightQuery)
+            return True
+        else:
+            print("flight query result is not expected ", data)
+            return False
+    print("query result dont have valid status")
+    return False
+
+
 def start():
     setFlightQuery()
     while True:
-        for flightQuery in flightQuerys:
-            checkIFCharlesIsRunning()
+        for index in range(0, len(flightQuerys)):
+            flightQuery = flightQuerys[index]
             now = datetime.now()
             dt_string = now.strftime("%m/%d/%Y %H:%M:%S")
-            print("===============================Query Started {}============================================".format(
+            print("===============================United Query Started {}============================================".format(
                 dt_string))
-            print("flightQuery", flightQuery)
             data = {}
             # with open('unitedResult.json') as json_file:
             #     data = json.load(json_file)
-            try:
-                data = getQueryData(flightQuery['Origin'], flightQuery['Destination'], flightQuery['DepartDate'])
-            except Exception as e:
-                print("We have error query the flight result", e)
-                traceback.print_exc()
-                print("we now try reload the cookie and header via selenium")
-                try:
-                    reloadHeaderAndCookie()
-                except Exception as e:
-                    print("we have error reload cookie, we continue", e)
-                    browser.quit()
-                    continue
-                print("we have reloaded cookie and header")
-            if 'status' in data:
-                if data['status'] == 'success':
-                    flightCadidates = analyzeQueryData(data)
-                    checkForTextAlerts(flightCadidates, flightQuery)
-                else:
-                    print("flight query result is not expected ", data)
+            # we keep trying the current query until we have a valid result
+            while True:
+                status = executeQuery(flightQuery)
+                if status:
+                    break
+                time.sleep(5)
             now = datetime.now()
             dt_string = now.strftime("%m/%d/%Y %H:%M:%S")
             print("===============================Query Ended {}============================================".format(
