@@ -152,7 +152,7 @@ def reloadHeaderAndCookie():
     global browser
     browsermob_path = '/usr/local/browsermob-proxy-2.1.4/bin/browsermob-proxy'
     server = Server(browsermob_path, {'port':8090})
-
+    server.start()
     time.sleep(1)
     proxy = server.create_proxy()
     time.sleep(1)
@@ -167,8 +167,7 @@ def reloadHeaderAndCookie():
     proxy.new_har("united", options=options)
     browser.get(url1)
     time.sleep(5)
-    server.start()
-    time.sleep(2)
+
     browser.get(url2)
 
     newH = proxy.har  # returns a HAR JSON blob
