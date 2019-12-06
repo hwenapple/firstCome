@@ -316,10 +316,10 @@ def setFlightQuery():
     # for predicate in predicates array, as long as we have a match, we alert the result
 
     ANACloseDay = getCloseANADate()
-    flightQuerys.append({"Origin": "SFO", "Destination": "NRT", "DepartDate": ANACloseDay, "Predicates": [f1]})
+    flightQuerys.append({"Origin": "SFO", "Destination": "NRT", "DepartDate": ANACloseDay, "Predicates": [f1, b1]})
     for i in range(1, 10):
         testDay = plusDay(ANACloseDay, i)
-        flightQuerys.append({"Origin": "SFO", "Destination": "NRT", "DepartDate": testDay, "Predicates": [f1]})
+        flightQuerys.append({"Origin": "SFO", "Destination": "NRT", "DepartDate": testDay, "Predicates": [f1, b1]})
     flightQuerys.append({"Origin": "SIN", "Destination": "TPE", "DepartDate": "2020-01-15", "Predicates": [b2]})
     for i in range(1, 3):
         testDay = plusDay(ANACloseDay, i)
