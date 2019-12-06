@@ -23,6 +23,10 @@ flightQuerys = []
 browser = None
 
 
+
+alertFilter = ["Dec 16 Business Saver NH171", "Dec 15 Business Saver NH171"]
+alertFilter = []
+
 def getDefaultQuery():
     data = '{"Revise":false,"UnaccompaniedMinorDisclamer":false,"IsManualUpsellFromBasicEconomy":false,"StartFlightRecommendation":false,"FareWheelOrCalendarCall":false,"RelocateRti":false,"ConfirmationID":null,"searchTypeMain":"oneWay","realSearchTypeMain":"oneWay","Origin":"San Francisco, CA, US (SFO - All Airports)","Destination":"Tokyo, JP (TYO - All Airports)","DepartDate":"Oct 15, 2020","DepartDateBasicFormat":"2020-10-15","ReturnDate":"Oct 15, 2020","ReturnDateBasicFormat":null,"awardTravel":true,"MaxTrips":null,"numberOfTravelers":1,"numOfAdults":1,"numOfSeniors":0,"numOfChildren04":0,"numOfChildren03":0,"numOfChildren02":0,"numOfChildren01":0,"numOfInfants":0,"numOfLapInfants":0,"travelerCount":1,"revisedTravelerKeys":null,"revisedTravelers":null,"OriginalReservation":null,"RiskFreePolicy":null,"EmployeeDiscountId":null,"IsUnAccompaniedMinor":false,"MilitaryTravelType":null,"MilitaryOrGovernmentPersonnelStateCode":null,"tripLength":0,"MultiCityTripLength":null,"IsParallelFareWheelCallEnabled":false,"flexMonth":null,"flexMonth2":null,"SortType":"bestmatches","SortTypeV2":null,"cboMiles":"-1","cboMiles2":"-1","Trips":[{"BBXCellIdSelected":null,"BBXSession":null,"BBXSolutionSetId":null,"DestinationAll":false,"returnARC":null,"connections":null,"nonStopOnly":true,"nonStop":true,"oneStop":false,"twoPlusStop":false,"ChangeType":0,"DepartDate":"Oct 15, 2020","ReturnDate":null,"PetIsTraveling":false,"PreferredTime":"","PreferredTimeReturn":null,"Destination":"TYO","Index":1,"Origin":"SFO","Selected":false,"NonStopMarket":false,"FormatedDepartDate":"Thu, Oct 15, 2020","OriginCorrection":null,"DestinationCorrection":null,"OriginAll":true,"Flights":null,"SelectedFlights":null,"OriginTriggeredAirport":false,"DestinationTriggeredAirport":false,"StopCount":0,"HasNonStopFlights":false,"Ignored":false,"Sequence":0,"IsDomesticUS":false,"ClearAllFilters":false}],"nonStopOnly":1,"CalendarOnly":false,"Matrix3day":false,"InitialShop":true,"IsSearchInjection":false,"CartId":"2186999E-4328-42B7-ACBD-E12F708C69E0","CellIdSelected":null,"BBXSession":null,"SolutionSetId":null,"SimpleSearch":true,"RequeryForUpsell":false,"RequeryForPOSChange":false,"YBMAlternateService":false,"ShowClassOfServiceListPreference":false,"SelectableUpgradesOriginal":null,"RegionalPremierUpgradeBalance":0,"GlobalPremierUpgradeBalance":0,"RegionalPremierUpgrades":null,"GlobalPremierUpgrades":null,"FormattedAccountBalance":null,"GovType":null,"TripTypes":1,"RealTripTypes":1,"flexible":false,"flexibleAward":false,"FlexibleDaysAfter":0,"FlexibleDaysBefore":0,"hiddenPreferredConn":null,"hiddenUnpreferredConn":null,"carrierPref":0,"chkFltOpt":0,"portOx":0,"travelwPet":0,"NumberOfPets":0,"cabinType":0,"cabinSelection":"ECONOMY","awardCabinType":0,"FareTypes":0,"FareWheelOnly":false,"EditSearch":false,"buyUpgrade":0,"offerCode":null,"IsPromo":false,"TVAOfferCodeLastName":null,"ClassofService":null,"UpgradeType":null,"AdditionalUpgradeIds":null,"BillingAddressCountryCode":null,"BillingAddressCountryDescription":null,"IsPassPlusFlex":false,"IsPassPlusSecure":false,"IsOffer":false,"IsMeetingWorks":false,"IsValidPromotion":false,"IsCorporate":0,"CalendarDateChange":null,"CoolAwardSpecials":false,"LastResultId":null,"IncludeLmx":false,"NGRP":true,"calendarStops":0,"IsAwardNonStopDisabled":false,"IsWeeklyAwardCalendarEnabled":true,"IsMonthlyAwardCalendarEnabled":true,"AwardCalendarType":0,"IsAwardCalendarEnabled":true,"IsAwardCalendarNonstop":false,"corporateBooking":false,"IsCorporateLeisure":false,"CorporateDiscountCode":"","IsAutoUpsellFromBasicEconomy":false,"CurrencyDescription":"International POS Cuurency","CurrentTripIndex":0,"LowestNonStopEconomyFare":0,"FromFlexibleCalendar":false,"TripIndex":0,"Cached":{"UaSessionId":"a34b34b1-0519-4908-82f2-66add950bad4","CarrierPref":0,"PreferredConn":null,"UnpreferredConn":null,"HiddenPreferredConn":null,"HiddenUnpreferredConn":null,"Trips":[{"NonStop":true,"OneStop":false,"TwoPlusStop":false,"PreferredTime":"","PreferredTimeReturn":null,"ClearAllFilters":false}]},"isReshopPath":false}'
     # data = '{"Revise":false,"UnaccompaniedMinorDisclamer":false,"IsManualUpsellFromBasicEconomy":false,"StartFlightRecommendation":false,"FareWheelOrCalendarCall":false,"RelocateRti":false,"ConfirmationID":null,"searchTypeMain":"oneWay","realSearchTypeMain":"oneWay","Origin":"SIN","Destination":"TPE","DepartDate":"Jan 15, 2020","DepartDateBasicFormat":"2020-01-15","ReturnDate":"Jan 15, 2020","ReturnDateBasicFormat":null,"awardTravel":true,"MaxTrips":null,"numberOfTravelers":1,"numOfAdults":1,"numOfSeniors":0,"numOfChildren04":0,"numOfChildren03":0,"numOfChildren02":0,"numOfChildren01":0,"numOfInfants":0,"numOfLapInfants":0,"travelerCount":1,"revisedTravelerKeys":null,"revisedTravelers":null,"OriginalReservation":null,"RiskFreePolicy":null,"EmployeeDiscountId":null,"IsUnAccompaniedMinor":false,"MilitaryTravelType":null,"MilitaryOrGovernmentPersonnelStateCode":null,"tripLength":0,"MultiCityTripLength":null,"IsParallelFareWheelCallEnabled":false,"flexMonth":null,"flexMonth2":null,"SortType":"bestmatches","SortTypeV2":null,"cboMiles":"-1","cboMiles2":"-1","Trips":[{"BBXCellIdSelected":null,"BBXSession":null,"BBXSolutionSetId":null,"DestinationAll":false,"returnARC":null,"connections":null,"nonStopOnly":true,"nonStop":true,"oneStop":false,"twoPlusStop":false,"ChangeType":0,"DepartDate":"Jan 15, 2020","ReturnDate":null,"PetIsTraveling":false,"PreferredTime":"","PreferredTimeReturn":null,"Destination":"TPE","Index":1,"Origin":"SIN","Selected":false,"NonStopMarket":false,"FormatedDepartDate":"Wed, Jan 15, 2020","OriginCorrection":null,"DestinationCorrection":null,"OriginAll":false,"Flights":null,"SelectedFlights":null,"OriginTriggeredAirport":false,"DestinationTriggeredAirport":false,"StopCount":0,"HasNonStopFlights":false,"Ignored":false,"Sequence":0,"IsDomesticUS":false,"ClearAllFilters":false}],"nonStopOnly":1,"CalendarOnly":false,"Matrix3day":false,"InitialShop":true,"IsSearchInjection":false,"CartId":"8A5EF7DE-3AAC-4946-9A72-C8062577C758","CellIdSelected":null,"BBXSession":null,"SolutionSetId":null,"SimpleSearch":true,"RequeryForUpsell":false,"RequeryForPOSChange":false,"YBMAlternateService":false,"ShowClassOfServiceListPreference":false,"ShowAvailableOnlyUpgrades":false,"SelectableUpgradesOriginal":null,"RegionalPremierUpgradeBalance":0,"GlobalPremierUpgradeBalance":0,"AvailablePlusPoints":0,"RegionalPremierUpgrades":null,"GlobalPremierUpgrades":null,"FormattedAccountBalance":null,"GovType":null,"TripTypes":1,"RealTripTypes":1,"RealUpgradePath":false,"UpgradePath":false,"flexible":false,"flexibleAward":false,"FlexibleDaysAfter":0,"FlexibleDaysBefore":0,"hiddenPreferredConn":null,"hiddenUnpreferredConn":null,"carrierPref":0,"chkFltOpt":0,"portOx":0,"travelwPet":0,"NumberOfPets":0,"cabinType":0,"cabinSelection":"ECONOMY","awardCabinType":0,"FareTypes":0,"FareWheelOnly":false,"EditSearch":false,"buyUpgrade":0,"offerCode":null,"IsPromo":false,"TVAOfferCodeLastName":null,"ClassofService":null,"UpgradeType":null,"AdditionalUpgradeIds":null,"SelectedUpgradePrices":null,"BillingAddressCountryCode":null,"BillingAddressCountryDescription":null,"IsPassPlusFlex":false,"IsPassPlusSecure":false,"IsOffer":false,"IsMeetingWorks":false,"IsValidPromotion":false,"IsCorporate":0,"CalendarDateChange":null,"CoolAwardSpecials":false,"LastResultId":null,"IncludeLmx":false,"NGRP":true,"calendarStops":0,"IsAwardNonStopDisabled":false,"IsWeeklyAwardCalendarEnabled":true,"IsMonthlyAwardCalendarEnabled":true,"AwardCalendarType":0,"IsAwardCalendarEnabled":true,"IsAwardCalendarNonstop":false,"corporateBooking":false,"IsCorporateLeisure":false,"CorporateDiscountCode":"","IsAutoUpsellFromBasicEconomy":false,"CurrencyDescription":"International POS Cuurency","CurrentTripIndex":0,"LowestNonStopEconomyFare":0,"FromFlexibleCalendar":false,"TripIndex":0,"Cached":{"UaSessionId":"657d2857-f7cc-429a-99e5-4feab6dfd53f","CarrierPref":0,"PreferredConn":null,"UnpreferredConn":null,"HiddenPreferredConn":null,"HiddenUnpreferredConn":null,"Trips":[{"NonStop":true,"OneStop":false,"TwoPlusStop":false,"PreferredTime":"","PreferredTimeReturn":null,"ClearAllFilters":false}]},"isReshopPath":false}'
@@ -213,8 +217,26 @@ def checkForTextAlerts(flights, query):
             print("finalTextMessage", textM)
             textMessage(textM)
 
+#should ignore current message or not
+def filterAlerts(message):
+    if not alertFilter:
+        return False
+
+    for filterMessage in alertFilter:
+        shouldIgnore = True
+        for word in filterMessage:
+            if word not in message:
+                shouldIgnore = False
+                break
+        if shouldIgnore:
+            return True
+    #we checked all messages, we did not find a match, we should not ignore
+    return False
 
 def textMessage(message):
+    if filterAlerts(message):
+        print("we already know this one, we ignore", message)
+        return
     cmd = 'osascript sendMessage.scpt 4129808827 "United Search Result: {0}"'.format(message)
     os.system(cmd)
     time.sleep(5)
@@ -273,8 +295,8 @@ def start():
                 dt_string))
             print("sleep 30 seconds between flight query")
             time.sleep(30)
-        print("*******************************************We finished one loop on query********************************\n\n\n\n")
-
+        print("*******************************************We finished one loop on query sleep for 3min********************************\n\n\n\n")
+        time.sleep(180)
 
 def checkIFCharlesIsRunning():
     while True:
@@ -314,12 +336,14 @@ def plusDay(originalDay, addDay):
 def setFlightQuery():
     global flightQuerys
     # for predicate in predicates array, as long as we have a match, we alert the result
-
+    flightQuerys.append({"Origin": "SFO", "Destination": "NRT", "DepartDate": "2019-12-16", "Predicates": [b1, f1]})
     ANACloseDay = getCloseANADate()
-    flightQuerys.append({"Origin": "SFO", "Destination": "NRT", "DepartDate": ANACloseDay, "Predicates": [f1]})
+    flightQuerys.append({"Origin": "SFO", "Destination": "NRT", "DepartDate": ANACloseDay, "Predicates": [b1, f1]})
     for i in range(1, 10):
         testDay = plusDay(ANACloseDay, i)
-        flightQuerys.append({"Origin": "SFO", "Destination": "NRT", "DepartDate": testDay, "Predicates": [f1]})
+        if '12-19' in testDay:
+            break
+        flightQuerys.append({"Origin": "SFO", "Destination": "NRT", "DepartDate": testDay, "Predicates": [b1, f1]})
     flightQuerys.append({"Origin": "SIN", "Destination": "TPE", "DepartDate": "2020-01-15", "Predicates": [b2]})
     for i in range(1, 3):
         testDay = plusDay(ANACloseDay, i)

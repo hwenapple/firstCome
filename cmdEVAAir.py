@@ -313,10 +313,10 @@ def setFlightQuery():
     ANACloseDay2 = plusDay(ANACloseDay, 2)
     ANACloseDay3 = plusDay(ANACloseDay, 3)
     # Check when ANA will release award ticket
-    flightQuerys.append(
-        {"Origin": "NRT", "Destination": "SFO", "DepartDate": '20201125', "Class": "First", "Predicates": [p1]})
-    flightQuerys.append(
-        {"Origin": "SFO", "Destination": "NRT", "DepartDate": "20201125", "Class": "First", "Predicates": [p1]})
+    # flightQuerys.append(
+    #     {"Origin": "NRT", "Destination": "SFO", "DepartDate": '20201125', "Class": "Business", "Predicates": [p1]})
+    # flightQuerys.append(
+    #     {"Origin": "SFO", "Destination": "NRT", "DepartDate": "20201125", "Class": "Business", "Predicates": [p1]})
     flightQuerys.append(
         {"Origin": "SFO", "Destination": "NRT", "DepartDate": ANACloseDay, "Class": "First", "Predicates": [p1]})
     flightQuerys.append(
