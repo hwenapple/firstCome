@@ -314,30 +314,28 @@ def setFlightQuery():
     ANACloseDay3 = plusDay(ANACloseDay, 3)
     # Check when ANA will release award ticket
     # flightQuerys.append(
-    #     {"Origin": "NRT", "Destination": "SFO", "DepartDate": '20201124', "Class": "First", "Predicates": [p1]})
+    #     {"Origin": "NRT", "Destination": "SFO", "DepartDate": '20201125', "Class": "Business", "Predicates": [p1]})
+    # flightQuerys.append(
+    #     {"Origin": "SFO", "Destination": "NRT", "DepartDate": "20201125", "Class": "Business", "Predicates": [p1]})
     flightQuerys.append(
-        {"Origin": "NRT", "Destination": "SFO", "DepartDate": '20201125', "Class": "First", "Predicates": [p1]})
+        {"Origin": "SFO", "Destination": "NRT", "DepartDate": ANACloseDay, "Class": "First", "Predicates": [p1]})
     flightQuerys.append(
-        {"Origin": "SFO", "Destination": "NRT", "DepartDate": "20201125", "Class": "First", "Predicates": [p1]})
-    # flightQuerys.append(
-    #     {"Origin": "SFO", "Destination": "NRT", "DepartDate": ANACloseDay, "Class": "First", "Predicates": [p1]})
-    # flightQuerys.append(
-    #     {"Origin": "SFO", "Destination": "NRT", "DepartDate": ANACloseDay1, "Class": "First", "Predicates": [p1]})
-    # flightQuerys.append(
-    #     {"Origin": "SFO", "Destination": "NRT", "DepartDate": ANACloseDay2, "Class": "First", "Predicates": [p1]})
-    # flightQuerys.append(
-    #     {"Origin": "SFO", "Destination": "NRT", "DepartDate": ANACloseDay3, "Class": "First", "Predicates": [p1]})
+        {"Origin": "SFO", "Destination": "NRT", "DepartDate": ANACloseDay1, "Class": "First", "Predicates": [p1]})
+    flightQuerys.append(
+        {"Origin": "SFO", "Destination": "NRT", "DepartDate": ANACloseDay2, "Class": "First", "Predicates": [p1]})
+    flightQuerys.append(
+        {"Origin": "SFO", "Destination": "NRT", "DepartDate": ANACloseDay3, "Class": "First", "Predicates": [p1]})
     flightQuerys.append(
         {"Origin": "SFO", "Destination": "NRT", "DepartDate": '20191218', "Class": "First", "Predicates": [p1]})
     # Check when SQ will release award ticket
-    # flightQuerys.append(
-    #     {"Origin": "SIN", "Destination": "TPE", "DepartDate": ANACloseDay, "Class": "Business", "Predicates": [p2]})
-    # flightQuerys.append(
-    #     {"Origin": "SIN", "Destination": "TPE", "DepartDate": ANACloseDay1, "Class": "Business", "Predicates": [p2]})
-    # flightQuerys.append(
-    #     {"Origin": "SIN", "Destination": "TPE", "DepartDate": ANACloseDay2, "Class": "Business", "Predicates": [p2]})
-    # flightQuerys.append(
-    #     {"Origin": "SIN", "Destination": "TPE", "DepartDate": ANACloseDay3, "Class": "Business", "Predicates": [p2]})
+    flightQuerys.append(
+        {"Origin": "SIN", "Destination": "TPE", "DepartDate": ANACloseDay, "Class": "Business", "Predicates": [p2]})
+    flightQuerys.append(
+        {"Origin": "SIN", "Destination": "TPE", "DepartDate": ANACloseDay1, "Class": "Business", "Predicates": [p2]})
+    flightQuerys.append(
+        {"Origin": "SIN", "Destination": "TPE", "DepartDate": ANACloseDay2, "Class": "Business", "Predicates": [p2]})
+    flightQuerys.append(
+        {"Origin": "SIN", "Destination": "TPE", "DepartDate": ANACloseDay3, "Class": "Business", "Predicates": [p2]})
     # flightQuerys.append(
     #     {"Origin": "SIN", "Destination": "TPE", "DepartDate": "20200115", "Class": "Business", "Predicates": [p2]})
 
@@ -385,7 +383,6 @@ def start():
             print("sleep 30 seconds between flight query")
             time.sleep(30)
         print("*******************************************We finished one loop on query********************************\n\n\n\n")
-        time.sleep(60)
 
 
 if __name__ == '__main__':
