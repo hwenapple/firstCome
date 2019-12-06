@@ -151,8 +151,32 @@ def queryRequest(headers, cookies, data):
         headers=headers, cookies=cookies, data=data)
     return response
 
+def killPortProcess(portNumber):
+    cmd = "lsof -n -i4TCP:" + str(portNumber)
+    p = Popen(cmd, stdin=PIPE, stdout=PIPE, stderr=PIPE, shell=True)
+    output, err = p.communicate()
+    output = str(output)
+    lines = output.split("\\n")
+    pid = None
+    for line in lines:
+        if line:
+            values = line.split()
+            try:
+                possiblePID = values[1]
+                pid = int(possiblePID)
+                print("we got our pid", pid)
+                break
+            except Exception as e:
+                continue
+    if pid:
+        cmd = "kill -9 " + str(pid)
+        print("we kill current port id", cmd)
+        os.system(cmd)
+
+
 
 def reloadHeaderAndCookie():
+    killPortProcess(8090)
     global browser
     browsermob_path = '/usr/local/browsermob-proxy-2.1.4/bin/browsermob-proxy'
     server = Server(browsermob_path, {'port':8090})

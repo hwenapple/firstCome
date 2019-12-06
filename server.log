@@ -4,37 +4,8 @@ WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$Ref
 WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2
 WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
 WARNING: All illegal access operations will be denied in a future release
-[INFO  2019-12-06T14:10:49,412 net.lightbody.bmp.proxy.Main] (main) Starting BrowserMob Proxy version 2.1.4 
-[INFO  2019-12-06T14:10:49,465 org.eclipse.jetty.util.log] (main) jetty-7.x.y-SNAPSHOT 
-[INFO  2019-12-06T14:10:49,502 org.eclipse.jetty.util.log] (main) started o.e.j.s.ServletContextHandler{/,null} 
-[WARN  2019-12-06T14:10:49,660 org.eclipse.jetty.util.log] (main) FAILED SelectChannelConnector@0.0.0.0:8090: java.net.BindException: Address already in use 
-[WARN  2019-12-06T14:10:49,660 org.eclipse.jetty.util.log] (main) FAILED org.eclipse.jetty.server.Server@62b3df3a: java.net.BindException: Address already in use 
-[ERROR 2019-12-06T14:10:49,661 net.lightbody.bmp.proxy.Main] (main) Failed to start Jetty server. Aborting. java.net.BindException: Address already in use
-	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
-	at sun.nio.ch.Net.bind(Net.java:469) ~[?:?]
-	at sun.nio.ch.Net.bind(Net.java:458) ~[?:?]
-	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:220) ~[?:?]
-	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:88) ~[?:?]
-	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:162) ~[browsermob-dist-2.1.4.jar:?]
-	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:356) ~[browsermob-dist-2.1.4.jar:?]
-	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:240) ~[browsermob-dist-2.1.4.jar:?]
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:55) ~[browsermob-dist-2.1.4.jar:?]
-	at org.eclipse.jetty.server.Server.doStart(Server.java:269) ~[browsermob-dist-2.1.4.jar:?]
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:55) ~[browsermob-dist-2.1.4.jar:?]
-	at net.lightbody.bmp.proxy.Main.main(Main.java:64) [browsermob-dist-2.1.4.jar:?]
-
-Exception in thread "main" net.lightbody.bmp.exception.JettyException: Unable to start Jetty server
-	at net.lightbody.bmp.proxy.Main.main(Main.java:68)
-Caused by: java.net.BindException: Address already in use
-	at java.base/sun.nio.ch.Net.bind0(Native Method)
-	at java.base/sun.nio.ch.Net.bind(Net.java:469)
-	at java.base/sun.nio.ch.Net.bind(Net.java:458)
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:220)
-	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:88)
-	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:162)
-	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:356)
-	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:240)
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:55)
-	at org.eclipse.jetty.server.Server.doStart(Server.java:269)
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:55)
-	at net.lightbody.bmp.proxy.Main.main(Main.java:64)
+[INFO  2019-12-06T14:15:56,564 net.lightbody.bmp.proxy.Main] (main) Starting BrowserMob Proxy version 2.1.4 
+[INFO  2019-12-06T14:15:56,631 org.eclipse.jetty.util.log] (main) jetty-7.x.y-SNAPSHOT 
+[INFO  2019-12-06T14:15:56,672 org.eclipse.jetty.util.log] (main) started o.e.j.s.ServletContextHandler{/,null} 
+[INFO  2019-12-06T14:15:56,786 org.eclipse.jetty.util.log] (main) Started SelectChannelConnector@0.0.0.0:8090 
+/usr/local/browsermob-proxy-2.1.4/bin/browsermob-proxy: line 16: 52801 Killed: 9               "$JAVACMD" $JAVA_OPTS -Dapp.name="browsermob-proxy" -Dbasedir="$BASEDIR" -jar "$BASEDIR/lib/browsermob-dist-2.1.4.jar" "$@"
