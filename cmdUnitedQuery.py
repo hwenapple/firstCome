@@ -11,11 +11,18 @@ from timeout import timeout
 import errno
 from subprocess import Popen, PIPE
 import sys
+import re
 
 # results matching predicates
 e1 = {"Price": 35000, "Type": "Economy"}
 b1 = {"Type": "Business Saver", "flightNumber": "NH"}
 b2 = {"Type": "Business Saver", "flightNumber": "SQ"}
+b3 = {"Type": "Business Saver", "flightNumber": "MI"}
+b4 = {"Type": "Business Saver", "flightNumber": "OZ"}
+b5 = {"Type": "Business Saver", "flightNumber": "BR", 'numberOfSeats': 2}
+b6 = {"Type": "Business Saver", "flightNumber": "UA"}
+
+
 # Japan to USA 110k, china to USA 120k
 f1 = {"Type": "First", "flightNumber": "NH"}
 
@@ -23,8 +30,7 @@ flightQuerys = []
 browser = None
 
 
-
-alertFilter = ["Dec 16 Business Saver NH171", "Dec 15 Business Saver NH171"]
+alertFilter = ["Dec 16 Business Saver NH171", "Dec 16 First Saver"]
 #alertFilter = []
 
 def getDefaultQuery():
@@ -141,6 +147,7 @@ def getQueryData(origin, destination, departDate):
     my_json = searchResult.decode('utf8').replace("'", '"')
 
     my_jsonResult = json.loads(my_json)
+    my_jsonResult['responseStatus'] = response.status_code
     return my_jsonResult
 
 
@@ -181,7 +188,7 @@ def reloadHeaderAndCookie():
     browsermob_path = '/usr/local/browsermob-proxy-2.1.4/bin/browsermob-proxy'
     server = Server(browsermob_path, {'port':8090})
     server.start()
-    time.sleep(1)
+    time.sleep(10)
     proxy = server.create_proxy()
     time.sleep(1)
 
@@ -222,6 +229,13 @@ def ticketMatchPredicates(ticket, predicates):
                 # print("ticket[key]", ticket[key])
                 predicateCheck = False
                 break
+            if 'numberOfSeats' == key:
+                if key in ticket:
+                    seats = re.sub("\D", "", ticket[key])
+                    seats = int(seats)
+                    if seats < predicate[key]:
+                        predicateCheck = False
+                        break                     
         if predicateCheck:
             return True
     return False
@@ -289,15 +303,18 @@ def executeQuery(flightQuery):
             checkForTextAlerts(flightCandidates, flightQuery)
             return True
         else:
-            print("flight query result is not expected ", data)
+            if data['responseStatus'] == 200:
+                return True
+            print("flight query result is not expected ")
             return False
     print("query result dont have valid status")
     return False
 
 
 def start():
-    setFlightQuery()
     while True:
+        print("updating flight queries")
+        setFlightQuery()
         for index in range(0, len(flightQuerys)):
             flightQuery = flightQuerys[index]
             now = datetime.now()
@@ -359,18 +376,15 @@ def plusDay(originalDay, addDay):
 
 def setFlightQuery():
     global flightQuerys
+    flightQuerys = []
     # for predicate in predicates array, as long as we have a match, we alert the result
     ANACloseDay = getCloseANADate()
-    flightQuerys.append({"Origin": "SFO", "Destination": "NRT", "DepartDate": ANACloseDay, "Predicates": [b1, f1]})
-    for i in range(1, 10):
-        testDay = plusDay(ANACloseDay, i)
-        if '12-19' in testDay:
-            break
-        flightQuerys.append({"Origin": "SFO", "Destination": "NRT", "DepartDate": testDay, "Predicates": [b1, f1]})
-    flightQuerys.append({"Origin": "SIN", "Destination": "TPE", "DepartDate": "2020-01-15", "Predicates": [b2]})
-    for i in range(1, 3):
-        testDay = plusDay(ANACloseDay, i)
-        flightQuerys.append({"Origin": "SIN", "Destination": "TPE", "DepartDate": testDay, "Predicates": [b2]})
+    #flightQuerys.append({"Origin": "SFO", "Destination": "TPE", "DepartDate": "2020-12-16", "Predicates": [b5]})
+    flightQuerys.append({"Origin": "SFO", "Destination": "NRT", "DepartDate": '2020-12-16', "Predicates": [b1, f1]})
+    #flightQuerys.append({"Origin": "SIN", "Destination": "MLE", "DepartDate": '2020-01-09', "Predicates": [b4]})
+    # for i in range(1, 8):
+    #     testDay = plusDay(ANACloseDay, i)
+    #     flightQuerys.append({"Origin": "SIN", "Destination": "TPE", "DepartDate": testDay, "Predicates": [b2]})
 
 #
 if __name__ == '__main__':

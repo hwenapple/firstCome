@@ -17,7 +17,13 @@ flightQuerys = []
 
 p1 = {"flightNumber": "NH"}
 p2 = {"flightNumber": "SQ"}
+p3 = {"flightNumber": "MI"}
+p4 = {"flightNumber": "OZ"}
 injected_javascript = ''
+
+alertFilter = ["Dec 17 Business SQ876", "Dec 16 First", "Dec 18 SQ878"]
+alertFilter = []
+
 with open('/Users/hwen/firstCome/eva.js', 'r') as f:
     injected_javascript = f.read()
 
@@ -284,7 +290,25 @@ def checkForTextAlerts(flights, query):
             textMessage(textM)
 
 
+def filterAlerts(message):
+    if not alertFilter:
+        return False
+
+    for filterMessage in alertFilter:
+        shouldIgnore = True
+        for word in filterMessage:
+            if word not in message:
+                shouldIgnore = False
+                break
+        if shouldIgnore:
+            return True
+    #we checked all messages, we did not find a match, we should not ignore
+    return False
+
 def textMessage(message):
+    if filterAlerts(message):
+        print("we already know this one, we ignore", message)
+        return
     cmd = 'osascript sendMessage.scpt 4129808827 "EVA Search Result: {0}"'.format(message)
     os.system(cmd)
     time.sleep(5)
@@ -313,36 +337,24 @@ def setFlightQuery():
     ANACloseDay2 = plusDay(ANACloseDay, 2)
     ANACloseDay3 = plusDay(ANACloseDay, 3)
     # Check when ANA will release award ticket
-    # flightQuerys.append(
-    #     {"Origin": "NRT", "Destination": "SFO", "DepartDate": '20201125', "Class": "Business", "Predicates": [p1]})
-    # flightQuerys.append(
-    #     {"Origin": "SFO", "Destination": "NRT", "DepartDate": "20201125", "Class": "Business", "Predicates": [p1]})
-    flightQuerys.append(
-        {"Origin": "SFO", "Destination": "NRT", "DepartDate": ANACloseDay, "Class": "First", "Predicates": [p1]})
-    flightQuerys.append(
-        {"Origin": "SFO", "Destination": "NRT", "DepartDate": ANACloseDay1, "Class": "First", "Predicates": [p1]})
-    flightQuerys.append(
-        {"Origin": "SFO", "Destination": "NRT", "DepartDate": ANACloseDay2, "Class": "First", "Predicates": [p1]})
-    flightQuerys.append(
-        {"Origin": "SFO", "Destination": "NRT", "DepartDate": ANACloseDay3, "Class": "First", "Predicates": [p1]})
-    flightQuerys.append(
-        {"Origin": "SFO", "Destination": "NRT", "DepartDate": '20191218', "Class": "First", "Predicates": [p1]})
+    #flightQuerys.append(
+     #   {"Origin": "SFO", "Destination": "NRT", "DepartDate": '20201215', "Class": "Business", "Predicates": [p1]})
+
+    #flightQuerys.append(
+     #   {"Origin": "SJC", "Destination": "HND", "DepartDate": '20201215', "Class": "Business", "Predicates": [p1]})
+
     # Check when SQ will release award ticket
+
     flightQuerys.append(
-        {"Origin": "SIN", "Destination": "TPE", "DepartDate": ANACloseDay, "Class": "Business", "Predicates": [p2]})
+        {"Origin": "SFO", "Destination": "NRT", "DepartDate": "20201216", "Class": "Business", "Predicates": [p1]})
     flightQuerys.append(
-        {"Origin": "SIN", "Destination": "TPE", "DepartDate": ANACloseDay1, "Class": "Business", "Predicates": [p2]})
-    flightQuerys.append(
-        {"Origin": "SIN", "Destination": "TPE", "DepartDate": ANACloseDay2, "Class": "Business", "Predicates": [p2]})
-    flightQuerys.append(
-        {"Origin": "SIN", "Destination": "TPE", "DepartDate": ANACloseDay3, "Class": "Business", "Predicates": [p2]})
-    # flightQuerys.append(
-    #     {"Origin": "SIN", "Destination": "TPE", "DepartDate": "20200115", "Class": "Business", "Predicates": [p2]})
+        {"Origin": "SFO", "Destination": "NRT", "DepartDate": "20201216", "Class": "First", "Predicates": [p1]})
 
 
 def start():
-    setFlightQuery()
     while True:
+        print("updating flight queries")
+        setFlightQuery()
         for flightQuery in flightQuerys:
             now = datetime.now()
             dt_string = now.strftime("%m/%d/%Y %H:%M:%S")

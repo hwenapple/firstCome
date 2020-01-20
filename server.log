@@ -4,8 +4,13 @@ WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$Ref
 WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2
 WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
 WARNING: All illegal access operations will be denied in a future release
-[INFO  2019-12-06T14:15:56,564 net.lightbody.bmp.proxy.Main] (main) Starting BrowserMob Proxy version 2.1.4 
-[INFO  2019-12-06T14:15:56,631 org.eclipse.jetty.util.log] (main) jetty-7.x.y-SNAPSHOT 
-[INFO  2019-12-06T14:15:56,672 org.eclipse.jetty.util.log] (main) started o.e.j.s.ServletContextHandler{/,null} 
-[INFO  2019-12-06T14:15:56,786 org.eclipse.jetty.util.log] (main) Started SelectChannelConnector@0.0.0.0:8090 
-/usr/local/browsermob-proxy-2.1.4/bin/browsermob-proxy: line 16: 52801 Killed: 9               "$JAVACMD" $JAVA_OPTS -Dapp.name="browsermob-proxy" -Dbasedir="$BASEDIR" -jar "$BASEDIR/lib/browsermob-dist-2.1.4.jar" "$@"
+[INFO  2020-01-20T13:47:18,330 net.lightbody.bmp.proxy.Main] (main) Starting BrowserMob Proxy version 2.1.4 
+[INFO  2020-01-20T13:47:18,383 org.eclipse.jetty.util.log] (main) jetty-7.x.y-SNAPSHOT 
+[INFO  2020-01-20T13:47:18,429 org.eclipse.jetty.util.log] (main) started o.e.j.s.ServletContextHandler{/,null} 
+[INFO  2020-01-20T13:47:18,613 org.eclipse.jetty.util.log] (main) Started SelectChannelConnector@0.0.0.0:8090 
+[INFO  2020-01-20T13:47:27,516 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp1648458262-17) Starting proxy at address: 0.0.0.0/0.0.0.0:8091 
+[INFO  2020-01-20T13:47:27,544 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp1648458262-17) Proxy listening with TCP transport 
+[INFO  2020-01-20T13:47:27,630 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp1648458262-17) Proxy started at address: /0:0:0:0:0:0:0:0:8091 
+[INFO  2020-01-20T14:19:06,016 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (LittleProxy-JVM-shutdown-hook) Shutting down proxy server immediately (non-graceful) 
+[INFO  2020-01-20T14:19:06,016 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (LittleProxy-JVM-shutdown-hook) Closing all channels (non-graceful) 
+[INFO  2020-01-20T14:19:06,021 org.littleshoot.proxy.impl.ServerGroup] (LittleProxy-JVM-shutdown-hook) Shutting down server group event loops (non-graceful) 
