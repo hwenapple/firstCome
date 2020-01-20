@@ -218,7 +218,28 @@ def executeCMD(cmd):
     check_call(cmd, stdout=DEVNULL, stderr=STDOUT, shell=True)
 
 
+
+def checkIFCharlesIsRunning():
+    while True:
+        if checkingCharles():
+            time.sleep(30)
+        else:
+            break
+
+
+def checkingCharles():
+    cmd = "pgrep Charles"
+    p = Popen(cmd, stdin=PIPE, stdout=PIPE, stderr=PIPE, shell=True)
+    output, err = p.communicate()
+    if len(output) > 3:
+        print("Charles is running, we wait till it close")
+        return True
+    else:
+        print("Charles is closed, we proceed")
+        return False
+
 def reloadHeaderAndCookie(browser):
+    checkIFCharlesIsRunning()
     startCharles()
 
     signIn(browser)
@@ -349,6 +370,10 @@ def setFlightQuery():
         {"Origin": "SFO", "Destination": "NRT", "DepartDate": "20201216", "Class": "Business", "Predicates": [p1]})
     flightQuerys.append(
         {"Origin": "SFO", "Destination": "NRT", "DepartDate": "20201216", "Class": "First", "Predicates": [p1]})
+    flightQuerys.append(
+        {"Origin": "NRT", "Destination": "SFO", "DepartDate": "20210110", "Class": "First", "Predicates": [p1]})
+    flightQuerys.append(
+        {"Origin": "NRT", "Destination": "SFO", "DepartDate": "20210111", "Class": "First", "Predicates": [p1]})
 
 
 def start():
