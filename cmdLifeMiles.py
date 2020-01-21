@@ -224,8 +224,10 @@ def getQueryData(Origin, Destination, DepartDate):
     response = requests.post('https://www.lifemiles.com/lifemiles/air-redemption-flight', headers=headers, cookies=cookies, data=data)
 
     print("flight query status", response.status_code)
+    print("flight query result", response.content)
     if response.status_code != 200:
         print("we did not get 200 status back from query")
+        time.sleep(2000)
         raise
    
 
@@ -236,7 +238,7 @@ def getQueryData(Origin, Destination, DepartDate):
     #     #json.dump(searchResult, my_file)
     #     my_file.write(searchResult)
     # return searchResultHTML
-    #print("flight query result", searchResult)
+    
     searchResult = json.loads(searchResult)
     return searchResult
 
@@ -371,7 +373,7 @@ def setFlightQuery():
 
     # Check when ANA will release award ticket
 
-    flightQuerys.append({"Origin": "NRT", "Destination": "SFO", "DepartDate": "2021-01-10", "Predicates": [b1, f1]})
+    flightQuerys.append({"Origin": "NRT", "Destination": "SFO", "DepartDate": "2021-01-09", "Predicates": [b1, f1]})
     flightQuerys.append({"Origin": "NRT", "Destination": "SFO", "DepartDate": "2021-01-10", "Predicates": [b1, f1]})
     flightQuerys.append({"Origin": "NRT", "Destination": "SFO", "DepartDate": "2021-01-11", "Predicates": [b1, f1]})
 
