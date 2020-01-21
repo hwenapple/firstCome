@@ -137,6 +137,7 @@ def fakeSearch(browser):
 
     dayButtons = browser.find_elements_by_css_selector("button[class^='AirRedemptionCalendarMonth_day']")
     count = 0
+    startCharlesSession()
     for day in dayButtons:
         className = day.get_attribute("class")
         if "pastDay" not in className:
@@ -145,7 +146,7 @@ def fakeSearch(browser):
                 break
             count += 1
 
-    startCharlesSession()
+    
     time.sleep(15)
     stopAndSaveSession()
 
@@ -210,7 +211,6 @@ def getQueryData(Origin, Destination, DepartDate):
 
     cookies = {}
 
-
     # data = '{"internationalization":{"language":"en","country":"jp","currency":"usd"},"currencies":[{"currency":"USD","decimal":2,"rateUsd":1}],"passengers":1,"od":{"orig":"NRT","dest":"SFO","departingCity":"Tokyo","arrivalCity":"San Francisco","depDate":"2020-12-31","depTime":""},"filter":false,"codPromo":null,"idCoti":"1433100767","officeId":"","ftNum":"33012219601","discounts":[],"promotionCodes":[],"context":"D","ipAddress":"73.189.39.42","channel":"COM","cabin":"2","itinerary":"OW","odNum":1,"usdTaxValue":"0","getQuickSummary":true,"ods":"","searchType":"SSA","searchTypePrioritized":"SSA","sch":{"schHcfltrc":"dTuGOG42eU0qzdNjjcAipoCWVHURLMc6"},"staticMileageRtX":null,"staticMileageRtI":null,"staticMileageRtF":null,"smpKey":null,"posCountry":"US","odAp":[{"org":"NRT","dest":"SFO","cabin":2}]}'
     #data = '{"internationalization":{"language":"en","country":"usa","currency":"usd"},"currencies":[{"currency":"USD","decimal":2,"rateUsd":1}],"passengers":1,"od":{"orig":"{0}","dest":"{1}","depDate":"{2}","depTime":""},"filter":false,"codPromo":null,"idCoti":"1433100767","officeId":"","ftNum":"33012219601","discounts":[],"promotionCodes":[],"context":"D","channel":"COM","cabin":"2","itinerary":"OW","odNum":1,"usdTaxValue":"0","getQuickSummary":true,"ods":"","searchType":"SSA","searchTypePrioritized":"SSA","sch":{"schHcfltrc":"dTuGOG42eU0qzdNjjcAipoCWVHURLMc6"},"staticMileageRtX":null,"staticMileageRtI":null,"staticMileageRtF":null,"smpKey":null,"posCountry":"US"}'.format(Origin, Destination, DepartDate)
     data = '{"internationalization":{"language":"en","country":"usa","currency":"usd"},"currencies":[{"currency":"USD","decimal":2,"rateUsd":1}],"passengers":1,"od":{"orig":"NRT","dest":"SFO","depDate":"2020-12-31","depTime":""},"filter":false,"codPromo":null,"idCoti":"1433100767","officeId":"","ftNum":"33012219601","discounts":[],"promotionCodes":[],"context":"D","channel":"COM","cabin":"2","itinerary":"OW","odNum":1,"usdTaxValue":"0","getQuickSummary":true,"ods":"","searchType":"SSA","searchTypePrioritized":"SSA","sch":{"schHcfltrc":"dTuGOG42eU0qzdNjjcAipoCWVHURLMc6"},"staticMileageRtX":null,"staticMileageRtI":null,"staticMileageRtF":null,"smpKey":null,"posCountry":"US"}'
@@ -224,12 +224,7 @@ def getQueryData(Origin, Destination, DepartDate):
     response = requests.post('https://www.lifemiles.com/lifemiles/air-redemption-flight', headers=headers, cookies=cookies, data=data)
 
     print("flight query status", response.status_code)
-    print("flight query result", response.content)
-    if response.status_code != 200:
-        print("we did not get 200 status back from query")
-        time.sleep(2000)
-        raise
-   
+    #print("flight query result", response.content)
 
     
     searchResult = response.content
@@ -240,6 +235,11 @@ def getQueryData(Origin, Destination, DepartDate):
     # return searchResultHTML
     
     searchResult = json.loads(searchResult)
+    searchResult['statusCode'] = response.status_code
+    if 'status' in searchResult and searchResult['status'] == 'success':
+        searchResult['hasContent'] = True
+    else:
+        searchResult['hasContent'] = False
     return searchResult
 
 
@@ -418,14 +418,16 @@ def executeQuery(flightQuery):
             if browser:
                 browser.quit()
         return False
-    if 'status' in data:
-        if data['status'] == 'success':
-            flightCandidates = analyzeQueryData(data)
-            checkForTextAlerts(flightCandidates, flightQuery)
+    if data['hasContent']:
+        flightCandidates = analyzeQueryData(data)
+        checkForTextAlerts(flightCandidates, flightQuery)
+        return True
+    else:
+        if data['statusCode'] == 202:
+            print("we dont have anything avaible on that day")
             return True
-        else:
-            print("flight query result is not expected ", data)
-            return False
+        print("flight query result is not expected ", data)
+        return False
     print("query result dont have valid status")
     return False
 
@@ -472,13 +474,14 @@ def parseHar():
                     #print(headerObj['name'])
                     if headerObj['name'] == 'Authorization':
                         print(headerObj['value'])
-                        break
+                        #break
 
 
 if __name__ == '__main__':
     start()
+    #parseHar()
     
-    # # getQueryData("NRT", "SFO", "2020-04-01")
+    # getQueryData("NRT", "SFO", "2020-12-31")
     # with open('lifeMilesResult_1.json') as json_file:
     #     data = json.load(json_file)
     # analyzeQueryData(data)

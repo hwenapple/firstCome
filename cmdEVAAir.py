@@ -122,11 +122,11 @@ def fakeSearch(browser):
     resultElement = browser.find_element_by_id(calendarValueID)
     browser.execute_script("arguments[0].value = '2020/10/11'", resultElement)
     time.sleep(2)
-
+    startCharlesSession()
     browser.execute_script(injected_javascript)
 
     browser.execute_script("return fakeSearch()")
-    startCharlesSession()
+    
     time.sleep(15)
     stopAndSaveSession()
     # searchID = "MainContent_lit_ok"

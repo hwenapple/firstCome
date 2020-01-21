@@ -24,7 +24,7 @@ cookies = {
 
 headers = {
     'Host': 'www.lifemiles.com',
-    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJvYXV0aDItcmVzb3VyY2UiLCJzdWIiOiIzMzAxMjIxOTYwMSIsInVzZXJfbmFtZSI6IjMzMDEyMjE5NjAxIiwic2NvcGUiOlsicmVhZCJdLCJpc3MiOiJMTSIsImV4cCI6MTU3OTU1NDcwMzI2MiwiaWF0IjoxNTc5NTU0NzAzMjYyLCJ0aWQiOiIxNzk4NjMwRkU0ODAwN0M5QUIzMTdGQTdCNjZEMTEyQSIsImNsaWVudF9pZCI6ImxtX3dlYnNpdGUiLCJjaWQiOiJsbV93ZWJzaXRlIn0.I8u0vhWgxwBPd1dHa9D6pRKz7W3sMIFZdIN1K8aKIg0',
+    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJvYXV0aDItcmVzb3VyY2UiLCJzdWIiOiIzMzAxMjIxOTYwMSIsInVzZXJfbmFtZSI6IjMzMDEyMjE5NjAxIiwic2NvcGUiOlsicmVhZCJdLCJpc3MiOiJMTSIsImV4cCI6MTU3OTU2NjQ2MzQ2OCwiaWF0IjoxNTc5NTY2NDYzNDY4LCJ0aWQiOiJDMDBEMUE1MEYyRkFBODhCMzYxM0VFNTkyNzc4Rjc5RSIsImNsaWVudF9pZCI6ImxtX3dlYnNpdGUiLCJjaWQiOiJsbV93ZWJzaXRlIn0.ePby96Zp6sLzAG1ulHZCrKf1zNPbrvoANqPtZIFMvvU',
     'Origin': 'https://www.lifemiles.com',
     'x-dtpc': '1$278418656_596h41vLJGJJFBFJLIIPCCGVNJWGKJVEJGLEAAF',
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
