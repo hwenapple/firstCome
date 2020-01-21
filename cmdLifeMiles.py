@@ -15,6 +15,7 @@ import sys
 from subprocess import Popen, PIPE
 
 flightQuerys = []
+browser = None
 
 b1 = {"Type": "Business", "flightNumber": "NH"}
 
@@ -176,6 +177,7 @@ def classMatch(className):
 
 
 def getQueryData(Origin, Destination, DepartDate):
+    checkIFCharlesIsRunning()
     headers = {
         'Host': 'www.lifemiles.com',
         'Authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJvYXV0aDItcmVzb3VyY2UiLCJzdWIiOiIzMzAxMjIxOTYwMSIsInVzZXJfbmFtZSI6IjMzMDEyMjE5NjAxIiwic2NvcGUiOlsicmVhZCJdLCJpc3MiOiJMTSIsImV4cCI6MTU3OTQ5NTc1MTI5NSwiaWF0IjoxNTc5NDk1NzUxMjk1LCJ0aWQiOiJGRkEzNzkyQzZGQTE3QUI4MDFGNDJERjk0RjBFRjY5RCIsImNsaWVudF9pZCI6ImxtX3dlYnNpdGUiLCJjaWQiOiJsbV93ZWJzaXRlIn0.KYh1JxWbXMLv-8JZAQ2aM5UJ7nJ4Sp9XJAaOmif63cQ',
@@ -257,9 +259,10 @@ def executeCMD(cmd):
     check_call(cmd, stdout=DEVNULL, stderr=STDOUT, shell=True)
 
 
-def reloadHeaderAndCookie(browser):
+def reloadHeaderAndCookie():
+    global browser
     checkIFCharlesIsRunning()
-
+    browser = webdriver.Chrome()
     startCharles()
 
     signIn(browser)
@@ -369,6 +372,7 @@ def setFlightQuery():
     # Check when ANA will release award ticket
 
     flightQuerys.append({"Origin": "NRT", "Destination": "SFO", "DepartDate": "2021-01-10", "Predicates": [b1, f1]})
+    flightQuerys.append({"Origin": "NRT", "Destination": "SFO", "DepartDate": "2021-01-10", "Predicates": [b1, f1]})
     flightQuerys.append({"Origin": "NRT", "Destination": "SFO", "DepartDate": "2021-01-11", "Predicates": [b1, f1]})
 
 
@@ -404,12 +408,13 @@ def executeQuery(flightQuery):
         traceback.print_exc()
         print("we now try reload the cookie and header via selenium")
         try:
-            browser = webdriver.Chrome()
-            reloadHeaderAndCookie(browser)
+            
+            reloadHeaderAndCookie()
             print("we have reloaded cookie and header")
         except Exception as e:
             print("we have error reload cookie", e)
-            browser.quit()
+            if browser:
+                browser.quit()
         return False
     if 'status' in data:
         if data['status'] == 'success':

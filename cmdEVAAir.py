@@ -12,8 +12,12 @@ import re
 import io
 from subprocess import DEVNULL, STDOUT, check_call
 import sys
+from subprocess import Popen, PIPE
+
 
 flightQuerys = []
+
+browser = None
 
 p1 = {"flightNumber": "NH"}
 p2 = {"flightNumber": "SQ"}
@@ -155,6 +159,7 @@ def classMatch(className):
 
 
 def getQueryData(Origin, Destination, DepartDate, flightClass):
+    checkIFCharlesIsRunning()
     flightClass = classMatch(flightClass)
     headers = {
         'Host': 'booking.evaair.com',
@@ -238,8 +243,10 @@ def checkingCharles():
         print("Charles is closed, we proceed")
         return False
 
-def reloadHeaderAndCookie(browser):
+def reloadHeaderAndCookie():
+    global browser
     checkIFCharlesIsRunning()
+    browser = webdriver.Chrome()
     startCharles()
 
     signIn(browser)
@@ -396,12 +403,13 @@ def start():
                 print("We have error query the flight result", e)
                 traceback.print_exc()
                 print("we now try reload the cookie and header via selenium")
-                browser = webdriver.Chrome()
+                
                 try:
-                    reloadHeaderAndCookie(browser)
+                    reloadHeaderAndCookie()
                 except Exception as e:
                     print("we have error reload cookie, we continue", e)
-                    browser.quit()
+                    if browser:
+                        browser.quit()
                     continue
                 print("we have reloaded cookie and header")
                 continue
